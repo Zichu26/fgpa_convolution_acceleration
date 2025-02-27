@@ -1,0 +1,1128 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 13, Column: 17 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 15, Column: 57 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - Callee:          'fp_struct<float>::mantissa() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 340, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 59, Column: 8 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - Callee:          'fp_struct<float>::__signbit() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 349, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 18, Column: 79 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - Callee:          'fp_struct<float>::expv() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 316, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 117, Column: 10 }
+Function:        _Z20generic_cast_IEEE754IifET_T0_b
+Args:            
+  - Callee:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_cast_IEEE754<int, float>(float, bool)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp', 
+                   Line: 51, Column: 54 }
+Function:        __hls_fptosi_float_i32
+Args:            
+  - Callee:          'int generic_cast_IEEE754<int, float>(float, bool)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 116, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          __hls_fptosi_float_i32
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp', 
+                       Line: 51, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: filter_kernel.cpp, Line: 173, Column: 43 }
+Function:        filter_kernel
+Args:            
+  - Callee:          __hls_fptosi_float_i32
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp', 
+                       Line: 51, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+Function:        filter_kernel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_165_17
+  - String:          ''' ('
+  - LoopLoc:         'filter_kernel.cpp:165:48'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          filter_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+Function:        filter_kernel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_49_2
+  - String:          ''' ('
+  - LoopLoc:         'filter_kernel.cpp:49:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          filter_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 13, Column: 17 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 15, Column: 57 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - Callee:          'fp_struct<float>::mantissa() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 340, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 18, Column: 79 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - Callee:          'fp_struct<float>::expv() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 316, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 59, Column: 8 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - Callee:          'fp_struct<float>::__signbit() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 349, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 117, Column: 10 }
+Function:        _Z20generic_cast_IEEE754IifET_T0_b
+Args:            
+  - Callee:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'int generic_cast_IEEE754<int, float>(float, bool)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp', 
+                   Line: 51, Column: 54 }
+Function:        __hls_fptosi_float_i32
+Args:            
+  - Callee:          'int generic_cast_IEEE754<int, float>(float, bool)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 116, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          __hls_fptosi_float_i32
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp', 
+                       Line: 51, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: filter_kernel.cpp, Line: 173, Column: 43 }
+Function:        filter_kernel
+Args:            
+  - Callee:          __hls_fptosi_float_i32
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp', 
+                       Line: 51, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_filter_kernel_ir
+Args:            
+  - Callee:          filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_filter_kernel_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::mantissa() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 340, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::expv() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 316, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::__signbit() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 349, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                   Line: 116, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IifET_T0_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, float>(float, bool)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 116, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp', 
+                   Line: 51, Column: 0 }
+Function:        __hls_fptosi_float_i32
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_cast_IEEE754<int, float>(float, bool)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h', 
+                       Line: 116, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          __hls_fptosi_float_i32
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp', 
+                       Line: 51, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+Function:        filter_kernel
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          __hls_fptosi_float_i32
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp', 
+                       Line: 51, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: filter_kernel.cpp, Line: 38, Column: 8 }
+Function:        filter_kernel
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          filter_local
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: filter_kernel.cpp, Line: 64, Column: 23 }
+Function:        filter_kernel
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          line_buffer
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: filter_kernel.cpp, Line: 70, Column: 16 }
+Function:        filter_kernel
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          window
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: filter_kernel.cpp, Line: 157, Column: 35 }
+Function:        filter_kernel
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          output_pixel
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: filter_kernel.cpp, Line: 120, Column: 48 }
+Function:        filter_kernel
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_120_11
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:120:48'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: filter_kernel.cpp, Line: 119, Column: 44 }
+Function:        filter_kernel
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_119_10
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:119:44'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: filter_kernel.cpp, Line: 188, Column: 40 }
+Function:        filter_kernel
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_188_18
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:188:40'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: filter_kernel.cpp, Line: 222, Column: 40 }
+Function:        filter_kernel
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_222_20
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:222:40'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: filter_kernel.cpp, Line: 116, Column: 46 }
+Function:        filter_kernel
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      axie4_data
+    DebugLoc:        { File: filter_kernel.cpp, Line: 116, Column: 46 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_119_10.load.27
+  - ArrayName:       input_image
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        read_line
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:114:21'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: filter_kernel.cpp, Line: 219, Column: 48 }
+Function:        filter_kernel
+Args:            
+  - String:          'Access '
+  - Access:          input_axie4_data
+    DebugLoc:        { File: filter_kernel.cpp, Line: 219, Column: 48 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      input_axie4_data
+    DebugLoc:        { File: filter_kernel.cpp, Line: 219, Column: 48 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_222_20.load.9
+  - ArrayName:       input_image
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        process_cols
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:87:13'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: filter_kernel.cpp, Line: 234, Column: 57 }
+Function:        filter_kernel
+Args:            
+  - String:          'Access '
+  - Access:          next_input_axie4_data
+    DebugLoc:        { File: filter_kernel.cpp, Line: 234, Column: 57 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      next_input_axie4_data
+    DebugLoc:        { File: filter_kernel.cpp, Line: 234, Column: 57 }
+  - OrigDirection:   read
+  - OrigID:          for.inc441.lr.ph.load.5
+  - ArrayName:       input_image
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        process_cols
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:87:13'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: filter_kernel.cpp, Line: 220, Column: 49 }
+Function:        filter_kernel
+Args:            
+  - String:          'Access '
+  - Access:          output_axie4_data
+    DebugLoc:        { File: filter_kernel.cpp, Line: 220, Column: 49 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      output_axie4_data
+    DebugLoc:        { File: filter_kernel.cpp, Line: 220, Column: 49 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_222_20.load.12
+  - ArrayName:       output_image
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        process_cols
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:87:13'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: filter_kernel.cpp, Line: 235, Column: 58 }
+Function:        filter_kernel
+Args:            
+  - String:          'Access '
+  - Access:          next_output_axie4_data
+    DebugLoc:        { File: filter_kernel.cpp, Line: 235, Column: 58 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      next_output_axie4_data
+    DebugLoc:        { File: filter_kernel.cpp, Line: 235, Column: 58 }
+  - OrigDirection:   read
+  - OrigID:          for.inc441.lr.ph.load.8
+  - ArrayName:       output_image
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        process_cols
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:87:13'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: filter_kernel.cpp, Line: 186, Column: 42 }
+Function:        filter_kernel
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      axie4_data
+    DebugLoc:        { File: filter_kernel.cpp, Line: 186, Column: 42 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_188_18.load.15
+  - ArrayName:       output_image
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        process_cols
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:87:13'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: filter_kernel.cpp, Line: 202, Column: 51 }
+Function:        filter_kernel
+Args:            
+  - String:          'Access '
+  - Access:          next_axie4_data
+    DebugLoc:        { File: filter_kernel.cpp, Line: 202, Column: 51 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      next_axie4_data
+    DebugLoc:        { File: filter_kernel.cpp, Line: 202, Column: 51 }
+  - OrigDirection:   read
+  - OrigID:          for.inc355.lr.ph.load.5
+  - ArrayName:       output_image
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        process_cols
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:87:13'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: filter_kernel.cpp, Line: 230, Column: 45 }
+Function:        filter_kernel
+Args:            
+  - String:          'Access '
+  - Access:          store
+    DebugLoc:        { File: filter_kernel.cpp, Line: 230, Column: 45 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: filter_kernel.cpp, Line: 230, Column: 45 }
+  - OrigDirection:   write
+  - OrigID:          for.end407.store.1
+  - ArrayName:       output_image
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        process_cols
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:87:13'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: filter_kernel.cpp, Line: 245, Column: 53 }
+Function:        filter_kernel
+Args:            
+  - String:          'Access '
+  - Access:          store
+    DebugLoc:        { File: filter_kernel.cpp, Line: 245, Column: 53 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: filter_kernel.cpp, Line: 245, Column: 53 }
+  - OrigDirection:   write
+  - OrigID:          for.end443.store.1
+  - ArrayName:       output_image
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        process_cols
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:87:13'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: filter_kernel.cpp, Line: 197, Column: 45 }
+Function:        filter_kernel
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: filter_kernel.cpp, Line: 197, Column: 45 }
+  - OrigDirection:   write
+  - OrigID:          for.end326.store.1
+  - ArrayName:       output_image
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        process_cols
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:87:13'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: filter_kernel.cpp, Line: 212, Column: 53 }
+Function:        filter_kernel
+Args:            
+  - String:          'Access '
+  - Access:          store
+    DebugLoc:        { File: filter_kernel.cpp, Line: 212, Column: 53 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: filter_kernel.cpp, Line: 212, Column: 53 }
+  - OrigDirection:   write
+  - OrigID:          for.end357.store.1
+  - ArrayName:       output_image
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        process_cols
+  - String:          ' '
+  - LoopLoc:         'filter_kernel.cpp:87:13'
+  - String:          ' '
+  - Function:        filter_kernel
+    DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: filter_kernel.cpp, Line: 222, Column: 40 }
+Function:        filter_kernel
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_222_20
+  - String:          '''('
+  - LoopLoc:         'filter_kernel.cpp:222:40'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: filter_kernel.cpp, Line: 188, Column: 40 }
+Function:        filter_kernel
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_188_18
+  - String:          '''('
+  - LoopLoc:         'filter_kernel.cpp:188:40'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_48_1
+  - String:          '> at '
+  - LoopLoc:         'filter_kernel.cpp:48:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_135_12
+  - String:          '> at '
+  - LoopLoc:         'filter_kernel.cpp:135:36'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_90_6
+  - String:          '> at '
+  - LoopLoc:         'filter_kernel.cpp:90:38'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_147_14
+  - String:          '> at '
+  - LoopLoc:         'filter_kernel.cpp:147:36'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_222_20
+  - String:          '> at '
+  - LoopLoc:         'filter_kernel.cpp:222:40'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_237_21
+  - String:          '> at '
+  - LoopLoc:         'filter_kernel.cpp:237:44'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_160_15
+  - String:          '> at '
+  - LoopLoc:         'filter_kernel.cpp:160:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_188_18
+  - String:          '> at '
+  - LoopLoc:         'filter_kernel.cpp:188:40'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_204_19
+  - String:          '> at '
+  - LoopLoc:         'filter_kernel.cpp:204:44'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 91, Column: 42 }
+Function:        filter_kernel
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_91_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 136, Column: 40 }
+Function:        filter_kernel
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_136_13
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 164, Column: 44 }
+Function:        filter_kernel
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_164_16
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 17, Column: 0 }
+Function:        filter_kernel
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_164_16
+  - String:          ''' ('
+  - LoopLoc:         'filter_kernel.cpp:164:44'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          filter_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 91, Column: 42 }
+Function:        filter_kernel
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_91_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 136, Column: 40 }
+Function:        filter_kernel
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_136_13
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 91, Column: 42 }
+Function:        filter_kernel
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_91_7
+  - String:          ''' ('
+  - LoopLoc:         'filter_kernel.cpp:91:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          filter_kernel
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 136, Column: 40 }
+Function:        filter_kernel
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_136_13
+  - String:          ''' ('
+  - LoopLoc:         'filter_kernel.cpp:136:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          filter_kernel
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 147, Column: 36 }
+Function:        filter_kernel
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_147_14
+  - String:          ''' ('
+  - LoopLoc:         'filter_kernel.cpp:147:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          filter_kernel
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 222, Column: 40 }
+Function:        filter_kernel
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_222_20
+  - String:          ''' ('
+  - LoopLoc:         'filter_kernel.cpp:222:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          filter_kernel
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 237, Column: 44 }
+Function:        filter_kernel
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_237_21
+  - String:          ''' ('
+  - LoopLoc:         'filter_kernel.cpp:237:44'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          filter_kernel
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 160, Column: 21 }
+Function:        filter_kernel
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_160_15
+  - String:          ''' ('
+  - LoopLoc:         'filter_kernel.cpp:160:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          filter_kernel
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 188, Column: 40 }
+Function:        filter_kernel
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_188_18
+  - String:          ''' ('
+  - LoopLoc:         'filter_kernel.cpp:188:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          filter_kernel
+  - String:          ''' as it has a variable trip count'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: filter_kernel.cpp, Line: 204, Column: 44 }
+Function:        filter_kernel
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_204_19
+  - String:          ''' ('
+  - LoopLoc:         'filter_kernel.cpp:204:44'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          filter_kernel
+  - String:          ''' as it has a variable trip count'
+...

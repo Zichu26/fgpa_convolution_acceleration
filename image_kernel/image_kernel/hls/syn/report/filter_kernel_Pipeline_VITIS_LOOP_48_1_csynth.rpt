@@ -1,0 +1,177 @@
+
+
+================================================================
+== Vitis HLS Report for 'filter_kernel_Pipeline_VITIS_LOOP_48_1'
+================================================================
+* Date:           Wed Feb 26 23:19:23 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        image_kernel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.118 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       11|       11|  0.110 us|  0.110 us|   10|   10|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_48_1  |        9|        9|         4|          3|          1|     3|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     59|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     88|    -|
+|Register         |        -|    -|     306|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     306|    147|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln48_fu_212_p2    |         +|   0|  0|  10|           2|           1|
+    |add_ln53_1_fu_279_p2  |         +|   0|  0|  13|           4|           2|
+    |add_ln53_fu_250_p2    |         +|   0|  0|  11|           3|           1|
+    |sub_ln53_fu_230_p2    |         -|   0|  0|  13|           4|           4|
+    |icmp_ln48_fu_206_p2   |      icmp|   0|  0|  10|           2|           2|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  59|          16|          12|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |  17|          4|    1|          4|
+    |ap_done_int                  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0      |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0_reg  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1      |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_1         |   9|          2|    2|          4|
+    |filter_address0_local        |  17|          4|    4|         16|
+    |i_fu_66                      |   9|          2|    2|          4|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        |  88|         20|   13|         36|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+----+----+-----+-----------+
+    |             Name            | FF | LUT| Bits| Const Bits|
+    +-----------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                    |   3|   0|    3|          0|
+    |ap_done_reg                  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1      |   1|   0|    1|          0|
+    |i_1_reg_424                  |   2|   0|    2|          0|
+    |i_fu_66                      |   2|   0|    2|          0|
+    |icmp_ln48_reg_428            |   1|   0|    1|          0|
+    |mux_case_014216_fu_70        |  32|   0|   32|          0|
+    |mux_case_032243_fu_82        |  32|   0|   32|          0|
+    |mux_case_097270_fu_94        |  32|   0|   32|          0|
+    |mux_case_116225_fu_74        |  32|   0|   32|          0|
+    |mux_case_134252_fu_86        |  32|   0|   32|          0|
+    |mux_case_199279_fu_98        |  32|   0|   32|          0|
+    |mux_case_2101288_fu_102      |  32|   0|   32|          0|
+    |mux_case_218234_fu_78        |  32|   0|   32|          0|
+    |mux_case_236261_fu_90        |  32|   0|   32|          0|
+    |sub_ln53_reg_432             |   4|   0|    4|          0|
+    |trunc_ln53_reg_437           |   3|   0|    3|          0|
+    +-----------------------------+----+----+-----+-----------+
+    |Total                        | 306|   0|  306|          0|
+    +-----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+----------------------------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |              Source Object             |    C Type    |
++-----------------------------+-----+-----+------------+----------------------------------------+--------------+
+|ap_clk                       |   in|    1|  ap_ctrl_hs|  filter_kernel_Pipeline_VITIS_LOOP_48_1|  return value|
+|ap_rst                       |   in|    1|  ap_ctrl_hs|  filter_kernel_Pipeline_VITIS_LOOP_48_1|  return value|
+|ap_start                     |   in|    1|  ap_ctrl_hs|  filter_kernel_Pipeline_VITIS_LOOP_48_1|  return value|
+|ap_done                      |  out|    1|  ap_ctrl_hs|  filter_kernel_Pipeline_VITIS_LOOP_48_1|  return value|
+|ap_idle                      |  out|    1|  ap_ctrl_hs|  filter_kernel_Pipeline_VITIS_LOOP_48_1|  return value|
+|ap_ready                     |  out|    1|  ap_ctrl_hs|  filter_kernel_Pipeline_VITIS_LOOP_48_1|  return value|
+|filter_address0              |  out|    4|   ap_memory|                                  filter|         array|
+|filter_ce0                   |  out|    1|   ap_memory|                                  filter|         array|
+|filter_q0                    |   in|   32|   ap_memory|                                  filter|         array|
+|mux_case_2101288_out         |  out|   32|      ap_vld|                    mux_case_2101288_out|       pointer|
+|mux_case_2101288_out_ap_vld  |  out|    1|      ap_vld|                    mux_case_2101288_out|       pointer|
+|mux_case_199279_out          |  out|   32|      ap_vld|                     mux_case_199279_out|       pointer|
+|mux_case_199279_out_ap_vld   |  out|    1|      ap_vld|                     mux_case_199279_out|       pointer|
+|mux_case_097270_out          |  out|   32|      ap_vld|                     mux_case_097270_out|       pointer|
+|mux_case_097270_out_ap_vld   |  out|    1|      ap_vld|                     mux_case_097270_out|       pointer|
+|mux_case_236261_out          |  out|   32|      ap_vld|                     mux_case_236261_out|       pointer|
+|mux_case_236261_out_ap_vld   |  out|    1|      ap_vld|                     mux_case_236261_out|       pointer|
+|mux_case_134252_out          |  out|   32|      ap_vld|                     mux_case_134252_out|       pointer|
+|mux_case_134252_out_ap_vld   |  out|    1|      ap_vld|                     mux_case_134252_out|       pointer|
+|mux_case_032243_out          |  out|   32|      ap_vld|                     mux_case_032243_out|       pointer|
+|mux_case_032243_out_ap_vld   |  out|    1|      ap_vld|                     mux_case_032243_out|       pointer|
+|mux_case_218234_out          |  out|   32|      ap_vld|                     mux_case_218234_out|       pointer|
+|mux_case_218234_out_ap_vld   |  out|    1|      ap_vld|                     mux_case_218234_out|       pointer|
+|mux_case_116225_out          |  out|   32|      ap_vld|                     mux_case_116225_out|       pointer|
+|mux_case_116225_out_ap_vld   |  out|    1|      ap_vld|                     mux_case_116225_out|       pointer|
+|mux_case_014216_out          |  out|   32|      ap_vld|                     mux_case_014216_out|       pointer|
+|mux_case_014216_out_ap_vld   |  out|    1|      ap_vld|                     mux_case_014216_out|       pointer|
++-----------------------------+-----+-----+------------+----------------------------------------+--------------+
+

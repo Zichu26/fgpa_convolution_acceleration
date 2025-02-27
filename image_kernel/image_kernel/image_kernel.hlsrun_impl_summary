@@ -1,0 +1,268 @@
+<ENTRY>
+{
+ "thisFile": "D:/cse_462\\image_kernel\\image_kernel\\image_kernel.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/26/25 23:19:38",
+ "timestampMillis": "1740633578683",
+ "buildStep": {
+  "cmdId": "e9121d32-7946-421e-9346-83e251da1da3",
+  "name": "vitis-run",
+  "logFile": "D:/cse_462\\image_kernel\\image_kernel\\logs\\image_kernel.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config D:\\cse_462\\image_kernel\\hls_config.cfg --work_dir image_kernel ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "D:\\cse_462\\image_kernel\\hls_config.cfg",
+   "--work_dir",
+   "image_kernel"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\cse_462\\image_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/26/25 23:19:38",
+ "timestampMillis": "1740633578683",
+ "status": {
+  "cmdId": "e9121d32-7946-421e-9346-83e251da1da3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/26/25 23:19:43",
+ "timestampMillis": "1740633583081",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "filter_kernel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/cse_462\\image_kernel\\filter_kernel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/26/25 23:19:43",
+ "timestampMillis": "1740633583082",
+ "buildStep": {
+  "cmdId": "1a5ce8f6-87be-44dd-9290-6d268386996e",
+  "name": "",
+  "logFile": "D:/cse_462\\image_kernel\\image_kernel\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\cse_462\\image_kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/26/25 23:19:43",
+ "timestampMillis": "1740633583082",
+ "status": {
+  "cmdId": "1a5ce8f6-87be-44dd-9290-6d268386996e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/26/25 23:19:43",
+ "timestampMillis": "1740633583083",
+ "report": {
+  "path": "D:/cse_462\\image_kernel\\image_kernel\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/26/25 23:19:43",
+ "timestampMillis": "1740633583083",
+ "report": {
+  "path": "D:/cse_462\\image_kernel\\image_kernel\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/26/25 23:19:43",
+ "timestampMillis": "1740633583083",
+ "report": {
+  "path": "D:/cse_462\\image_kernel\\image_kernel\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/26/25 23:19:43",
+ "timestampMillis": "1740633583084",
+ "report": {
+  "path": "D:/cse_462\\image_kernel\\image_kernel\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/26/25 23:19:43",
+ "timestampMillis": "1740633583084",
+ "report": {
+  "path": "D:/cse_462\\image_kernel\\image_kernel\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/26/25 23:19:43",
+ "timestampMillis": "1740633583084",
+ "report": {
+  "path": "D:/cse_462\\image_kernel\\image_kernel\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/26/25 23:29:16",
+ "timestampMillis": "1740634156598",
+ "report": {
+  "path": "D:/cse_462\\image_kernel\\image_kernel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/26/25 23:29:16",
+ "timestampMillis": "1740634156599",
+ "report": {
+  "path": "D:/cse_462\\image_kernel\\image_kernel\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/26/25 23:29:16",
+ "timestampMillis": "1740634156599",
+ "status": {
+  "cmdId": "1a5ce8f6-87be-44dd-9290-6d268386996e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/26/25 23:29:16",
+ "timestampMillis": "1740634156748",
+ "status": {
+  "cmdId": "e9121d32-7946-421e-9346-83e251da1da3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/26/25 23:29:16",
+ "timestampMillis": "1740634156750",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/26/25 23:29:16",
+ "timestampMillis": "1740634156751",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

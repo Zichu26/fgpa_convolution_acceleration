@@ -1,0 +1,351 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>9.058</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>9.058</CP_FINAL>
+  <CP_ROUTE>9.058</CP_ROUTE>
+  <CP_SYNTH>7.958</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>0.942</SLACK_FINAL>
+  <SLACK_ROUTE>0.942</SLACK_ROUTE>
+  <SLACK_SYNTH>2.042</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>0.942</WNS_FINAL>
+  <WNS_ROUTE>0.942</WNS_ROUTE>
+  <WNS_SYNTH>2.042</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>43</BRAM>
+    <CLB>0</CLB>
+    <DSP>79</DSP>
+    <FF>14834</FF>
+    <LATCH>0</LATCH>
+    <LUT>11365</LUT>
+    <SLICE>5203</SLICE>
+    <SRL>1365</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <SLICE>13300</SLICE>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="filter_kernel" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="27">control_r_s_axi_U control_s_axi_U gmem0_m_axi_U gmem1_m_axi_U grp_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11_fu_955 grp_filter_kernel_Pipeline_VITIS_LOOP_147_14_fu_970 grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987 grp_filter_kernel_Pipeline_VITIS_LOOP_188_18_fu_1049 grp_filter_kernel_Pipeline_VITIS_LOOP_204_19_fu_1060 grp_filter_kernel_Pipeline_VITIS_LOOP_222_20_fu_1032 grp_filter_kernel_Pipeline_VITIS_LOOP_237_21_fu_1041 grp_filter_kernel_Pipeline_VITIS_LOOP_48_1_fu_907 grp_filter_kernel_Pipeline_init_line_buffer_VITIS_LOOP_76_3_VITIS_LOOP_77_4_fu_922 grp_filter_kernel_Pipeline_shift_lines_VITIS_LOOP_102_8_VITIS_LOOP_103_9_fu_939 line_buffer_1_U line_buffer_2_U line_buffer_3_U line_buffer_4_U line_buffer_5_U line_buffer_6_U line_buffer_7_U line_buffer_8_U line_buffer_U mul_31ns_31ns_62_1_1_U167 mul_32ns_31ns_63_1_1_U168 mul_32s_32s_32_1_1_U169 mul_64ns_64ns_128_3_1_U170</SubModules>
+    <Resources BRAM="43" DSP="79" FF="14834" LUT="11365" LUTRAM="32" LogicLUT="9968" RAMB18="11" RAMB36="16" SRL="1365"/>
+    <LocalResources DSP="2" FF="4780" LUT="1553" LogicLUT="1551" SRL="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_r_s_axi_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_control_r_s_axi">
+    <Resources FF="169" LUT="139" LogicLUT="139"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_s_axi_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_control_s_axi">
+    <Resources FF="248" LUT="267" LUTRAM="32" LogicLUT="235"/>
+    <LocalResources FF="184" LUT="187" LogicLUT="187"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gmem0_m_axi_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_gmem0_m_axi">
+    <Resources BRAM="15" FF="835" LUT="472" LogicLUT="439" RAMB18="1" RAMB36="7" SRL="33"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gmem1_m_axi_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_gmem1_m_axi">
+    <Resources BRAM="19" FF="1883" LUT="2783" LogicLUT="1515" RAMB18="1" RAMB36="9" SRL="1268"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11_fu_955" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U mul_61s_32s_61_3_1_U39</SubModules>
+    <Resources DSP="7" FF="495" LUT="284" LogicLUT="272" SRL="12"/>
+    <LocalResources FF="459" LUT="230" LogicLUT="218" SRL="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11_fu_955/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v" ORIG_REF_NAME="filter_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11_fu_955/mul_61s_32s_61_3_1_U39" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v" ORIG_REF_NAME="filter_kernel_mul_61s_32s_61_3_1">
+    <Resources DSP="7" FF="34" LUT="50" LogicLUT="50"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_147_14_fu_970" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_147_14">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="28" LUT="183" LogicLUT="183"/>
+    <LocalResources FF="26" LUT="136" LogicLUT="136"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_147_14_fu_970/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_147_14.v" ORIG_REF_NAME="filter_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="47" LogicLUT="47"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15">
+    <SubModules count="29">fadd_32ns_32ns_32_4_full_dsp_1_U71 fadd_32ns_32ns_32_4_full_dsp_1_U72 fadd_32ns_32ns_32_4_full_dsp_1_U73 fadd_32ns_32ns_32_4_full_dsp_1_U74 fadd_32ns_32ns_32_4_full_dsp_1_U75 fadd_32ns_32ns_32_4_full_dsp_1_U76 fadd_32ns_32ns_32_4_full_dsp_1_U77 fadd_32ns_32ns_32_4_full_dsp_1_U78 fadd_32ns_32ns_32_4_full_dsp_1_U79 fdiv_32ns_32ns_32_12_no_dsp_1_U89 flow_control_loop_pipe_sequential_init_U fmul_32ns_32ns_32_4_max_dsp_1_U80 fmul_32ns_32ns_32_4_max_dsp_1_U81 fmul_32ns_32ns_32_4_max_dsp_1_U82 fmul_32ns_32ns_32_4_max_dsp_1_U83 fmul_32ns_32ns_32_4_max_dsp_1_U84 fmul_32ns_32ns_32_4_max_dsp_1_U85 fmul_32ns_32ns_32_4_max_dsp_1_U86 fmul_32ns_32ns_32_4_max_dsp_1_U87 fmul_32ns_32ns_32_4_max_dsp_1_U88 uitofp_32ns_32_4_no_dsp_1_U90 uitofp_32ns_32_4_no_dsp_1_U91 uitofp_32ns_32_4_no_dsp_1_U92 uitofp_32ns_32_4_no_dsp_1_U93 uitofp_32ns_32_4_no_dsp_1_U94 uitofp_32ns_32_4_no_dsp_1_U95 uitofp_32ns_32_4_no_dsp_1_U96 uitofp_32ns_32_4_no_dsp_1_U97 uitofp_32ns_32_4_no_dsp_1_U98</SubModules>
+    <Resources DSP="45" FF="4680" LUT="3568" LogicLUT="3518" SRL="50"/>
+    <LocalResources FF="1052" LUT="268" LogicLUT="246" SRL="22"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fadd_32ns_32ns_32_4_full_dsp_1_U71" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1">
+    <Resources DSP="2" FF="132" LUT="166" LogicLUT="166"/>
+    <LocalResources FF="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fadd_32ns_32ns_32_4_full_dsp_1_U72" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1">
+    <Resources DSP="2" FF="199" LUT="176" LogicLUT="176"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fadd_32ns_32ns_32_4_full_dsp_1_U73" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1">
+    <Resources DSP="2" FF="199" LUT="176" LogicLUT="176"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fadd_32ns_32ns_32_4_full_dsp_1_U74" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1">
+    <Resources DSP="2" FF="199" LUT="176" LogicLUT="176"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fadd_32ns_32ns_32_4_full_dsp_1_U75" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1">
+    <Resources DSP="2" FF="199" LUT="176" LogicLUT="176"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fadd_32ns_32ns_32_4_full_dsp_1_U76" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1">
+    <Resources DSP="2" FF="199" LUT="176" LogicLUT="176"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fadd_32ns_32ns_32_4_full_dsp_1_U77" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1">
+    <Resources DSP="2" FF="199" LUT="176" LogicLUT="176"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fadd_32ns_32ns_32_4_full_dsp_1_U78" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1">
+    <Resources DSP="2" FF="199" LUT="176" LogicLUT="176"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fadd_32ns_32ns_32_4_full_dsp_1_U79" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1">
+    <Resources DSP="2" FF="199" LUT="176" LogicLUT="176"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fdiv_32ns_32ns_32_12_no_dsp_1_U89" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1">
+    <Resources FF="532" LUT="767" LogicLUT="739" SRL="28"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="24" LogicLUT="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fmul_32ns_32ns_32_4_max_dsp_1_U80" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1">
+    <Resources DSP="3" FF="106" LUT="72" LogicLUT="72"/>
+    <LocalResources FF="59"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fmul_32ns_32ns_32_4_max_dsp_1_U81" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1">
+    <Resources DSP="3" FF="104" LUT="72" LogicLUT="72"/>
+    <LocalResources FF="57"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fmul_32ns_32ns_32_4_max_dsp_1_U82" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1">
+    <Resources DSP="3" FF="106" LUT="72" LogicLUT="72"/>
+    <LocalResources FF="59"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fmul_32ns_32ns_32_4_max_dsp_1_U83" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1">
+    <Resources DSP="3" FF="104" LUT="72" LogicLUT="72"/>
+    <LocalResources FF="57"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fmul_32ns_32ns_32_4_max_dsp_1_U84" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1">
+    <Resources DSP="3" FF="106" LUT="72" LogicLUT="72"/>
+    <LocalResources FF="59"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fmul_32ns_32ns_32_4_max_dsp_1_U85" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1">
+    <Resources DSP="3" FF="104" LUT="72" LogicLUT="72"/>
+    <LocalResources FF="57"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fmul_32ns_32ns_32_4_max_dsp_1_U86" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1">
+    <Resources DSP="3" FF="106" LUT="72" LogicLUT="72"/>
+    <LocalResources FF="59"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fmul_32ns_32ns_32_4_max_dsp_1_U87" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1">
+    <Resources DSP="3" FF="104" LUT="72" LogicLUT="72"/>
+    <LocalResources FF="57"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fmul_32ns_32ns_32_4_max_dsp_1_U88" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1">
+    <Resources DSP="3" FF="106" LUT="72" LogicLUT="72"/>
+    <LocalResources FF="59"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/uitofp_32ns_32_4_no_dsp_1_U90" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_uitofp_32ns_32_4_no_dsp_1">
+    <Resources FF="48" LUT="32" LogicLUT="32"/>
+    <LocalResources FF="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/uitofp_32ns_32_4_no_dsp_1_U91" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_uitofp_32ns_32_4_no_dsp_1">
+    <Resources FF="46" LUT="32" LogicLUT="32"/>
+    <LocalResources FF="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/uitofp_32ns_32_4_no_dsp_1_U92" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_uitofp_32ns_32_4_no_dsp_1">
+    <Resources FF="48" LUT="32" LogicLUT="32"/>
+    <LocalResources FF="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/uitofp_32ns_32_4_no_dsp_1_U93" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_uitofp_32ns_32_4_no_dsp_1">
+    <Resources FF="46" LUT="32" LogicLUT="32"/>
+    <LocalResources FF="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/uitofp_32ns_32_4_no_dsp_1_U94" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_uitofp_32ns_32_4_no_dsp_1">
+    <Resources FF="48" LUT="32" LogicLUT="32"/>
+    <LocalResources FF="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/uitofp_32ns_32_4_no_dsp_1_U95" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_uitofp_32ns_32_4_no_dsp_1">
+    <Resources FF="46" LUT="32" LogicLUT="32"/>
+    <LocalResources FF="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/uitofp_32ns_32_4_no_dsp_1_U96" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_uitofp_32ns_32_4_no_dsp_1">
+    <Resources FF="48" LUT="32" LogicLUT="32"/>
+    <LocalResources FF="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/uitofp_32ns_32_4_no_dsp_1_U97" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_uitofp_32ns_32_4_no_dsp_1">
+    <Resources FF="46" LUT="32" LogicLUT="32"/>
+    <LocalResources FF="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/uitofp_32ns_32_4_no_dsp_1_U98" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v" ORIG_REF_NAME="filter_kernel_uitofp_32ns_32_4_no_dsp_1">
+    <Resources FF="48" LUT="32" LogicLUT="32"/>
+    <LocalResources FF="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_188_18_fu_1049" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_188_18">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="162" LUT="240" LogicLUT="240"/>
+    <LocalResources FF="160" LUT="89" LogicLUT="89"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_188_18_fu_1049/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_188_18.v" ORIG_REF_NAME="filter_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="151" LogicLUT="151"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_204_19_fu_1060" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_204_19">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="192" LUT="334" LogicLUT="334"/>
+    <LocalResources FF="190" LUT="81" LogicLUT="81"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_204_19_fu_1060/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_204_19.v" ORIG_REF_NAME="filter_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="253" LogicLUT="253"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_222_20_fu_1032" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_222_20">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="175" LUT="272" LogicLUT="272"/>
+    <LocalResources FF="173" LUT="87" LogicLUT="87"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_222_20_fu_1032/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_222_20.v" ORIG_REF_NAME="filter_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="185" LogicLUT="185"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_237_21_fu_1041" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_237_21">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="199" LUT="374" LogicLUT="374"/>
+    <LocalResources FF="197" LUT="138" LogicLUT="138"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_237_21_fu_1041/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_237_21.v" ORIG_REF_NAME="filter_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="236" LogicLUT="236"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_48_1_fu_907" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_48_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="302" LUT="20" LogicLUT="20"/>
+    <LocalResources FF="300" LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_VITIS_LOOP_48_1_fu_907/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_48_1.v" ORIG_REF_NAME="filter_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="13" LogicLUT="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_init_line_buffer_VITIS_LOOP_76_3_VITIS_LOOP_77_4_fu_922" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_filter_kernel_Pipeline_init_line_buffer_VITIS_LOOP_76_3_VITIS_LOOP_77_4">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="214" LUT="131" LogicLUT="131"/>
+    <LocalResources FF="212" LUT="125" LogicLUT="125"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_init_line_buffer_VITIS_LOOP_76_3_VITIS_LOOP_77_4_fu_922/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_init_line_buffer_VITIS_LOOP_76_3_VITIS_LOOP_77_4.v" ORIG_REF_NAME="filter_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_shift_lines_VITIS_LOOP_102_8_VITIS_LOOP_103_9_fu_939" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_filter_kernel_Pipeline_shift_lines_VITIS_LOOP_102_8_VITIS_LOOP_103_9">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="370" LUT="245" LogicLUT="245"/>
+    <LocalResources FF="368" LUT="235" LogicLUT="235"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_filter_kernel_Pipeline_shift_lines_VITIS_LOOP_102_8_VITIS_LOOP_103_9_fu_939/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="filter_kernel_filter_kernel_Pipeline_shift_lines_VITIS_LOOP_102_8_VITIS_LOOP_103_9.v" ORIG_REF_NAME="filter_kernel_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/line_buffer_1_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_line_buffer_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/line_buffer_2_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_line_buffer_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/line_buffer_3_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_line_buffer_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="1" LogicLUT="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/line_buffer_4_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_line_buffer_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/line_buffer_5_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_line_buffer_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/line_buffer_6_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_line_buffer_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/line_buffer_7_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_line_buffer_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/line_buffer_8_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_line_buffer_RAM_AUTO_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/line_buffer_U" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_line_buffer_RAM_AUTO_1R1W">
+    <Resources BRAM="1" LUT="35" LogicLUT="35" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_31ns_31ns_62_1_1_U167" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_mul_31ns_31ns_62_1_1">
+    <Resources DSP="2" LUT="123" LogicLUT="123"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_32ns_31ns_63_1_1_U168" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_mul_32ns_31ns_63_1_1">
+    <Resources DSP="4" LUT="46" LogicLUT="46"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_32s_32s_32_1_1_U169" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_mul_32s_32s_32_1_1">
+    <Resources DSP="3" LUT="47" LogicLUT="47"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_64ns_64ns_128_3_1_U170" DEPTH="1" FILE_NAME="filter_kernel.v" ORIG_REF_NAME="filter_kernel_mul_64ns_64ns_128_3_1">
+    <Resources DSP="16" FF="102" LUT="252" LogicLUT="252"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="8.811" DATAPATH_LOGIC_DELAY="5.361" DATAPATH_NET_DELAY="3.450" ENDPOINT_PIN="bd_0_i/hls_inst/inst/tmp_19_reg_3920_reg[0]/D" LOGIC_LEVELS="7" MAX_FANOUT="42" SLACK="0.942" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[68]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[68]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="filter_kernel.v" LINE_NUMBER="2318"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/tmp_product__0_i_11" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="filter_kernel.v" LINE_NUMBER="1407"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="filter_kernel_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/tmp_product__1" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="filter_kernel_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/reg_1225[19]_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="filter_kernel_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/reg_1225_reg[19]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="filter_kernel_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/reg_1225_reg[23]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="filter_kernel_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/tmp_19_reg_3920_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="filter_kernel_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/tmp_19_reg_3920_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="filter_kernel.v" LINE_NUMBER="2914"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="8.951" DATAPATH_LOGIC_DELAY="0.438" DATAPATH_NET_DELAY="8.513" ENDPOINT_PIN="bd_0_i/hls_inst/inst/output_axie4_data_0_lcssa_reg_887_reg[113]/D" LOGIC_LEVELS="1" MAX_FANOUT="165" SLACK="1.008" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[43]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[43]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="filter_kernel.v" LINE_NUMBER="2318"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[113]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="filter_kernel.v" LINE_NUMBER="2525"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/output_axie4_data_0_lcssa_reg_887_reg[113]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="filter_kernel.v" LINE_NUMBER="2526"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="8.710" DATAPATH_LOGIC_DELAY="5.361" DATAPATH_NET_DELAY="3.349" ENDPOINT_PIN="bd_0_i/hls_inst/inst/reg_1225_reg[27]/D" LOGIC_LEVELS="7" MAX_FANOUT="42" SLACK="1.018" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[68]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[68]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="filter_kernel.v" LINE_NUMBER="2318"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/tmp_product__0_i_11" PRIMITIVE_TYPE="LUT.others.LUT4" FILE_NAME="filter_kernel.v" LINE_NUMBER="1407"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="filter_kernel_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/tmp_product__1" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" FILE_NAME="filter_kernel_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/reg_1225[19]_i_4" PRIMITIVE_TYPE="LUT.others.LUT2" FILE_NAME="filter_kernel_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/reg_1225_reg[19]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="filter_kernel_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/reg_1225_reg[23]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="filter_kernel_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mul_32s_32s_32_1_1_U169/tmp_19_reg_3920_reg[0]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" FILE_NAME="filter_kernel_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/reg_1225_reg[27]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="filter_kernel.v" LINE_NUMBER="2858"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="8.904" DATAPATH_LOGIC_DELAY="0.438" DATAPATH_NET_DELAY="8.466" ENDPOINT_PIN="bd_0_i/hls_inst/inst/output_axie4_data_0_lcssa_reg_887_reg[49]/D" LOGIC_LEVELS="1" MAX_FANOUT="165" SLACK="1.057" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[43]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[43]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="filter_kernel.v" LINE_NUMBER="2318"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[49]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="filter_kernel.v" LINE_NUMBER="2525"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/output_axie4_data_0_lcssa_reg_887_reg[49]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="filter_kernel.v" LINE_NUMBER="2526"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="8.938" DATAPATH_LOGIC_DELAY="0.438" DATAPATH_NET_DELAY="8.500" ENDPOINT_PIN="bd_0_i/hls_inst/inst/output_axie4_data_0_lcssa_reg_887_reg[32]/D" LOGIC_LEVELS="1" MAX_FANOUT="165" SLACK="1.061" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[43]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[43]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="filter_kernel.v" LINE_NUMBER="2318"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[32]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" FILE_NAME="filter_kernel.v" LINE_NUMBER="2525"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/output_axie4_data_0_lcssa_reg_887_reg[32]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" FILE_NAME="filter_kernel.v" LINE_NUMBER="2526"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/filter_kernel_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/filter_kernel_failfast_routed.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/filter_kernel_power_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/filter_kernel_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/filter_kernel_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/filter_kernel_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/filter_kernel_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/filter_kernel_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

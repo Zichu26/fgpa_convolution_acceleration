@@ -1,0 +1,367 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Wed Feb 26 23:29:16 -0600 2025
+    * Version:         2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:         image_kernel
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg400-3
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       auto
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              11365
+FF:               14834
+DSP:              79
+BRAM:             43
+URAM:             0
+SRL:              1365
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 7.958       |
+| Post-Route     | 9.058       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++------------------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                                     | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++------------------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                                     | 11365 | 14834 | 79  | 43   |      |     |        |      |         |          |        |
+|   (inst)                                                                                 | 1553  | 4780  | 2   |      |      |     |        |      |         |          |        |
+|   control_r_s_axi_U                                                                      | 139   | 169   |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                                                                        | 267   | 248   |     |      |      |     |        |      |         |          |        |
+|   gmem0_m_axi_U                                                                          | 472   | 835   |     | 15   |      |     |        |      |         |          |        |
+|   gmem1_m_axi_U                                                                          | 2783  | 1883  |     | 19   |      |     |        |      |         |          |        |
+|   grp_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11_fu_955                  | 284   | 495   | 7   |      |      |     |        |      |         |          |        |
+|     (grp_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11_fu_955)              | 230   | 459   |     |      |      |     |        |      |         |          |        |
+|     mul_61s_32s_61_3_1_U39                                                               | 50    | 34    | 7   |      |      |     |        |      |         |          |        |
+|   grp_filter_kernel_Pipeline_VITIS_LOOP_147_14_fu_970                                    | 183   | 28    |     |      |      |     |        |      |         |          |        |
+|     (grp_filter_kernel_Pipeline_VITIS_LOOP_147_14_fu_970)                                | 136   | 26    |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                             | 47    | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987                                    | 3568  | 4680  | 45  |      |      |     |        |      |         |          |        |
+|     (grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987)                                | 268   | 1052  |     |      |      |     |        |      |         |          |        |
+|     fadd_32ns_32ns_32_4_full_dsp_1_U71                                                   | 166   | 132   | 2   |      |      |     |        |      |         |          |        |
+|     fadd_32ns_32ns_32_4_full_dsp_1_U72                                                   | 176   | 199   | 2   |      |      |     |        |      |         |          |        |
+|     fadd_32ns_32ns_32_4_full_dsp_1_U73                                                   | 176   | 199   | 2   |      |      |     |        |      |         |          |        |
+|     fadd_32ns_32ns_32_4_full_dsp_1_U74                                                   | 176   | 199   | 2   |      |      |     |        |      |         |          |        |
+|     fadd_32ns_32ns_32_4_full_dsp_1_U75                                                   | 176   | 199   | 2   |      |      |     |        |      |         |          |        |
+|     fadd_32ns_32ns_32_4_full_dsp_1_U76                                                   | 176   | 199   | 2   |      |      |     |        |      |         |          |        |
+|     fadd_32ns_32ns_32_4_full_dsp_1_U77                                                   | 176   | 199   | 2   |      |      |     |        |      |         |          |        |
+|     fadd_32ns_32ns_32_4_full_dsp_1_U78                                                   | 176   | 199   | 2   |      |      |     |        |      |         |          |        |
+|     fadd_32ns_32ns_32_4_full_dsp_1_U79                                                   | 176   | 199   | 2   |      |      |     |        |      |         |          |        |
+|     fdiv_32ns_32ns_32_12_no_dsp_1_U89                                                    | 767   | 532   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                             | 24    | 2     |     |      |      |     |        |      |         |          |        |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U80                                                    | 72    | 106   | 3   |      |      |     |        |      |         |          |        |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U81                                                    | 72    | 104   | 3   |      |      |     |        |      |         |          |        |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U82                                                    | 72    | 106   | 3   |      |      |     |        |      |         |          |        |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U83                                                    | 72    | 104   | 3   |      |      |     |        |      |         |          |        |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U84                                                    | 72    | 106   | 3   |      |      |     |        |      |         |          |        |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U85                                                    | 72    | 104   | 3   |      |      |     |        |      |         |          |        |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U86                                                    | 72    | 106   | 3   |      |      |     |        |      |         |          |        |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U87                                                    | 72    | 104   | 3   |      |      |     |        |      |         |          |        |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U88                                                    | 72    | 106   | 3   |      |      |     |        |      |         |          |        |
+|     uitofp_32ns_32_4_no_dsp_1_U90                                                        | 32    | 48    |     |      |      |     |        |      |         |          |        |
+|     uitofp_32ns_32_4_no_dsp_1_U91                                                        | 32    | 46    |     |      |      |     |        |      |         |          |        |
+|     uitofp_32ns_32_4_no_dsp_1_U92                                                        | 32    | 48    |     |      |      |     |        |      |         |          |        |
+|     uitofp_32ns_32_4_no_dsp_1_U93                                                        | 32    | 46    |     |      |      |     |        |      |         |          |        |
+|     uitofp_32ns_32_4_no_dsp_1_U94                                                        | 32    | 48    |     |      |      |     |        |      |         |          |        |
+|     uitofp_32ns_32_4_no_dsp_1_U95                                                        | 32    | 46    |     |      |      |     |        |      |         |          |        |
+|     uitofp_32ns_32_4_no_dsp_1_U96                                                        | 32    | 48    |     |      |      |     |        |      |         |          |        |
+|     uitofp_32ns_32_4_no_dsp_1_U97                                                        | 32    | 46    |     |      |      |     |        |      |         |          |        |
+|     uitofp_32ns_32_4_no_dsp_1_U98                                                        | 32    | 48    |     |      |      |     |        |      |         |          |        |
+|   grp_filter_kernel_Pipeline_VITIS_LOOP_188_18_fu_1049                                   | 240   | 162   |     |      |      |     |        |      |         |          |        |
+|     (grp_filter_kernel_Pipeline_VITIS_LOOP_188_18_fu_1049)                               | 89    | 160   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                             | 151   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_filter_kernel_Pipeline_VITIS_LOOP_204_19_fu_1060                                   | 334   | 192   |     |      |      |     |        |      |         |          |        |
+|     (grp_filter_kernel_Pipeline_VITIS_LOOP_204_19_fu_1060)                               | 81    | 190   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                             | 253   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_filter_kernel_Pipeline_VITIS_LOOP_222_20_fu_1032                                   | 272   | 175   |     |      |      |     |        |      |         |          |        |
+|     (grp_filter_kernel_Pipeline_VITIS_LOOP_222_20_fu_1032)                               | 87    | 173   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                             | 185   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_filter_kernel_Pipeline_VITIS_LOOP_237_21_fu_1041                                   | 374   | 199   |     |      |      |     |        |      |         |          |        |
+|     (grp_filter_kernel_Pipeline_VITIS_LOOP_237_21_fu_1041)                               | 138   | 197   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                             | 236   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_filter_kernel_Pipeline_VITIS_LOOP_48_1_fu_907                                      | 20    | 302   |     |      |      |     |        |      |         |          |        |
+|     (grp_filter_kernel_Pipeline_VITIS_LOOP_48_1_fu_907)                                  | 8     | 300   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                             | 13    | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_filter_kernel_Pipeline_init_line_buffer_VITIS_LOOP_76_3_VITIS_LOOP_77_4_fu_922     | 131   | 214   |     |      |      |     |        |      |         |          |        |
+|     (grp_filter_kernel_Pipeline_init_line_buffer_VITIS_LOOP_76_3_VITIS_LOOP_77_4_fu_922) | 125   | 212   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                             | 6     | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_filter_kernel_Pipeline_shift_lines_VITIS_LOOP_102_8_VITIS_LOOP_103_9_fu_939        | 245   | 370   |     |      |      |     |        |      |         |          |        |
+|     (grp_filter_kernel_Pipeline_shift_lines_VITIS_LOOP_102_8_VITIS_LOOP_103_9_fu_939)    | 235   | 368   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                             | 10    | 2     |     |      |      |     |        |      |         |          |        |
+|   line_buffer_1_U                                                                        |       |       |     | 1    |      |     |        |      |         |          |        |
+|   line_buffer_2_U                                                                        | 1     |       |     | 1    |      |     |        |      |         |          |        |
+|   line_buffer_3_U                                                                        | 1     |       |     | 1    |      |     |        |      |         |          |        |
+|   line_buffer_4_U                                                                        |       |       |     | 1    |      |     |        |      |         |          |        |
+|   line_buffer_5_U                                                                        |       |       |     | 1    |      |     |        |      |         |          |        |
+|   line_buffer_6_U                                                                        |       |       |     | 1    |      |     |        |      |         |          |        |
+|   line_buffer_7_U                                                                        |       |       |     | 1    |      |     |        |      |         |          |        |
+|   line_buffer_8_U                                                                        |       |       |     | 1    |      |     |        |      |         |          |        |
+|   line_buffer_U                                                                          | 35    |       |     | 1    |      |     |        |      |         |          |        |
+|   mul_31ns_31ns_62_1_1_U167                                                              | 123   |       | 2   |      |      |     |        |      |         |          |        |
+|   mul_32ns_31ns_63_1_1_U168                                                              | 46    |       | 4   |      |      |     |        |      |         |          |        |
+|   mul_32s_32s_32_1_1_U169                                                                | 47    |       | 3   |      |      |     |        |      |         |          |        |
+|   mul_64ns_64ns_128_3_1_U170                                                             | 252   | 102   | 16  |      |      |     |        |      |         |          |        |
++------------------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 21.36% | OK     |
+| FD                                                        | 50%       | 13.94% | OK     |
+| LUTRAM+SRL                                                | 25%       | 8.03%  | OK     |
+| MUXF7                                                     | 15%       | 2.31%  | OK     |
+| DSP                                                       | 80%       | 35.91% | OK     |
+| RAMB/FIFO                                                 | 80%       | 15.36% | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 25.63% | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 229    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.48   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.425ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.298ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was met
++-------+-------+---------------------+----------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN      | ENDPOINT PIN                                 | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                     |                                              |              |            |                |          DELAY |        DELAY |
++-------+-------+---------------------+----------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 0.942 | ap_CS_fsm_reg[68]/C | tmp_19_reg_3920_reg[0]/D                     |            7 |         42 |          8.811 |          5.361 |        3.450 |
+| Path2 | 1.008 | ap_CS_fsm_reg[43]/C | output_axie4_data_0_lcssa_reg_887_reg[113]/D |            1 |        165 |          8.951 |          0.438 |        8.513 |
+| Path3 | 1.018 | ap_CS_fsm_reg[68]/C | reg_1225_reg[27]/D                           |            7 |         42 |          8.710 |          5.361 |        3.349 |
+| Path4 | 1.057 | ap_CS_fsm_reg[43]/C | output_axie4_data_0_lcssa_reg_887_reg[49]/D  |            1 |        165 |          8.904 |          0.438 |        8.466 |
+| Path5 | 1.061 | ap_CS_fsm_reg[43]/C | output_axie4_data_0_lcssa_reg_887_reg[32]/D  |            1 |        165 |          8.938 |          0.438 |        8.500 |
++-------+-------+---------------------+----------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +---------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                     | Primitive Type       |
+    +---------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[68]                                                               | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0_i_11                                     | LUT.others.LUT4      |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/tmp_product__1                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/reg_1225[19]_i_4                                        | LUT.others.LUT2      |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[19]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[23]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/tmp_19_reg_3920_reg[0]_i_1                              | CARRY.others.CARRY4  |
+    | tmp_19_reg_3920_reg[0]                                                          | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[113]_i_1 | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[113]                                      | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[68]                                                               | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0_i_11                                     | LUT.others.LUT4      |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/tmp_product__1                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/reg_1225[19]_i_4                                        | LUT.others.LUT2      |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[19]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[23]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/tmp_19_reg_3920_reg[0]_i_1                              | CARRY.others.CARRY4  |
+    | reg_1225_reg[27]                                                                | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[49]_i_1  | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[49]                                       | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[32]_i_1  | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[32]                                       | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                     | Primitive Type       |
+    +---------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[68]                                                               | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0_i_11                                     | LUT.others.LUT4      |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/tmp_product__1                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/reg_1225[19]_i_4                                        | LUT.others.LUT2      |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[19]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[23]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/tmp_19_reg_3920_reg[0]_i_1                              | CARRY.others.CARRY4  |
+    | tmp_19_reg_3920_reg[0]                                                          | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[113]_i_1 | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[113]                                      | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[68]                                                               | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0_i_11                                     | LUT.others.LUT4      |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/tmp_product__1                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/reg_1225[19]_i_4                                        | LUT.others.LUT2      |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[19]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[23]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/tmp_19_reg_3920_reg[0]_i_1                              | CARRY.others.CARRY4  |
+    | reg_1225_reg[27]                                                                | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[49]_i_1  | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[49]                                       | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[32]_i_1  | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[32]                                       | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                     | Primitive Type       |
+    +---------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[68]                                                               | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0_i_11                                     | LUT.others.LUT4      |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/tmp_product__1                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/reg_1225[19]_i_4                                        | LUT.others.LUT2      |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[19]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[23]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/tmp_19_reg_3920_reg[0]_i_1                              | CARRY.others.CARRY4  |
+    | tmp_19_reg_3920_reg[0]                                                          | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[113]_i_1 | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[113]                                      | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[68]                                                               | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0_i_11                                     | LUT.others.LUT4      |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/tmp_product__1                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/reg_1225[19]_i_4                                        | LUT.others.LUT2      |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[19]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[23]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/tmp_19_reg_3920_reg[0]_i_1                              | CARRY.others.CARRY4  |
+    | reg_1225_reg[27]                                                                | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[49]_i_1  | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[49]                                       | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[32]_i_1  | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[32]                                       | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                     | Primitive Type       |
+    +---------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[68]                                                               | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0_i_11                                     | LUT.others.LUT4      |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/tmp_product__1                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/reg_1225[19]_i_4                                        | LUT.others.LUT2      |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[19]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[23]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/tmp_19_reg_3920_reg[0]_i_1                              | CARRY.others.CARRY4  |
+    | tmp_19_reg_3920_reg[0]                                                          | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[113]_i_1 | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[113]                                      | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[68]                                                               | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0_i_11                                     | LUT.others.LUT4      |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/tmp_product__1                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/reg_1225[19]_i_4                                        | LUT.others.LUT2      |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[19]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[23]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/tmp_19_reg_3920_reg[0]_i_1                              | CARRY.others.CARRY4  |
+    | reg_1225_reg[27]                                                                | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[49]_i_1  | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[49]                                       | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[32]_i_1  | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[32]                                       | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                     | Primitive Type       |
+    +---------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[68]                                                               | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0_i_11                                     | LUT.others.LUT4      |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/tmp_product__1                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/reg_1225[19]_i_4                                        | LUT.others.LUT2      |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[19]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[23]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/tmp_19_reg_3920_reg[0]_i_1                              | CARRY.others.CARRY4  |
+    | tmp_19_reg_3920_reg[0]                                                          | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[113]_i_1 | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[113]                                      | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[68]                                                               | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0_i_11                                     | LUT.others.LUT4      |
+    | mul_32s_32s_32_1_1_U169/tmp_product__0                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/tmp_product__1                                          | MULT.dsp.DSP48E1     |
+    | mul_32s_32s_32_1_1_U169/reg_1225[19]_i_4                                        | LUT.others.LUT2      |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[19]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/reg_1225_reg[23]_i_1                                    | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U169/tmp_19_reg_3920_reg[0]_i_1                              | CARRY.others.CARRY4  |
+    | reg_1225_reg[27]                                                                | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[49]_i_1  | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[49]                                       | FLOP_LATCH.flop.FDRE |
+    | ap_CS_fsm_reg[43]                                                               | FLOP_LATCH.flop.FDRE |
+    | gmem1_m_axi_U/store_unit_0/fifo_wreq/output_axie4_data_0_lcssa_reg_887[32]_i_1  | LUT.others.LUT5      |
+    | output_axie4_data_0_lcssa_reg_887_reg[32]                                       | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+-----------------------------------------------------------------------+
+| Report Type              | Report Location                                                       |
++--------------------------+-----------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/filter_kernel_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/filter_kernel_failfast_routed.rpt                 |
+| power                    | impl/verilog/report/filter_kernel_power_routed.rpt                    |
+| status                   | impl/verilog/report/filter_kernel_status_routed.rpt                   |
+| timing                   | impl/verilog/report/filter_kernel_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/filter_kernel_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/filter_kernel_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/filter_kernel_utilization_hierarchical_routed.rpt |
++--------------------------+-----------------------------------------------------------------------+
+
+

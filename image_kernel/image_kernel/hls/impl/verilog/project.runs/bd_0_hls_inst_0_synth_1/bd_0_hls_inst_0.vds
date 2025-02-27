@@ -1,0 +1,879 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Feb 26 23:20:36 2025
+# Process ID         : 18196
+# Current directory  : D:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line       : vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file           : D:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file       : D:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On         : LAPTOP-D6BOEUU6
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 5800H with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14877 MB
+# Swap memory        : 11282 MB
+# Total Virtual      : 26159 MB
+# Available Virtual  : 3219 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 52752
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/cse_462/image_kernel/image_kernel/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg400-3 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16820
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1081.238 ; gain = 466.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_line_buffer_RAM_AUTO_1R1W' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_line_buffer_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_line_buffer_RAM_AUTO_1R1W' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_line_buffer_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_48_1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_48_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_flow_control_loop_pipe_sequential_init' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_flow_control_loop_pipe_sequential_init' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_48_1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_48_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_init_line_buffer_VITIS_LOOP_76_3_VITIS_LOOP_77_4' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_init_line_buffer_VITIS_LOOP_76_3_VITIS_LOOP_77_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_init_line_buffer_VITIS_LOOP_76_3_VITIS_LOOP_77_4' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_init_line_buffer_VITIS_LOOP_76_3_VITIS_LOOP_77_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_shift_lines_VITIS_LOOP_102_8_VITIS_LOOP_103_9' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_shift_lines_VITIS_LOOP_102_8_VITIS_LOOP_103_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_sparsemux_7_2_8_1_1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_sparsemux_7_2_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_sparsemux_7_2_8_1_1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_sparsemux_7_2_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_shift_lines_VITIS_LOOP_102_8_VITIS_LOOP_103_9' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_shift_lines_VITIS_LOOP_102_8_VITIS_LOOP_103_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_mul_61s_32s_61_3_1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_mul_61s_32s_61_3_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_mul_61s_32s_61_3_1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_mul_61s_32s_61_3_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_147_14' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_147_14.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_147_14' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_147_14.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1_ip' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/ip/filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84087]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84087]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1_ip' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/ip/filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/ip/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/ip/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/ip/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/ip/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_uitofp_32ns_32_4_no_dsp_1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_uitofp_32ns_32_4_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/ip/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/ip/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_uitofp_32ns_32_4_no_dsp_1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_uitofp_32ns_32_4_no_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_160_15.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_222_20' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_222_20.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_222_20' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_222_20.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_237_21' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_237_21.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_237_21' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_237_21.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_188_18' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_188_18.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_188_18' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_188_18.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_204_19' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_204_19.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_204_19' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_204_19.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_control_s_axi' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_control_s_axi_ram' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_control_s_axi.v:537]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_control_s_axi_ram' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_control_s_axi.v:537]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_control_s_axi.v:265]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_control_s_axi' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_control_r_s_axi' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_control_r_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_control_r_s_axi.v:179]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_control_r_s_axi' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_control_r_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem0_m_axi' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:12]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem0_m_axi_load' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:245]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem0_m_axi_fifo' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem0_m_axi_srl' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem0_m_axi_srl' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem0_m_axi_fifo' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem0_m_axi_fifo__parameterized0' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem0_m_axi_mem' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem0_m_axi_mem' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2733]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem0_m_axi_fifo__parameterized0' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem0_m_axi_load' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:245]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem0_m_axi_read' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:1355]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem0_m_axi_burst_converter' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:1867]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem0_m_axi_reg_slice' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem0_m_axi_reg_slice' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem0_m_axi_burst_converter' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:1867]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem0_m_axi_reg_slice__parameterized0' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2399]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem0_m_axi_reg_slice__parameterized0' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2399]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem0_m_axi_fifo__parameterized1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2501]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem0_m_axi_srl__parameterized0' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem0_m_axi_srl__parameterized0' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2679]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem0_m_axi_fifo__parameterized1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2501]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:1539]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem0_m_axi_read' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:1355]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem0_m_axi' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:12]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:12]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_store' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:815]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_fifo' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_srl' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_srl' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_fifo' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized0' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_mem' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2811]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_mem' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2811]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized0' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_srl__parameterized0' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_srl__parameterized0' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized2' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_srl__parameterized1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_srl__parameterized1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized2' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_store' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:815]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_load' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:323]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized3' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_mem__parameterized0' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2811]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_mem__parameterized0' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2811]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized3' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_load' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:323]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_write' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:1625]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_burst_converter' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:1945]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_reg_slice' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2477]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_reg_slice' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2477]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_burst_converter' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:1945]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized4' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_srl__parameterized2' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_srl__parameterized2' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized4' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_throttle' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2251]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_reg_slice__parameterized0' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2477]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_reg_slice__parameterized0' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2477]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized5' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_srl__parameterized3' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_srl__parameterized3' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized5' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized6' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_srl__parameterized4' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_srl__parameterized4' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_fifo__parameterized6' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2579]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_throttle' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2251]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_reg_slice__parameterized1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2477]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_reg_slice__parameterized1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2477]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:1936]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:1939]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_write' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:1625]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_read' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:1433]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_gmem1_m_axi_reg_slice__parameterized2' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2477]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_reg_slice__parameterized2' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2477]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:1617]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi_read' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:1433]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_gmem1_m_axi' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:12]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_mul_31ns_31ns_62_1_1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_mul_31ns_31ns_62_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_mul_31ns_31ns_62_1_1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_mul_31ns_31ns_62_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_mul_32ns_31ns_63_1_1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_mul_32ns_31ns_63_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_mul_32ns_31ns_63_1_1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_mul_32ns_31ns_63_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_mul_32s_32s_32_1_1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_mul_32s_32s_32_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_mul_32s_32s_32_1_1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_mul_32s_32s_32_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_mul_64ns_64ns_128_3_1' [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_mul_64ns_64ns_128_3_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_mul_64ns_64ns_128_3_1' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_mul_64ns_64ns_128_3_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_7_addr_reg_441_reg was removed.  [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v:342]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_7_addr_reg_441_pp0_iter3_reg_reg was removed.  [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v:343]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_7_addr_reg_441_pp0_iter4_reg_reg was removed.  [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v:344]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_7_addr_reg_441_pp0_iter5_reg_reg was removed.  [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v:345]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_8_addr_reg_446_reg was removed.  [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v:346]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_8_addr_reg_446_pp0_iter3_reg_reg was removed.  [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v:347]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_8_addr_reg_446_pp0_iter4_reg_reg was removed.  [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v:348]
+WARNING: [Synth 8-6014] Unused sequential element line_buffer_8_addr_reg_446_pp0_iter5_reg_reg was removed.  [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v:349]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_control_s_axi.v:341]
+WARNING: [Synth 8-6014] Unused sequential element last_sect_buf_reg was removed.  [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem0_m_axi.v:2040]
+WARNING: [Synth 8-6014] Unused sequential element last_sect_buf_reg was removed.  [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_gmem1_m_axi.v:2118]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port reset in module filter_kernel_mul_64ns_64ns_128_3_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module filter_kernel_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module filter_kernel_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module filter_kernel_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module filter_kernel_gmem1_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module filter_kernel_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module filter_kernel_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module filter_kernel_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module filter_kernel_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module filter_kernel_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module filter_kernel_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module filter_kernel_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module filter_kernel_gmem0_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWREADY in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WREADY in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BID[0] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BRESP[1] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BRESP[0] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUSER[0] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BVALID in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[63] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[62] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[61] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[60] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[59] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[58] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[57] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[56] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[55] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[54] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[53] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[52] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[51] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[50] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[49] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[48] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[47] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[46] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[45] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[44] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[43] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[42] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[41] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[40] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[39] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[38] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[37] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[36] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[35] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[34] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[33] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[32] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[31] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[30] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[29] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[28] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[27] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[26] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[25] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[24] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[23] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[22] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[21] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[20] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[19] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[18] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[17] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[16] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[15] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[14] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[13] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[12] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[11] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[10] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[9] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[8] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[7] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[6] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[5] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[4] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[3] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[2] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[1] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWADDR[0] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[31] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[30] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[29] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[28] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[27] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[26] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[25] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[24] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[23] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[22] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[21] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[20] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[19] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[18] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[17] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_CH0_AWLEN[16] in module filter_kernel_gmem0_m_axi is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1396.852 ; gain = 782.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1396.852 ; gain = 782.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1396.852 ; gain = 782.406
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1396.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3032 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/filter_kernel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/filter_kernel_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1614.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 99 instances were transformed.
+  FDE => FDRE: 99 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1659.555 ; gain = 45.207
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 1659.555 ; gain = 1045.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 1659.555 ; gain = 1045.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 1659.555 ; gain = 1045.109
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'filter_kernel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'filter_kernel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'filter_kernel_control_r_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'filter_kernel_control_r_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_kernel_gmem0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_kernel_gmem0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_kernel_gmem1_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_kernel_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_kernel_gmem1_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_kernel_gmem1_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'filter_kernel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'filter_kernel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'filter_kernel_control_r_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'filter_kernel_control_r_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_kernel_gmem0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_kernel_gmem0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_kernel_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_kernel_gmem1_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_kernel_gmem1_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_kernel_gmem1_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:53 . Memory (MB): peak = 1659.555 ; gain = 1045.109
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1:/filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1:/filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1:/filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1:/filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1:/filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1:/filter_kernel_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1:/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1:/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1:/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1:/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fdiv_32ns_32ns_32_12_no_dsp_1_U89/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fdiv_32ns_32ns_32_12_no_dsp_1_U89/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fdiv_32ns_32ns_32_12_no_dsp_1_U89/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fdiv_32ns_32ns_32_12_no_dsp_1_U89/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fdiv_32ns_32ns_32_12_no_dsp_1_U89/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized28) to 'inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fdiv_32ns_32ns_32_12_no_dsp_1_U89/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fdiv_32ns_32ns_32_12_no_dsp_1_U89/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized28) to 'inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fdiv_32ns_32ns_32_12_no_dsp_1_U89/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fdiv_32ns_32ns_32_12_no_dsp_1_U89/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized0) to 'inst/grp_filter_kernel_Pipeline_VITIS_LOOP_160_15_fu_987/fdiv_32ns_32ns_32_12_no_dsp_1_U89/filter_kernel_fdiv_32ns_32ns_32_12_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized28) to 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized28) to 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_4_no_dsp_1:/filter_kernel_uitofp_32ns_32_4_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'sext_ln75_cast_reg_397_reg' and it is trimmed from '61' to '32' bits. [d:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/865d/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.v:365]
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__2.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__2.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__4.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__4.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__5.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__5.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__6.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__6.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__7.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__7.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__8.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__8.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module filter_kernel_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module filter_kernel_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module filter_kernel_control_r_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module filter_kernel_control_r_s_axi.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[47]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[46]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[45]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[44]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[43]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[42]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[41]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[40]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[39]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[38]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[37]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[36]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[35]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[34]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[33]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[32]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[31]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[30]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[29]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[28]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[27]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[26]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[25]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[24]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[23]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[22]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[21]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[20]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[19]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[18]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[17]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[16]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[15]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[14]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[13]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[12]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[11]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[10]) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[47]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[46]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[45]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[44]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[43]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[42]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[41]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[40]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[39]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[38]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[37]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[36]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[35]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[34]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[33]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[32]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[31]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[30]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[29]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[28]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[27]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[26]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[25]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[24]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[23]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[22]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[21]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[20]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[19]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[18]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[17]__0) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[47]__1) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[46]__1) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[45]__1) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[44]__1) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[43]__1) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[42]__1) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[41]__1) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[40]__1) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+WARNING: [Synth 8-3332] Sequential element (mul_61s_32s_61_3_1_U39/buff0_reg[39]__1) is unused and will be removed from module filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:40 . Memory (MB): peak = 1659.555 ; gain = 1045.109
+---------------------------------------------------------------------------------
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_1b : 0 0 : 3173 12778 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_1b : 0 1 : 3192 12778 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_1b : 0 2 : 3173 12778 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_1b : 0 3 : 3240 12778 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_1e : 0 0 : 3173 12110 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_1e : 0 1 : 3173 12110 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_1e : 0 2 : 2543 12110 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_1e : 0 3 : 3221 12110 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_20 : 0 0 : 3173 11461 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_20 : 0 1 : 2524 11461 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_20 : 0 2 : 2543 11461 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_20 : 0 3 : 3221 11461 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_22 : 0 0 : 2524 9971 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_22 : 0 1 : 2543 9971 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_22 : 0 2 : 2524 9971 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_64ns_64ns_128_3_1_U170/tmp_product_22 : 0 3 : 2380 9971 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_61s_32s_61_3_1_U39/tmp_product_10 : 0 0 : 3173 9098 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_61s_32s_61_3_1_U39/tmp_product_10 : 0 1 : 2704 9098 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_61s_32s_61_3_1_U39/tmp_product_10 : 0 2 : 3221 9098 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_61s_32s_61_3_1_U39/tmp_product_14 : 0 0 : 2685 8610 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_61s_32s_61_3_1_U39/tmp_product_14 : 0 1 : 3173 8610 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_61s_32s_61_3_1_U39/tmp_product_14 : 0 2 : 2752 8610 : Used 1 time 0
+ Sort Area is filter_kernel__GB1 mul_32s_32s_32_1_1_U169/tmp_product_c : 0 0 : 2701 5354 : Used 1 time 0
+ Sort Area is filter_kernel__GB1 mul_32s_32s_32_1_1_U169/tmp_product_c : 0 1 : 2653 5354 : Used 1 time 0
+ Sort Area is filter_kernel__GB1 mul_31ns_31ns_62_1_1_U167/tmp_product_0 : 0 0 : 2701 4912 : Used 1 time 0
+ Sort Area is filter_kernel__GB1 mul_31ns_31ns_62_1_1_U167/tmp_product_0 : 0 1 : 2211 4912 : Used 1 time 0
+ Sort Area is filter_kernel__GB1 mul_32ns_31ns_63_1_1_U168/tmp_product_6 : 0 0 : 2719 4900 : Used 1 time 0
+ Sort Area is filter_kernel__GB1 mul_32ns_31ns_63_1_1_U168/tmp_product_6 : 0 1 : 2181 4900 : Used 1 time 0
+ Sort Area is filter_kernel__GB1 mul_32s_32s_32_1_1_U169/tmp_product_e : 0 0 : 2158 4643 : Used 1 time 0
+ Sort Area is filter_kernel__GB1 mul_32s_32s_32_1_1_U169/tmp_product_e : 0 1 : 2485 4643 : Used 1 time 0
+ Sort Area is filter_kernel__GB1 mul_32ns_31ns_63_1_1_U168/tmp_product_9 : 0 0 : 2304 4252 : Used 1 time 0
+ Sort Area is filter_kernel__GB1 mul_32ns_31ns_63_1_1_U168/tmp_product_9 : 0 1 : 1948 4252 : Used 1 time 0
+ Sort Area is filter_kernel__GB1 mul_31ns_31ns_62_1_1_U167/tmp_product_3 : 0 0 : 2158 4062 : Used 1 time 0
+ Sort Area is filter_kernel__GB1 mul_31ns_31ns_62_1_1_U167/tmp_product_3 : 0 1 : 1904 4062 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_61s_32s_61_3_1_U39/tmp_product_18 : 0 0 : 1785 3511 : Used 1 time 0
+ Sort Area is filter_kernel__GB2 mul_61s_32s_61_3_1_U39/tmp_product_18 : 0 1 : 1726 3511 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:49 . Memory (MB): peak = 1695.078 ; gain = 1080.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:21 . Memory (MB): peak = 1802.191 ; gain = 1187.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_8_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_7_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_5_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_4_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_3_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:14 ; elapsed = 00:02:35 . Memory (MB): peak = 1818.215 ; gain = 1203.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:20 ; elapsed = 00:02:42 . Memory (MB): peak = 1983.930 ; gain = 1369.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:20 ; elapsed = 00:02:42 . Memory (MB): peak = 1983.930 ; gain = 1369.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:24 ; elapsed = 00:02:46 . Memory (MB): peak = 1996.305 ; gain = 1381.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:24 ; elapsed = 00:02:47 . Memory (MB): peak = 1996.305 ; gain = 1381.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:25 ; elapsed = 00:02:47 . Memory (MB): peak = 2021.141 ; gain = 1406.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:25 ; elapsed = 00:02:47 . Memory (MB): peak = 2021.141 ; gain = 1406.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------------------------------------------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                              | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------------------------------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|filter_kernel                                                            | (PCIN>>17+A*B')'    | 14     | 14     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|filter_kernel                                                            | (PCIN>>17+A*B')'    | 0      | 14     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11 | (A''*B'')'          | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11 | A''*B''             | 17     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11 | PCIN+A''*B''        | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11 | (PCIN>>17+A''*B'')' | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11 | A''*B''             | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11 | PCIN>>17+A''*B''    | 17     | 18     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_10_VITIS_LOOP_120_11 | (PCIN+A''*B'')'     | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_1187                                                     | Dynamic             | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1143                                     | C+A*B               | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1127                                                     | Dynamic             | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1077                                     | C+A*B               | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1060                                                     | Dynamic             | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_1010                                     | C+A*B               | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_993                                                      | Dynamic             | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_943                                      | C+A*B               | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_926                                                      | Dynamic             | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_876                                      | C+A*B               | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_859                                                      | Dynamic             | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_809                                      | C+A*B               | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_792                                                      | Dynamic             | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_742                                      | C+A*B               | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_725                                                      | Dynamic             | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_675                                      | C+A*B               | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper                                                          | Dynamic             | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0                                          | C+A*B               | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_516                                      | (A*B)'              | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_517                                      | PCIN>>17+(A*B)'     | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_514                                      | PCIN+A:B+C          | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_487                                      | (A*B)'              | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_488                                      | PCIN>>17+(A*B)'     | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_485                                      | PCIN+A:B+C          | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_458                                      | (A*B)'              | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_459                                      | PCIN>>17+(A*B)'     | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_456                                      | PCIN+A:B+C          | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_429                                      | (A*B)'              | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_430                                      | PCIN>>17+(A*B)'     | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_427                                      | PCIN+A:B+C          | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_400                                      | (A*B)'              | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_401                                      | PCIN>>17+(A*B)'     | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_398                                      | PCIN+A:B+C          | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_371                                      | (A*B)'              | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_372                                      | PCIN>>17+(A*B)'     | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_369                                      | PCIN+A:B+C          | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_342                                      | (A*B)'              | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_343                                      | PCIN>>17+(A*B)'     | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_340                                      | PCIN+A:B+C          | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_313                                      | (A*B)'              | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_314                                      | PCIN>>17+(A*B)'     | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_311                                      | PCIN+A:B+C          | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1                                          | (A*B)'              | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2                                          | PCIN>>17+(A*B)'     | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3                                          | PCIN+A:B+C          | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | A'*B                | 17     | 14     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | A*B'                | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | A'*B'               | 17     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | PCIN>>17+A'*B'      | 15     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | A'*B'               | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | PCIN>>17+A'*B'      | 17     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | A*B'                | 17     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | PCIN>>17+A*B'       | 0      | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | A'*B                | 17     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | A''*B''             | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | PCIN>>17+A''*B''    | 18     | 13     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | PCIN+A''*B''        | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | (PCIN>>17+A''*B'')' | 30     | 13     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|filter_kernel                                                            | A''*B''             | 18     | 17     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | PCIN+A''*B''        | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | PCIN>>17+A''*B''    | 17     | 13     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | (PCIN+A''*B'')'     | 18     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|filter_kernel                                                            | A''*B''             | 17     | 17     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | PCIN+A''*B''        | 18     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | PCIN>>17+A''*B''    | 17     | 13     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | (PCIN+A''*B'')'     | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|filter_kernel                                                            | A''*B''             | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | PCIN>>17+A''*B''    | 17     | 17     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | PCIN+A''*B''        | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|filter_kernel                                                            | (PCIN>>17+A''*B'')' | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
++-------------------------------------------------------------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   924|
+|2     |DSP48E1  |    79|
+|15    |LUT1     |   563|
+|16    |LUT2     |  2245|
+|17    |LUT3     |  3093|
+|18    |LUT4     |  2263|
+|19    |LUT5     |  2191|
+|20    |LUT6     |  2876|
+|21    |MUXCY    |  1738|
+|22    |MUXF7    |   615|
+|23    |MUXF8    |   290|
+|24    |RAM16X1D |    32|
+|25    |RAMB18E1 |    11|
+|28    |RAMB36E1 |    16|
+|30    |SRL16E   |   328|
+|31    |SRLC32E  |  1166|
+|32    |XORCY    |  1098|
+|33    |FDE      |    99|
+|34    |FDRE     | 14987|
+|35    |FDSE     |   107|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:25 ; elapsed = 00:02:48 . Memory (MB): peak = 2021.141 ; gain = 1406.695
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 106 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:53 ; elapsed = 00:02:32 . Memory (MB): peak = 2021.141 ; gain = 1143.992
+Synthesis Optimization Complete : Time (s): cpu = 00:02:25 ; elapsed = 00:02:48 . Memory (MB): peak = 2021.141 ; gain = 1406.695
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.832 . Memory (MB): peak = 2026.258 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4902 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2036.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 610 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 479 instances
+  FDE => FDRE: 99 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+
+Synth Design complete | Checksum: 6d3675a6
+INFO: [Common 17-83] Releasing license: Synthesis
+257 Infos, 199 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:36 ; elapsed = 00:03:02 . Memory (MB): peak = 2036.969 ; gain = 1651.762
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 2036.969 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 87099cdfc5970890
+INFO: [Coretcl 2-1174] Renamed 1429 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2036.969 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/cse_462/image_kernel/image_kernel/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 26 23:24:02 2025...

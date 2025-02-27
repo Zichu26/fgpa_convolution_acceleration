@@ -1,0 +1,149 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'filter_kernel_Pipeline_VITIS_LOOP_188_18'" level="0">
+<item name = "Date">Wed Feb 26 23:19:26 2025
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">image_kernel</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-3</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.643 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3, 33, 30.000 ns, 0.330 us, 1, 31, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_188_18">1, 31, 2, 1, 1, 1 ~ 31, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 2392, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 9, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 63, -</column>
+<column name="Register">-, -, 163, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 4, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="sparsemux_7_2_8_1_1_U153">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln188_1_fu_192_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln188_fu_182_p2">+, 0, 0, 13, 5, 1</column>
+<column name="sub_ln191_fu_176_p2">-, 0, 0, 18, 1, 11</column>
+<column name="and_ln193_fu_295_p2">and, 0, 0, 128, 128, 128</column>
+<column name="icmp_ln188_fu_198_p2">icmp, 0, 0, 13, 5, 5</column>
+<column name="lshr_ln191_fu_263_p2">lshr, 0, 0, 423, 8, 128</column>
+<column name="lshr_ln193_fu_269_p2">lshr, 0, 0, 423, 128, 128</column>
+<column name="axie4_data_3_fu_301_p2">or, 0, 0, 128, 128, 128</column>
+<column name="cond_i179_fu_282_p3">select, 0, 0, 128, 1, 128</column>
+<column name="cond_i208150_fu_275_p3">select, 0, 0, 128, 1, 128</column>
+<column name="shl_ln191_fu_244_p2">shl, 0, 0, 423, 8, 128</column>
+<column name="shl_ln193_fu_250_p2">shl, 0, 0, 423, 128, 128</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln193_fu_289_p2">xor, 0, 0, 128, 128, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="add30759_fu_76">9, 2, 7, 14</column>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_add30759_load">9, 2, 7, 14</column>
+<column name="ap_sig_allocacmp_k">9, 2, 5, 10</column>
+<column name="axie4_data_fu_72">9, 2, 128, 256</column>
+<column name="k_8_fu_80">9, 2, 5, 10</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add30759_fu_76">7, 0, 7, 0</column>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="axie4_data_fu_72">128, 0, 128, 0</column>
+<column name="icmp_ln188_reg_370">1, 0, 1, 0</column>
+<column name="k_8_fu_80">5, 0, 5, 0</column>
+<column name="shl_ln6_reg_354">7, 0, 10, 3</column>
+<column name="sub_ln191_reg_365">8, 0, 11, 3</column>
+<column name="tmp_2_reg_359">1, 0, 1, 0</column>
+<column name="trunc_ln186_reg_349">2, 0, 2, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, filter_kernel_Pipeline_VITIS_LOOP_188_18, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, filter_kernel_Pipeline_VITIS_LOOP_188_18, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, filter_kernel_Pipeline_VITIS_LOOP_188_18, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, filter_kernel_Pipeline_VITIS_LOOP_188_18, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, filter_kernel_Pipeline_VITIS_LOOP_188_18, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, filter_kernel_Pipeline_VITIS_LOOP_188_18, return value</column>
+<column name="empty">in, 5, ap_none, empty, scalar</column>
+<column name="axie4_data_1">in, 128, ap_none, axie4_data_1, scalar</column>
+<column name="output_pixel_reload">in, 8, ap_none, output_pixel_reload, scalar</column>
+<column name="output_pixel_1_reload">in, 8, ap_none, output_pixel_1_reload, scalar</column>
+<column name="output_pixel_2_reload">in, 8, ap_none, output_pixel_2_reload, scalar</column>
+<column name="sub_ln188">in, 5, ap_none, sub_ln188, scalar</column>
+<column name="axie4_data_3_out">out, 128, ap_vld, axie4_data_3_out, pointer</column>
+<column name="axie4_data_3_out_ap_vld">out, 1, ap_vld, axie4_data_3_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

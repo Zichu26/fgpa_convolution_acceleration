@@ -1,0 +1,40 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/cse_462/image_kernel/image_kernel 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=filter_kernel.cpp' from D:/cse_462/image_kernel/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/cse_462/image_kernel/filter_kernel.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=filter_kernel' from D:/cse_462/image_kernel/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/cse_462/image_kernel/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-3' from D:/cse_462/image_kernel/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-3'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/cse_462/image_kernel/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.175 seconds; current allocated memory: 161.652 MB.
+INFO: [HLS 200-10] Analyzing design file 'filter_kernel.cpp' ... 
+ERROR: [HLS 207-3776] use of undeclared identifier 'c' (filter_kernel.cpp:149:15)
+ERROR: [HLS 207-3776] use of undeclared identifier 'c' (filter_kernel.cpp:149:40)
+ERROR: [HLS 207-1220] expected ';' in 'for' statement specifier (filter_kernel.cpp:204:36)
+ERROR: [HLS 207-1186] expected expression (filter_kernel.cpp:204:36)
+ERROR: [HLS 207-7] expected ')' (filter_kernel.cpp:204:63)
+INFO: [HLS 207-66] to match this '(' (filter_kernel.cpp:204:29)
+ERROR: [HLS 207-3776] use of undeclared identifier 'k' (filter_kernel.cpp:204:65)
+ERROR: [HLS 207-3776] use of undeclared identifier 'k' (filter_kernel.cpp:206:55)
+ERROR: [HLS 207-3777] use of undeclared identifier 'next_axie4_data'; did you mean 'new_axie4_data'? (filter_kernel.cpp:207:29)
+INFO: [HLS 207-4436] 'new_axie4_data' declared here (filter_kernel.cpp:202:33)
+ERROR: [HLS 207-3776] use of undeclared identifier 'k' (filter_kernel.cpp:207:72)
+ERROR: [HLS 207-3777] use of undeclared identifier 'next_axie_data'; did you mean 'new_axie4_data'? (filter_kernel.cpp:208:29)
+ERROR: [HLS 207-3776] use of undeclared identifier 'c' (filter_kernel.cpp:208:91)
+ERROR: [HLS 207-3777] use of undeclared identifier 'next_axie4_data'; did you mean 'axie4_data'? (filter_kernel.cpp:212:55)
+INFO: [HLS 207-4436] 'axie4_data' declared here (filter_kernel.cpp:186:29)
+ERROR: [HLS 207-1186] expected expression (filter_kernel.cpp:214:19)
+ERROR: [HLS 207-3776] use of undeclared identifier 'input_axie4_data' (filter_kernel.cpp:224:44)
+ERROR: [HLS 207-3776] use of undeclared identifier 'byte_offset' (filter_kernel.cpp:224:70)
+ERROR: [HLS 207-3776] use of undeclared identifier 'k' (filter_kernel.cpp:224:84)
+ERROR: [HLS 207-3776] use of undeclared identifier 'output_axie4_data' (filter_kernel.cpp:226:25)
+ERROR: [HLS 207-3776] use of undeclared identifier 'byte_offset' (filter_kernel.cpp:226:71)
+ERROR: [HLS 207-3776] use of undeclared identifier 'k' (filter_kernel.cpp:226:85)
+ERROR: [HLS 207-59] too many errors emitted, stopping now
+ERROR:  
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 0 seconds. Total elapsed time: 3.31 seconds; peak allocated memory: 163.715 MB.

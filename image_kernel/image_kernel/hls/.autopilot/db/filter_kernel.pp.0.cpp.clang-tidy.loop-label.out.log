@@ -1,0 +1,125 @@
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:2256:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:2256:5: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:2270:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:2270:5: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:2284:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:2284:5: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:3918:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:3918:7: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5876:2: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 3; i++) {
+ ^~~
+ VITIS_LOOP_48_1: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5876:2: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5877:13: warning: Added loop label VITIS_LOOP_49_2:   [xilinx-label-all-loops]
+            for (int j = 0; j < 3; j++) {
+            ^~~
+            VITIS_LOOP_49_2: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5877:13: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5904:13: warning: Added loop label VITIS_LOOP_76_3:   [xilinx-label-all-loops]
+            for (int j = 0; j < width; j++) {
+            ^~~
+            VITIS_LOOP_76_3: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5904:13: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5905:17: warning: Added loop label VITIS_LOOP_77_4:   [xilinx-label-all-loops]
+                for (int k = 0; k < channels; k++) {
+                ^~~
+                VITIS_LOOP_77_4: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5905:17: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5917:17: warning: Added loop label VITIS_LOOP_89_5:   [xilinx-label-all-loops]
+                for (int i = 0; i < 3; i++) {
+                ^~~
+                VITIS_LOOP_89_5: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5917:17: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5918:21: warning: Added loop label VITIS_LOOP_90_6:   [xilinx-label-all-loops]
+                    for (int j = 0; j < 2; j++) {
+                    ^~~
+                    VITIS_LOOP_90_6: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5918:21: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5919:25: warning: Added loop label VITIS_LOOP_91_7:   [xilinx-label-all-loops]
+                        for (int k = 0; k < channels; k++) {
+                        ^~~
+                        VITIS_LOOP_91_7: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5919:25: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5930:25: warning: Added loop label VITIS_LOOP_102_8:   [xilinx-label-all-loops]
+                        for (int j = 0; j < width; j++) {
+                        ^~~
+                        VITIS_LOOP_102_8: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5930:25: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5931:29: warning: Added loop label VITIS_LOOP_103_9:   [xilinx-label-all-loops]
+                            for (int k = 0; k < channels; k++) {
+                            ^~~
+                            VITIS_LOOP_103_9: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5931:29: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5947:25: warning: Added loop label VITIS_LOOP_119_10:   [xilinx-label-all-loops]
+                        for (int x = 0; x < elements_per_axie4 && j + x < width; x++) {
+                        ^~~
+                        VITIS_LOOP_119_10: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5947:25: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5948:29: warning: Added loop label VITIS_LOOP_120_11:   [xilinx-label-all-loops]
+                            for (int k = 0; k < channels && (j * channels + k) < elements_per_axie4; k++) {
+                            ^~~
+                            VITIS_LOOP_120_11: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5948:29: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5963:17: warning: Added loop label VITIS_LOOP_135_12:   [xilinx-label-all-loops]
+                for (int i = 0; i < 3; i++) {
+                ^~~
+                VITIS_LOOP_135_12: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5963:17: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5964:21: warning: Added loop label VITIS_LOOP_136_13:   [xilinx-label-all-loops]
+                    for (int k = 0; k < channels; k++) {
+                    ^~~
+                    VITIS_LOOP_136_13: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5964:21: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5975:17: warning: Added loop label VITIS_LOOP_147_14:   [xilinx-label-all-loops]
+                for (int k = 0; k < channels; k++) {
+                ^~~
+                VITIS_LOOP_147_14: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5975:17: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5988:2: warning: Added loop label VITIS_LOOP_160_15:   [xilinx-label-all-loops]
+ for (int k = 0; k < channels; k++) {
+ ^~~
+ VITIS_LOOP_160_15: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5988:2: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5992:25: warning: Added loop label VITIS_LOOP_164_16:   [xilinx-label-all-loops]
+                        for (int i = 0; i < 3; i++) {
+                        ^~~
+                        VITIS_LOOP_164_16: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5992:25: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5993:29: warning: Added loop label VITIS_LOOP_165_17:   [xilinx-label-all-loops]
+                            for (int j = 0; j < 3; j++) {
+                            ^~~
+                            VITIS_LOOP_165_17: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:5993:29: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:6016:21: warning: Added loop label VITIS_LOOP_188_18:   [xilinx-label-all-loops]
+                    for (int k = 0; k < channels && (byte_offset + k) < elements_per_axie4; k++) {
+                    ^~~
+                    VITIS_LOOP_188_18: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:6016:21: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:6032:25: warning: Added loop label VITIS_LOOP_204_19:   [xilinx-label-all-loops]
+                        for (int k = 0; k < remaining_channels; k++) {
+                        ^~~
+                        VITIS_LOOP_204_19: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:6032:25: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:6050:21: warning: Added loop label VITIS_LOOP_222_20:   [xilinx-label-all-loops]
+                    for (int k = 0; k < channels && (byte_offset + k) < elements_per_axie4; k++) {
+                    ^~~
+                    VITIS_LOOP_222_20: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:6050:21: note: FIX-IT applied suggested code changes
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:6065:25: warning: Added loop label VITIS_LOOP_237_21:   [xilinx-label-all-loops]
+                        for (int k = 0; k < remaining_channels; k++) {
+                        ^~~
+                        VITIS_LOOP_237_21: 
+D:\cse_462\image_kernel\image_kernel\hls\.autopilot\db\filter_kernel.pp.0.cpp:6065:25: note: FIX-IT applied suggested code changes

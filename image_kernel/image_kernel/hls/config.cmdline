@@ -1,0 +1,3 @@
+relativeroot=D:/cse_462/image_kernel
+original_argv=--mode hls --impl --config D:\cse_462\image_kernel\hls_config.cfg --work_dir image_kernel 
+
