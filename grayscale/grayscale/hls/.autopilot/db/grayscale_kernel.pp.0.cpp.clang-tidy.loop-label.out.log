@@ -1,0 +1,30 @@
+D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp:2386:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp:2386:5: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp:2400:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp:2400:5: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp:2414:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp:2414:5: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp:4048:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp:4048:7: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp:9776:5: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+    for (int row = 0; row < height; row++) {
+    ^~~
+    VITIS_LOOP_38_1: 
+D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp:9776:5: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp:9777:9: warning: Added loop label VITIS_LOOP_39_2:   [xilinx-label-all-loops]
+        for (int col = 0; col < width; col++) {
+        ^~~
+        VITIS_LOOP_39_2: 
+D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp:9777:9: note: FIX-IT applied suggested code changes

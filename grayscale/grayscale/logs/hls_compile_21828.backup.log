@@ -1,0 +1,107 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=grayscale_kernel.cpp' from D:/cse_462/fgpa_convolution_acceleration/grayscale/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale_kernel.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=grayscale_kernel' from D:/cse_462/fgpa_convolution_acceleration/grayscale/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/cse_462/fgpa_convolution_acceleration/grayscale/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/cse_462/fgpa_convolution_acceleration/grayscale/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/cse_462/fgpa_convolution_acceleration/grayscale/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.246 seconds; current allocated memory: 161.859 MB.
+INFO: [HLS 200-10] Analyzing design file 'grayscale_kernel.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.949 seconds; current allocated memory: 164.547 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 113 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 94 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 70 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 72 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 72 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 54 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 54 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 54 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 54 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 56 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 56 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 56 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 54 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 54 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 68 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 82 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_75_3' is marked as complete unroll implied by the pipeline pragma (grayscale_kernel.cpp:75:34)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_75_3' (grayscale_kernel.cpp:75:34) in function 'grayscale_kernel' completely with a factor of 3 (grayscale_kernel.cpp:22:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.096 seconds; current allocated memory: 166.289 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 166.293 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 170.555 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 171.980 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (grayscale_kernel.cpp:64:9) to (grayscale_kernel.cpp:63:26) in function 'grayscale_kernel'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 193.176 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_62_1'(grayscale_kernel.cpp:62:22) and 'VITIS_LOOP_63_2'(grayscale_kernel.cpp:63:26) in function 'grayscale_kernel' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_62_1' (grayscale_kernel.cpp:62:22) in function 'grayscale_kernel'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.068 seconds; current allocated memory: 195.754 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'grayscale_kernel' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'grayscale_kernel_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_62_1_VITIS_LOOP_63_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 17, loop 'VITIS_LOOP_62_1_VITIS_LOOP_63_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.217 seconds; current allocated memory: 199.172 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 200.227 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'grayscale_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 200.324 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 200.402 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'grayscale_kernel_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'grayscale_kernel_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2' pipeline 'VITIS_LOOP_62_1_VITIS_LOOP_63_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'grayscale_kernel_Pipeline_VITIS_LOOP_62_1_VITIS_LOOP_63_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 202.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'grayscale_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'grayscale_kernel/filter' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'grayscale_kernel/filter_divisor' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'grayscale_kernel/width' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'grayscale_kernel/height' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'grayscale_kernel/channels' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'grayscale_kernel/input_stream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'grayscale_kernel/output_stream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'grayscale_kernel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'filter_divisor', 'width', 'height', 'channels', 'filter' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_31ns_62_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'grayscale_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.254 seconds; current allocated memory: 204.879 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.324 seconds; current allocated memory: 208.723 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.521 seconds; current allocated memory: 212.398 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for grayscale_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for grayscale_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 137.82 MHz
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 18.561 seconds; peak allocated memory: 212.559 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 23s

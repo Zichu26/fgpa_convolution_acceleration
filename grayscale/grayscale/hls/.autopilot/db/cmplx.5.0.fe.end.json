@@ -1,0 +1,29 @@
+{
+    "1": {
+        "name": "grayscale_kernel_Pipeline_VITIS_LOOP_38_1_VITIS_LOOP_39_2",
+        "file": "grayscale_kernel.cpp",
+        "fileloc": "38",
+        "instructions": "84",
+        "total_instructions": "84",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "grayscale_kernel",
+        "file": "grayscale_kernel.cpp",
+        "fileloc": "12",
+        "instructions": "35",
+        "total_instructions": "119",
+        "calls": "1",
+        "basicblocks": "1"
+    }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="grayscale_axi_dma_0_1_synth_1" LaunchDir="D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/grayscale_axi_dma_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="grayscale_rst_ps7_0_100M_0_synth_1" LaunchDir="D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/grayscale_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="grayscale_axi_mem_intercon_imp_xbar_0_synth_1" LaunchDir="D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/grayscale_axi_mem_intercon_imp_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="grayscale_axi_mem_intercon_imp_auto_us_0_synth_1" LaunchDir="D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/grayscale_axi_mem_intercon_imp_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="grayscale_axi_mem_intercon_imp_auto_us_1_synth_1" LaunchDir="D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/grayscale_axi_mem_intercon_imp_auto_us_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="grayscale_axi_mem_intercon_imp_auto_pc_0_synth_1" LaunchDir="D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/grayscale_axi_mem_intercon_imp_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="grayscale_axi_smc_0_synth_1" LaunchDir="D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/grayscale_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="grayscale_grayscale_kernel_0_2_synth_1" LaunchDir="D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/grayscale_grayscale_kernel_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="grayscale_processing_system7_0_1_synth_1" LaunchDir="D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/grayscale_processing_system7_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="grayscale_axi_dma_0_1_synth_1"/>
+		<Parent Id="grayscale_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="grayscale_axi_mem_intercon_imp_xbar_0_synth_1"/>
+		<Parent Id="grayscale_axi_mem_intercon_imp_auto_us_0_synth_1"/>
+		<Parent Id="grayscale_axi_mem_intercon_imp_auto_us_1_synth_1"/>
+		<Parent Id="grayscale_axi_mem_intercon_imp_auto_pc_0_synth_1"/>
+		<Parent Id="grayscale_axi_smc_0_synth_1"/>
+		<Parent Id="grayscale_grayscale_kernel_0_2_synth_1"/>
+		<Parent Id="grayscale_processing_system7_0_1_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="grayscale_axi_dma_0_1_synth_1"/>
+		<Parent Id="grayscale_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="grayscale_axi_mem_intercon_imp_xbar_0_synth_1"/>
+		<Parent Id="grayscale_axi_mem_intercon_imp_auto_us_0_synth_1"/>
+		<Parent Id="grayscale_axi_mem_intercon_imp_auto_us_1_synth_1"/>
+		<Parent Id="grayscale_axi_mem_intercon_imp_auto_pc_0_synth_1"/>
+		<Parent Id="grayscale_axi_smc_0_synth_1"/>
+		<Parent Id="grayscale_grayscale_kernel_0_2_synth_1"/>
+		<Parent Id="grayscale_processing_system7_0_1_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

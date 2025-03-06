@@ -1,0 +1,167 @@
+
+
+================================================================
+== Synthesis Summary Report of 'grayscale_kernel'
+================================================================
++ General Information: 
+    * Date:           Thu Mar  6 03:14:30 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        grayscale
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |                            Modules                           | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |         |           |           |     |
+    |                            & Loops                           | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +--------------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ grayscale_kernel                                            |     -|  0.04|        -|       -|         -|        -|     -|        no|     -|  17 (7%)|  2161 (2%)|  3555 (6%)|    -|
+    | + grayscale_kernel_Pipeline_VITIS_LOOP_38_1_VITIS_LOOP_39_2  |     -|  0.04|        -|       -|         -|        -|     -|        no|     -|  13 (5%)|  1543 (1%)|  3032 (5%)|    -|
+    |  o VITIS_LOOP_38_1_VITIS_LOOP_39_2                           |     -|  7.30|        -|       -|        24|        1|     -|       yes|     -|        -|          -|          -|    -|
+    +--------------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 5             | 16     | 1        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | width    | 0x10   | 32    | W      | Data signal of width             |                                                                      |
+| s_axi_control | height   | 0x18   | 32    | W      | Data signal of height            |                                                                      |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++---------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface     | Direction | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++---------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+| input_stream  | in        | both          | 32    | 4     | 1     | 1      | 4     | 1      |
+| output_stream | out       | both          | 32    | 4     | 1     | 1      | 4     | 1      |
++---------------+-----------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++---------------+-----------+--------------------------------------------------------+
+| Argument      | Direction | Datatype                                               |
++---------------+-----------+--------------------------------------------------------+
+| width         | in        | int                                                    |
+| height        | in        | int                                                    |
+| input_stream  | in        | stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>& |
+| output_stream | out       | stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>& |
++---------------+-----------+--------------------------------------------------------+
+
+* SW-to-HW Mapping
++---------------+---------------+-----------+----------------------------------+
+| Argument      | HW Interface  | HW Type   | HW Info                          |
++---------------+---------------+-----------+----------------------------------+
+| width         | s_axi_control | register  | name=width offset=0x10 range=32  |
+| height        | s_axi_control | register  | name=height offset=0x18 range=32 |
+| input_stream  | input_stream  | interface |                                  |
+| output_stream | output_stream | interface |                                  |
++---------------+---------------+-----------+----------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------------------------+-----+--------+---------------+--------+-----------+---------+
+| Name                                                         | DSP | Pragma | Variable      | Op     | Impl      | Latency |
++--------------------------------------------------------------+-----+--------+---------------+--------+-----------+---------+
+| + grayscale_kernel                                           | 17  |        |               |        |           |         |
+|   sub_fu_148_p2                                              |     |        | sub           | add    | fabric    | 0       |
+|   sub22_fu_153_p2                                            |     |        | sub22         | add    | fabric    | 0       |
+|   empty_fu_112_p2                                            |     |        | empty         | setgt  | auto      | 0       |
+|   smax_fu_118_p3                                             |     |        | smax          | select | auto_sel  | 0       |
+|   empty_17_fu_126_p2                                         |     |        | empty_17      | setgt  | auto      | 0       |
+|   smax1_fu_132_p3                                            |     |        | smax1         | select | auto_sel  | 0       |
+|   mul_31ns_31ns_62_2_1_U24                                   | 4   |        | mul_ln12      | mul    | auto      | 1       |
+|  + grayscale_kernel_Pipeline_VITIS_LOOP_38_1_VITIS_LOOP_39_2 | 13  |        |               |        |           |         |
+|    icmp_ln38_fu_218_p2                                       |     |        | icmp_ln38     | seteq  | auto      | 0       |
+|    icmp_ln39_fu_349_p2                                       |     |        | icmp_ln39     | setlt  | auto      | 0       |
+|    add_ln38_fu_223_p2                                        |     |        | add_ln38      | add    | fabric    | 0       |
+|    add_ln38_1_fu_354_p2                                      |     |        | add_ln38_1    | add    | fabric    | 0       |
+|    select_ln38_fu_360_p3                                     |     |        | select_ln38   | select | auto_sel  | 0       |
+|    select_ln38_1_fu_372_p3                                   |     |        | select_ln38_1 | select | auto_sel  | 0       |
+|    cmp21_fu_384_p2                                           |     |        | cmp21         | seteq  | auto      | 0       |
+|    uitofp_32ns_32_6_no_dsp_1_U6                              |     |        | r             | uitofp | auto      | 5       |
+|    uitofp_32ns_32_6_no_dsp_1_U7                              |     |        | g             | uitofp | auto      | 5       |
+|    uitofp_32ns_32_6_no_dsp_1_U8                              |     |        | b             | uitofp | auto      | 5       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U3                          | 3   |        | mul           | fmul   | maxdsp    | 3       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U4                          | 3   |        | mul1          | fmul   | maxdsp    | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U1                         | 2   |        | add           | fadd   | fulldsp   | 4       |
+|    fmul_32ns_32ns_32_4_max_dsp_1_U5                          | 3   |        | mul2          | fmul   | maxdsp    | 3       |
+|    fadd_32ns_32ns_32_5_full_dsp_1_U2                         | 2   |        | gray_value    | fadd   | fulldsp   | 4       |
+|    add_ln317_fu_307_p2                                       |     |        | add_ln317     | add    | fabric    | 0       |
+|    sub_ln18_fu_321_p2                                        |     |        | sub_ln18      | sub    | fabric    | 0       |
+|    select_ln18_fu_331_p3                                     |     |        | select_ln18   | select | auto_sel  | 0       |
+|    lshr_ln18_fu_409_p2                                       |     |        | lshr_ln18     | lshr   | auto_pipe | 0       |
+|    shl_ln18_fu_415_p2                                        |     |        | shl_ln18      | shl    | auto_pipe | 0       |
+|    val_fu_441_p3                                             |     |        | val           | select | auto_sel  | 0       |
+|    result_2_fu_483_p2                                        |     |        | result_2      | sub    | fabric    | 0       |
+|    result_fu_488_p3                                          |     |        | result        | select | auto_sel  | 0       |
+|    or_ln50_fu_506_p2                                         |     |        | or_ln50       | or     | auto      | 0       |
+|    output_stream_TDATA                                       |     |        | pixel_data_1  | or     | auto      | 0       |
+|    icmp_ln52_fu_448_p2                                       |     |        | icmp_ln52     | seteq  | auto      | 0       |
+|    pixel_last_fu_453_p2                                      |     |        | pixel_last    | and    | auto      | 0       |
+|    add_ln39_fu_459_p2                                        |     |        | add_ln39      | add    | fabric    | 0       |
+|    col_1_fu_465_p3                                           |     |        | col_1         | select | auto_sel  | 0       |
++--------------------------------------------------------------+-----+--------+---------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++--------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name               | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                    |           |           |      |      |        |          |      |         | Banks            |
++--------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + grayscale_kernel |           |           | 0    | 0    |        |          |      |         |                  |
+|   control_s_axi_U  | interface | s_axilite |      |      |        |          |      |         |                  |
++--------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-----------------------------------------------+------------------------------------------------------------+
+| Type      | Options                                       | Location                                                   |
++-----------+-----------------------------------------------+------------------------------------------------------------+
+| interface | s_axilite port=width register bundle=control  | grayscale_kernel.cpp:20 in grayscale_kernel, width         |
+| interface | s_axilite port=height register bundle=control | grayscale_kernel.cpp:21 in grayscale_kernel, height        |
+| interface | s_axilite port=return bundle=control          | grayscale_kernel.cpp:28 in grayscale_kernel, return        |
+| interface | axis port=input_stream                        | grayscale_kernel.cpp:30 in grayscale_kernel, input_stream  |
+| interface | axis port=output_stream                       | grayscale_kernel.cpp:31 in grayscale_kernel, output_stream |
+| pipeline  |                                               | grayscale_kernel.cpp:40 in grayscale_kernel                |
++-----------+-----------------------------------------------+------------------------------------------------------------+
+
+

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Mar  6 03:30:33 2025
+# Process ID         : 30468
+# Current directory  : D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/impl_1
+# Command line       : vivado.exe -log grayscale_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source grayscale_wrapper.tcl -notrace
+# Log file           : D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/impl_1/grayscale_wrapper.vdi
+# Journal file       : D:/cse_462/fgpa_convolution_acceleration/grayscale_hardware/grayscale_hardware.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-D6BOEUU6
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 5800H with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14877 MB
+# Swap memory        : 15049 MB
+# Total Virtual      : 29926 MB
+# Available Virtual  : 6056 MB
+#-----------------------------------------------------------
+source grayscale_wrapper.tcl -notrace

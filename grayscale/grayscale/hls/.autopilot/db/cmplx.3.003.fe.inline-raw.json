@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "grayscale_kernel.cpp",
+    "fileloc": 12,
+    "instructions": 155,
+    "loads": {
+      "L": 7
+    },
+    "name": "grayscale_kernel",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 155
+  }
+}
