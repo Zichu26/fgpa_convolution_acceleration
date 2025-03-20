@@ -1,0 +1,20 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=grayscale_kernel.cpp' from D:/cse_462/fgpa_convolution_acceleration/grayscale/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/cse_462/fgpa_convolution_acceleration/grayscale/grayscale_kernel.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=grayscale_kernel' from D:/cse_462/fgpa_convolution_acceleration/grayscale/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/cse_462/fgpa_convolution_acceleration/grayscale/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/cse_462/fgpa_convolution_acceleration/grayscale/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/cse_462/fgpa_convolution_acceleration/grayscale/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.17 seconds; current allocated memory: 161.715 MB.
+INFO: [HLS 200-10] Analyzing design file 'grayscale_kernel.cpp' ... 
+ERROR: [HLS 207-2359] conditional expression is ambiguous; 'int' can be converted to 'ap_uint<8>' and vice versa (grayscale_kernel.cpp:73:55)
+ERROR: [HLS 207-2359] conditional expression is ambiguous; 'int' can be converted to 'ap_uint<8>' and vice versa (grayscale_kernel.cpp:74:55)
+ERROR: [HLS 207-2359] conditional expression is ambiguous; 'int' can be converted to 'ap_uint<8>' and vice versa (grayscale_kernel.cpp:75:55)
+ERROR:  
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 6.688 seconds; peak allocated memory: 163.664 MB.

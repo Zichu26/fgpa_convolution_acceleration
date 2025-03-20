@@ -1,5 +1,5 @@
 
-set TopModule "grayscale_kernel"
+set TopModule "filter_kernel"
 set ClockPeriod 10
 set ClockList ap_clk
 set AxiliteClockList {}
@@ -24,7 +24,7 @@ set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix grayscale_kernel_
+set RtlSubPrefix filter_kernel_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}

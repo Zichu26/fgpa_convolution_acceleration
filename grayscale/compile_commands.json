@@ -6,7 +6,7 @@
       "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
       "-fhls",
       "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
-      "-fhlstoplevel=grayscale_kernel",
+      "-fhlstoplevel=filter_kernel",
       "-c",
       "D:\\cse_462\\fgpa_convolution_acceleration\\grayscale\\grayscale_kernel.cpp"
     ],

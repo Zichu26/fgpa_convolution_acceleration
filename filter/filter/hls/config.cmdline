@@ -1,0 +1,3 @@
+relativeroot=D:/cse_462/fgpa_convolution_acceleration/filter
+original_argv=--mode hls --package --config D:\cse_462\fgpa_convolution_acceleration\filter\hls_config.cfg --work_dir filter 
+

@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\filter.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/19/25 23:04:07",
+ "timestampMillis": "1742443447747",
+ "buildStep": {
+  "cmdId": "4ca87561-03c2-49c6-a388-ab5a7ecad195",
+  "name": "vitis-run",
+  "logFile": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\logs\\filter.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config D:\\cse_462\\fgpa_convolution_acceleration\\filter\\hls_config.cfg --work_dir filter ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "D:\\cse_462\\fgpa_convolution_acceleration\\filter\\hls_config.cfg",
+   "--work_dir",
+   "filter"
+  ],
+  "iniFiles": [],
+  "cwd": "D:\\cse_462\\fgpa_convolution_acceleration\\filter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/19/25 23:04:07",
+ "timestampMillis": "1742443447747",
+ "status": {
+  "cmdId": "4ca87561-03c2-49c6-a388-ab5a7ecad195",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/19/25 23:04:12",
+ "timestampMillis": "1742443452246",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "filter_kernel",
+     "file": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\filter_kernel.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/19/25 23:04:12",
+ "timestampMillis": "1742443452247",
+ "buildStep": {
+  "cmdId": "9d2dc5de-4c04-4c39-882c-f8cb114e1bf7",
+  "name": "",
+  "logFile": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "D:\\cse_462\\fgpa_convolution_acceleration\\filter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/19/25 23:04:12",
+ "timestampMillis": "1742443452248",
+ "status": {
+  "cmdId": "9d2dc5de-4c04-4c39-882c-f8cb114e1bf7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/19/25 23:04:39",
+ "timestampMillis": "1742443479523",
+ "status": {
+  "cmdId": "9d2dc5de-4c04-4c39-882c-f8cb114e1bf7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/19/25 23:04:39",
+ "timestampMillis": "1742443479649",
+ "status": {
+  "cmdId": "4ca87561-03c2-49c6-a388-ab5a7ecad195",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/19/25 23:04:39",
+ "timestampMillis": "1742443479650",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/19/25 23:04:39",
+ "timestampMillis": "1742443479650",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

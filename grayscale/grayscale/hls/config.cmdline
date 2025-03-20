@@ -1,3 +1,3 @@
 relativeroot=D:/cse_462/fgpa_convolution_acceleration/grayscale
-original_argv=--mode hls --package --config D:\cse_462\fgpa_convolution_acceleration\grayscale\hls_config.cfg --work_dir grayscale 
+original_argv=-c --mode hls --config D:\cse_462\fgpa_convolution_acceleration\grayscale\hls_config.cfg --work_dir grayscale 
 

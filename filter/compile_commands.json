@@ -1,0 +1,15 @@
+[
+  {
+    "directory": "D:\\cse_462\\fgpa_convolution_acceleration\\filter",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=filter_kernel",
+      "-c",
+      "D:\\cse_462\\fgpa_convolution_acceleration\\filter\\filter.cpp"
+    ],
+    "file": "D:\\cse_462\\fgpa_convolution_acceleration\\filter\\filter.cpp"
+  }
+]

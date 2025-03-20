@@ -29,47 +29,140 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:400:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="store" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="create_window" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="create_window" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:60:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="apply_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:65:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="apply_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:67:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="apply_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="directive" ARG_PragmaFunction="grayscale_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=grayscale_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=filter_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:20:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="grayscale_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=width register bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:93:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=width register bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:21:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="grayscale_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=height register bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:94:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=height register bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:28:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="grayscale_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:95:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=kernel register bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:30:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="grayscale_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=input_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:102:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:31:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="grayscale_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=output_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:104:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=input_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:40:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="grayscale_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:105:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=output_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(float)' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
-        <args Callee="fp_struct&lt;float&gt;::fp_struct(float)" Callee-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 283 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 12 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:108:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line_buffer complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::mantissa() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
-        <args Callee="fp_struct&lt;float&gt;::mantissa() const" Callee-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 340 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 12 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line_buffer complete dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::expv() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
-        <args Callee="fp_struct&lt;float&gt;::expv() const" Callee-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 316 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 12 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:112:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::__signbit() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
-        <args Callee="fp_struct&lt;float&gt;::__signbit() const" Callee-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 349 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 12 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:116:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116:0" msg_body="Inlining function 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)' into 'int generic_cast_IEEE754&lt;int, float&gt;(float, bool)'">
-        <args Callee="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Callee-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 12 Column 0" Caller="int generic_cast_IEEE754&lt;int, float&gt;(float, bool)" Caller-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 116 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:118:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp:51:0" msg_body="Inlining function 'int generic_cast_IEEE754&lt;int, float&gt;(float, bool)' into '__hls_fptosi_float_i32'">
-        <args Callee="int generic_cast_IEEE754&lt;int, float&gt;(float, bool)" Callee-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h} Line 116 Column 0" Caller="__hls_fptosi_float_i32" Caller-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp} Line 51 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:120:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:17:0" msg_body="Inlining function '__hls_fptosi_float_i32' into 'grayscale_kernel(int, int, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
-        <args Callee="__hls_fptosi_float_i32" Callee-DebugLoc="File {C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp} Line 51 Column 0" Caller="grayscale_kernel(int, int, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File grayscale_kernel.cpp Line 17 Column 0"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:130:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="grayscale_kernel.cpp:138:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:152:13" msg_body="Inlining function 'apply_kernel(ap_uint&lt;8&gt; (*) [3][3], float (*) [3], hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;&amp;)' into 'filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="apply_kernel(ap_uint&lt;8&gt; (*) [3][3], float (*) [3], hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;&amp;)" Callee-DebugLoc="File grayscale_kernel.cpp Line 59 Column 0" Caller="filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File grayscale_kernel.cpp Line 90 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:145:13" msg_body="Inlining function 'store(hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;&amp;, int, int, ap_uint&lt;8&gt; (*) [1920][3])' into 'filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="store(hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;&amp;, int, int, ap_uint&lt;8&gt; (*) [1920][3])" Callee-DebugLoc="File grayscale_kernel.cpp Line 17 Column 0" Caller="filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File grayscale_kernel.cpp Line 90 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:151:13" msg_body="Inlining function 'create_window(int, int, int, int, ap_uint&lt;8&gt; (*) [1920][3], ap_uint&lt;8&gt; (*) [3][3])' into 'filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="create_window(int, int, int, int, ap_uint&lt;8&gt; (*) [1920][3], ap_uint&lt;8&gt; (*) [3][3])" Callee-DebugLoc="File grayscale_kernel.cpp Line 31 Column 0" Caller="filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File grayscale_kernel.cpp Line 90 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:34:19" msg_body="Loop 'VITIS_LOOP_34_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_34_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:35:26" msg_body="Loop 'VITIS_LOOP_35_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_35_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:36:30" msg_body="Loop 'VITIS_LOOP_36_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_36_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:63:22" msg_body="Loop 'VITIS_LOOP_63_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_63_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:64:26" msg_body="Loop 'VITIS_LOOP_64_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_64_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:66:19" msg_body="Loop 'VITIS_LOOP_66_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_66_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:119:20" msg_body="Loop 'VITIS_LOOP_119_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_119_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_34_1' (grayscale_kernel.cpp:34:19) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="grayscale_kernel.cpp:34:19" LoopName="VITIS_LOOP_34_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_35_2' (grayscale_kernel.cpp:35:26) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="grayscale_kernel.cpp:35:26" LoopName="VITIS_LOOP_35_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_36_3' (grayscale_kernel.cpp:36:30) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="grayscale_kernel.cpp:36:30" LoopName="VITIS_LOOP_36_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:90:0" msg_body="Unrolling loop 'anonymous' () in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_63_1' (grayscale_kernel.cpp:63:22) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="grayscale_kernel.cpp:63:22" LoopName="VITIS_LOOP_63_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_64_2' (grayscale_kernel.cpp:64:26) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="grayscale_kernel.cpp:64:26" LoopName="VITIS_LOOP_64_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_66_3' (grayscale_kernel.cpp:66:19) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="grayscale_kernel.cpp:66:19" LoopName="VITIS_LOOP_66_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_129_6' (grayscale_kernel.cpp:129:31) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="grayscale_kernel.cpp:129:31" LoopName="VITIS_LOOP_129_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_115_1' (grayscale_kernel.cpp:115:20) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="grayscale_kernel.cpp:115:20" LoopName="VITIS_LOOP_115_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_119_3' (grayscale_kernel.cpp:119:20) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="grayscale_kernel.cpp:119:20" LoopName="VITIS_LOOP_119_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:90:0" msg_body="Inlining function 'ap_uint&lt;8&gt;::ap_uint(float)' into 'filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="ap_uint&lt;8&gt;::ap_uint(float)" Callee-DebugLoc="File {C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h} Line 299 Column 0" Caller="filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File grayscale_kernel.cpp Line 90 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:107:13" msg_body="Applying array_partition to 'line_buffer': Complete partitioning on dimension 1. Complete partitioning on dimension 3.">
+        <args Dim="islist 1 3" Mode="islist Complete Complete" UOName="line_buffer"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:136:23" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_136_7'.">
+        <args LoopName="VITIS_LOOP_136_7"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="grayscale_kernel.cpp:136:23" msg_body="loop_flatten 0 1 filter_kernel grayscale_kernel.cpp:136:23VITIS_LOOP_136_7 grayscale_kernel.cpp:136:23">
+        <args LoopLoc="grayscale_kernel.cpp:136:23" LoopLoc-DebugLoc="File grayscale_kernel.cpp Line 136 Column 23" LoopName="VITIS_LOOP_136_7" PragmaFunction="filter_kernel" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="grayscale_kernel.cpp:136:23" PragmaSrcLoc-DebugLoc="File grayscale_kernel.cpp Line 136 Column 23" PragmaType="loop_flatten"/>
     </msg>
 </xilinx:hls_fe_msgs>
 
