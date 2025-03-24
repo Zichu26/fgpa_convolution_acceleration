@@ -259,8 +259,8 @@ static AESL_RUNTIME_BC __xlx_output_stream_V_strb_V_V_size_Reader("../tv/stream_
 unsigned int ap_apatb_output_stream_V_last_V_cap_bc;
 static AESL_RUNTIME_BC __xlx_output_stream_V_last_V_V_size_Reader("../tv/stream_size/stream_size_out_output_stream_V_last_V.dat");
 using hls::sim::Byte;
-extern "C" void filter_kernel(int, int, Byte<4>*, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *);
-extern "C" void apatb_filter_kernel_hw(int __xlx_apatb_param_width, int __xlx_apatb_param_height, volatile void * __xlx_apatb_param_kernel, volatile void * __xlx_apatb_param_input_stream_V_data_V, volatile void * __xlx_apatb_param_input_stream_V_keep_V, volatile void * __xlx_apatb_param_input_stream_V_strb_V, volatile void * __xlx_apatb_param_input_stream_V_last_V, volatile void * __xlx_apatb_param_output_stream_V_data_V, volatile void * __xlx_apatb_param_output_stream_V_keep_V, volatile void * __xlx_apatb_param_output_stream_V_strb_V, volatile void * __xlx_apatb_param_output_stream_V_last_V) {
+extern "C" void filter_kernel(int, int, int, Byte<4>*, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *);
+extern "C" void apatb_filter_kernel_hw(int __xlx_apatb_param_image_width, int __xlx_apatb_param_image_height, int __xlx_apatb_param_kernel_factor, volatile void * __xlx_apatb_param_kernel, volatile void * __xlx_apatb_param_input_stream_V_data_V, volatile void * __xlx_apatb_param_input_stream_V_keep_V, volatile void * __xlx_apatb_param_input_stream_V_strb_V, volatile void * __xlx_apatb_param_input_stream_V_last_V, volatile void * __xlx_apatb_param_output_stream_V_data_V, volatile void * __xlx_apatb_param_output_stream_V_keep_V, volatile void * __xlx_apatb_param_output_stream_V_strb_V, volatile void * __xlx_apatb_param_output_stream_V_last_V) {
 using hls::sim::createStream;
   // Collect __xlx_kernel__tmp_vec
 std::vector<Byte<4>> __xlx_kernel__tmp_vec;
@@ -291,7 +291,7 @@ auto* soutput_stream_V_strb_V = createStream((hls::stream<char>*)__xlx_apatb_par
   char* __xlx_output_stream_V_last_V_input_buffer= new char[ap_apatb_output_stream_V_last_V_cap_bc];
 auto* soutput_stream_V_last_V = createStream((hls::stream<char>*)__xlx_apatb_param_output_stream_V_last_V);
   // DUT call
-  filter_kernel(__xlx_apatb_param_width, __xlx_apatb_param_height, __xlx_kernel__tmp_vec.data(), sinput_stream_V_data_V->data<int>(), sinput_stream_V_keep_V->data<char>(), sinput_stream_V_strb_V->data<char>(), sinput_stream_V_last_V->data<char>(), soutput_stream_V_data_V->data<int>(), soutput_stream_V_keep_V->data<char>(), soutput_stream_V_strb_V->data<char>(), soutput_stream_V_last_V->data<char>());
+  filter_kernel(__xlx_apatb_param_image_width, __xlx_apatb_param_image_height, __xlx_apatb_param_kernel_factor, __xlx_kernel__tmp_vec.data(), sinput_stream_V_data_V->data<int>(), sinput_stream_V_keep_V->data<char>(), sinput_stream_V_strb_V->data<char>(), sinput_stream_V_last_V->data<char>(), soutput_stream_V_data_V->data<int>(), soutput_stream_V_keep_V->data<char>(), soutput_stream_V_strb_V->data<char>(), soutput_stream_V_last_V->data<char>());
 // print __xlx_apatb_param_kernel
 for (size_t i = 0; i < __xlx_size_param_kernel; ++i) {
 ((Byte<4>*)__xlx_apatb_param_kernel)[i] = __xlx_kernel__tmp_vec[__xlx_offset_param_kernel+i];

@@ -29,13 +29,13 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:400:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:18:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:17:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="store" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:32:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:31:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="create_window" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:37:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:36:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="create_window" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:60:9" msg_body="HLS pragma dump">
@@ -50,65 +50,68 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=filter_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:93:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=width register bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:94:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=height register bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=image_width register bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:95:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=kernel register bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=image_height register bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:102:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:96:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=kernel_factor register bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:97:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=kernel bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:104:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:106:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=input_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:105:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:107:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=output_stream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:108:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:110:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line_buffer complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:109:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:111:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line_buffer complete dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:112:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:114:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:116:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:118:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:120:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:122:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:130:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:132:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:138:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="filter.cpp:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="filter_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="filter.cpp:152:13" msg_body="Inlining function 'apply_kernel(ap_uint&lt;8&gt; (*) [3][3], float (*) [3], hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;&amp;)' into 'filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
-        <args Callee="apply_kernel(ap_uint&lt;8&gt; (*) [3][3], float (*) [3], hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;&amp;)" Callee-DebugLoc="File filter.cpp Line 59 Column 0" Caller="filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File filter.cpp Line 90 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="filter.cpp:152:13" msg_body="Inlining function 'apply_kernel(ap_uint&lt;8&gt; (*) [3][3], int, int (*) [3], hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;&amp;)' into 'filter_kernel(int, int, int, int (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="apply_kernel(ap_uint&lt;8&gt; (*) [3][3], int, int (*) [3], hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;&amp;)" Callee-DebugLoc="File filter.cpp Line 59 Column 0" Caller="filter_kernel(int, int, int, int (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File filter.cpp Line 91 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="filter.cpp:145:13" msg_body="Inlining function 'store(hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;&amp;, int, int, ap_uint&lt;8&gt; (*) [1920][3])' into 'filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
-        <args Callee="store(hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;&amp;, int, int, ap_uint&lt;8&gt; (*) [1920][3])" Callee-DebugLoc="File filter.cpp Line 17 Column 0" Caller="filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File filter.cpp Line 90 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="filter.cpp:148:13" msg_body="Inlining function 'store(hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;&amp;, int, int, ap_uint&lt;8&gt; (*) [1920][3])' into 'filter_kernel(int, int, int, int (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="store(hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;&amp;, int, int, ap_uint&lt;8&gt; (*) [1920][3])" Callee-DebugLoc="File filter.cpp Line 16 Column 0" Caller="filter_kernel(int, int, int, int (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File filter.cpp Line 91 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="filter.cpp:151:13" msg_body="Inlining function 'create_window(int, int, int, int, ap_uint&lt;8&gt; (*) [1920][3], ap_uint&lt;8&gt; (*) [3][3])' into 'filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
-        <args Callee="create_window(int, int, int, int, ap_uint&lt;8&gt; (*) [1920][3], ap_uint&lt;8&gt; (*) [3][3])" Callee-DebugLoc="File filter.cpp Line 31 Column 0" Caller="filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File filter.cpp Line 90 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="filter.cpp:151:13" msg_body="Inlining function 'create_window(int, int, int, int, ap_uint&lt;8&gt; (*) [1920][3], ap_uint&lt;8&gt; (*) [3][3])' into 'filter_kernel(int, int, int, int (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="create_window(int, int, int, int, ap_uint&lt;8&gt; (*) [1920][3], ap_uint&lt;8&gt; (*) [3][3])" Callee-DebugLoc="File filter.cpp Line 30 Column 0" Caller="filter_kernel(int, int, int, int (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File filter.cpp Line 91 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="filter.cpp:34:19" msg_body="Loop 'VITIS_LOOP_34_1' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_34_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="filter.cpp:33:19" msg_body="Loop 'VITIS_LOOP_33_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_33_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="filter.cpp:35:26" msg_body="Loop 'VITIS_LOOP_35_2' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_35_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="filter.cpp:34:26" msg_body="Loop 'VITIS_LOOP_34_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_34_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="filter.cpp:36:30" msg_body="Loop 'VITIS_LOOP_36_3' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_36_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="filter.cpp:35:30" msg_body="Loop 'VITIS_LOOP_35_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_35_3"/>
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="filter.cpp:63:22" msg_body="Loop 'VITIS_LOOP_63_1' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_63_1"/>
@@ -119,50 +122,50 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="filter.cpp:66:19" msg_body="Loop 'VITIS_LOOP_66_3' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_66_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="filter.cpp:119:20" msg_body="Loop 'VITIS_LOOP_119_3' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_119_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="filter.cpp:121:20" msg_body="Loop 'VITIS_LOOP_121_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_121_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_34_1' (filter.cpp:34:19) in function 'filter_kernel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="filter.cpp:34:19" LoopName="VITIS_LOOP_34_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_33_1' (filter.cpp:33:19) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="filter.cpp:33:19" LoopName="VITIS_LOOP_33_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_35_2' (filter.cpp:35:26) in function 'filter_kernel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="filter.cpp:35:26" LoopName="VITIS_LOOP_35_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_34_2' (filter.cpp:34:26) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="filter.cpp:34:26" LoopName="VITIS_LOOP_34_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_36_3' (filter.cpp:36:30) in function 'filter_kernel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="filter.cpp:36:30" LoopName="VITIS_LOOP_36_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_35_3' (filter.cpp:35:30) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="filter.cpp:35:30" LoopName="VITIS_LOOP_35_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:90:0" msg_body="Unrolling loop 'anonymous' () in function 'filter_kernel' completely with a factor of 3">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:91:0" msg_body="Unrolling loop 'anonymous' () in function 'filter_kernel' completely with a factor of 3">
         <args Factor="3" LoopName="anonymous"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_63_1' (filter.cpp:63:22) in function 'filter_kernel' completely with a factor of 3">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_63_1' (filter.cpp:63:22) in function 'filter_kernel' completely with a factor of 3">
         <args Factor="3" LoopLoc="filter.cpp:63:22" LoopName="VITIS_LOOP_63_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_64_2' (filter.cpp:64:26) in function 'filter_kernel' completely with a factor of 3">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_64_2' (filter.cpp:64:26) in function 'filter_kernel' completely with a factor of 3">
         <args Factor="3" LoopLoc="filter.cpp:64:26" LoopName="VITIS_LOOP_64_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_66_3' (filter.cpp:66:19) in function 'filter_kernel' completely with a factor of 3">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_66_3' (filter.cpp:66:19) in function 'filter_kernel' completely with a factor of 3">
         <args Factor="3" LoopLoc="filter.cpp:66:19" LoopName="VITIS_LOOP_66_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_129_6' (filter.cpp:129:31) in function 'filter_kernel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="filter.cpp:129:31" LoopName="VITIS_LOOP_129_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_131_6' (filter.cpp:131:31) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="filter.cpp:131:31" LoopName="VITIS_LOOP_131_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_115_1' (filter.cpp:115:20) in function 'filter_kernel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="filter.cpp:115:20" LoopName="VITIS_LOOP_115_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_117_1' (filter.cpp:117:20) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="filter.cpp:117:20" LoopName="VITIS_LOOP_117_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:90:0" msg_body="Unrolling loop 'VITIS_LOOP_119_3' (filter.cpp:119:20) in function 'filter_kernel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="filter.cpp:119:20" LoopName="VITIS_LOOP_119_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="filter.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_121_3' (filter.cpp:121:20) in function 'filter_kernel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="filter.cpp:121:20" LoopName="VITIS_LOOP_121_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="filter.cpp:90:0" msg_body="Inlining function 'ap_uint&lt;8&gt;::ap_uint(float)' into 'filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
-        <args Callee="ap_uint&lt;8&gt;::ap_uint(float)" Callee-DebugLoc="File {C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h} Line 299 Column 0" Caller="filter_kernel(int, int, float (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File filter.cpp Line 90 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="filter.cpp:91:0" msg_body="Inlining function 'ap_uint&lt;8&gt;::ap_uint(float)' into 'filter_kernel(int, int, int, int (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)'">
+        <args Callee="ap_uint&lt;8&gt;::ap_uint(float)" Callee-DebugLoc="File {C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h} Line 299 Column 0" Caller="filter_kernel(int, int, int, int (*) [3], hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;)" Caller-DebugLoc="File filter.cpp Line 91 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="filter.cpp:107:13" msg_body="Applying array_partition to 'line_buffer': Complete partitioning on dimension 1. Complete partitioning on dimension 3.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="filter.cpp:109:13" msg_body="Applying array_partition to 'line_buffer': Complete partitioning on dimension 1. Complete partitioning on dimension 3.">
         <args Dim="islist 1 3" Mode="islist Complete Complete" UOName="line_buffer"/>
     </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="filter.cpp:136:23" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_136_7'.">
-        <args LoopName="VITIS_LOOP_136_7"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="filter.cpp:138:23" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_138_7'.">
+        <args LoopName="VITIS_LOOP_138_7"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="filter.cpp:136:23" msg_body="loop_flatten 0 1 filter_kernel filter.cpp:136:23VITIS_LOOP_136_7 filter.cpp:136:23">
-        <args LoopLoc="filter.cpp:136:23" LoopLoc-DebugLoc="File filter.cpp Line 136 Column 23" LoopName="VITIS_LOOP_136_7" PragmaFunction="filter_kernel" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="filter.cpp:136:23" PragmaSrcLoc-DebugLoc="File filter.cpp Line 136 Column 23" PragmaType="loop_flatten"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="filter.cpp:138:23" msg_body="loop_flatten 0 1 filter_kernel filter.cpp:138:23VITIS_LOOP_138_7 filter.cpp:138:23">
+        <args LoopLoc="filter.cpp:138:23" LoopLoc-DebugLoc="File filter.cpp Line 138 Column 23" LoopName="VITIS_LOOP_138_7" PragmaFunction="filter_kernel" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="filter.cpp:138:23" PragmaSrcLoc-DebugLoc="File filter.cpp Line 138 Column 23" PragmaType="loop_flatten"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

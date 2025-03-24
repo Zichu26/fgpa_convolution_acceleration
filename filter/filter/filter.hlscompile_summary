@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "03/19/25 23:02:21",
- "timestampMillis": "1742443341099",
+ "dateTimestamp": "03/24/25 04:06:13",
+ "timestampMillis": "1742807173719",
  "buildStep": {
-  "cmdId": "6ab25a0b-2508-4f42-b696-631f2c53de71",
+  "cmdId": "ed565924-b738-4cbb-9d00-ff63442c6b03",
   "name": "v++",
   "logFile": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\logs\\filter.steps.log",
   "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config D:\\cse_462\\fgpa_convolution_acceleration\\filter\\hls_config.cfg --work_dir filter ",
@@ -38,10 +38,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/19/25 23:02:21",
- "timestampMillis": "1742443341100",
+ "dateTimestamp": "03/24/25 04:06:13",
+ "timestampMillis": "1742807173719",
  "status": {
-  "cmdId": "6ab25a0b-2508-4f42-b696-631f2c53de71",
+  "cmdId": "ed565924-b738-4cbb-9d00-ff63442c6b03",
   "state": "CS_RUNNING"
  }
 }
@@ -49,8 +49,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "03/19/25 23:02:25",
- "timestampMillis": "1742443345605",
+ "dateTimestamp": "03/24/25 04:06:18",
+ "timestampMillis": "1742807178856",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -85,10 +85,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "03/19/25 23:02:25",
- "timestampMillis": "1742443345607",
+ "dateTimestamp": "03/24/25 04:06:18",
+ "timestampMillis": "1742807178857",
  "buildStep": {
-  "cmdId": "2219ebeb-9c18-4b7a-bea8-21337bd070d9",
+  "cmdId": "695e13ae-665f-4b7a-95cb-40aac9437c51",
   "name": "",
   "logFile": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\hls\\hls.log",
   "commandLine": "",
@@ -101,10 +101,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/19/25 23:02:25",
- "timestampMillis": "1742443345607",
+ "dateTimestamp": "03/24/25 04:06:18",
+ "timestampMillis": "1742807178857",
  "status": {
-  "cmdId": "2219ebeb-9c18-4b7a-bea8-21337bd070d9",
+  "cmdId": "695e13ae-665f-4b7a-95cb-40aac9437c51",
   "state": "CS_RUNNING"
  }
 }
@@ -112,8 +112,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/19/25 23:02:25",
- "timestampMillis": "1742443345607",
+ "dateTimestamp": "03/24/25 04:06:18",
+ "timestampMillis": "1742807178857",
  "report": {
   "path": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\hls\\hls_data.json",
   "name": "",
@@ -126,8 +126,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/19/25 23:02:25",
- "timestampMillis": "1742443345607",
+ "dateTimestamp": "03/24/25 04:06:18",
+ "timestampMillis": "1742807178858",
  "report": {
   "path": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\hls\\syn\\report\\csynth.rpt",
   "name": "",
@@ -140,8 +140,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/19/25 23:02:25",
- "timestampMillis": "1742443345608",
+ "dateTimestamp": "03/24/25 04:06:18",
+ "timestampMillis": "1742807178858",
  "report": {
   "path": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\hls\\syn\\report\\csynth.xml",
   "name": "",
@@ -154,8 +154,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/19/25 23:02:51",
- "timestampMillis": "1742443371085",
+ "dateTimestamp": "03/24/25 04:06:43",
+ "timestampMillis": "1742807203203",
  "report": {
   "path": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\hls",
   "name": "",
@@ -168,8 +168,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/19/25 23:02:51",
- "timestampMillis": "1742443371086",
+ "dateTimestamp": "03/24/25 04:06:43",
+ "timestampMillis": "1742807203203",
  "report": {
   "path": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\hls",
   "name": "",
@@ -182,8 +182,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/19/25 23:02:51",
- "timestampMillis": "1742443371087",
+ "dateTimestamp": "03/24/25 04:06:43",
+ "timestampMillis": "1742807203204",
  "report": {
   "path": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\hls",
   "name": "",
@@ -196,10 +196,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/19/25 23:02:51",
- "timestampMillis": "1742443371087",
+ "dateTimestamp": "03/24/25 04:06:43",
+ "timestampMillis": "1742807203204",
  "status": {
-  "cmdId": "2219ebeb-9c18-4b7a-bea8-21337bd070d9",
+  "cmdId": "695e13ae-665f-4b7a-95cb-40aac9437c51",
   "state": "CS_PASSED"
  }
 }
@@ -207,10 +207,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "03/19/25 23:02:51",
- "timestampMillis": "1742443371304",
+ "dateTimestamp": "03/24/25 04:06:43",
+ "timestampMillis": "1742807203363",
  "status": {
-  "cmdId": "6ab25a0b-2508-4f42-b696-631f2c53de71",
+  "cmdId": "ed565924-b738-4cbb-9d00-ff63442c6b03",
   "state": "CS_PASSED"
  }
 }
@@ -218,8 +218,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/19/25 23:02:51",
- "timestampMillis": "1742443371321",
+ "dateTimestamp": "03/24/25 04:06:43",
+ "timestampMillis": "1742807203381",
  "report": {
   "path": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\reports\\v++_compile_filter_guidance.html",
   "name": "",
@@ -232,8 +232,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "03/19/25 23:02:51",
- "timestampMillis": "1742443371322",
+ "dateTimestamp": "03/24/25 04:06:43",
+ "timestampMillis": "1742807203381",
  "report": {
   "path": "D:/cse_462\\fgpa_convolution_acceleration\\filter\\filter\\reports\\.db\\v++_compile_filter_guidance.pb3",
   "name": "",

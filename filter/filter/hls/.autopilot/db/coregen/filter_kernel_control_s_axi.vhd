@@ -35,8 +35,9 @@ port (
     RVALID                :out  STD_LOGIC;
     RREADY                :in   STD_LOGIC;
     interrupt             :out  STD_LOGIC;
-    width                 :out  STD_LOGIC_VECTOR(31 downto 0);
-    height                :out  STD_LOGIC_VECTOR(31 downto 0);
+    image_width           :out  STD_LOGIC_VECTOR(31 downto 0);
+    image_height          :out  STD_LOGIC_VECTOR(31 downto 0);
+    kernel_factor         :out  STD_LOGIC_VECTOR(31 downto 0);
     kernel_address0       :in   STD_LOGIC_VECTOR(3 downto 0);
     kernel_ce0            :in   STD_LOGIC;
     kernel_q0             :out  STD_LOGIC_VECTOR(31 downto 0);
@@ -69,12 +70,15 @@ end entity filter_kernel_control_s_axi;
 --        bit 0 - ap_done (Read/TOW)
 --        bit 1 - ap_ready (Read/TOW)
 --        others - reserved
--- 0x10 : Data signal of width
---        bit 31~0 - width[31:0] (Read/Write)
+-- 0x10 : Data signal of image_width
+--        bit 31~0 - image_width[31:0] (Read/Write)
 -- 0x14 : reserved
--- 0x18 : Data signal of height
---        bit 31~0 - height[31:0] (Read/Write)
+-- 0x18 : Data signal of image_height
+--        bit 31~0 - image_height[31:0] (Read/Write)
 -- 0x1c : reserved
+-- 0x20 : Data signal of kernel_factor
+--        bit 31~0 - kernel_factor[31:0] (Read/Write)
+-- 0x24 : reserved
 -- 0x40 ~
 -- 0x7f : Memory 'kernel' (9 * 32b)
 --        Word n : bit [31:0] - kernel[n]
@@ -85,16 +89,18 @@ architecture behave of filter_kernel_control_s_axi is
     signal wstate  : states := wrreset;
     signal rstate  : states := rdreset;
     signal wnext, rnext: states;
-    constant ADDR_AP_CTRL       : INTEGER := 16#00#;
-    constant ADDR_GIE           : INTEGER := 16#04#;
-    constant ADDR_IER           : INTEGER := 16#08#;
-    constant ADDR_ISR           : INTEGER := 16#0c#;
-    constant ADDR_WIDTH_DATA_0  : INTEGER := 16#10#;
-    constant ADDR_WIDTH_CTRL    : INTEGER := 16#14#;
-    constant ADDR_HEIGHT_DATA_0 : INTEGER := 16#18#;
-    constant ADDR_HEIGHT_CTRL   : INTEGER := 16#1c#;
-    constant ADDR_KERNEL_BASE   : INTEGER := 16#40#;
-    constant ADDR_KERNEL_HIGH   : INTEGER := 16#7f#;
+    constant ADDR_AP_CTRL              : INTEGER := 16#00#;
+    constant ADDR_GIE                  : INTEGER := 16#04#;
+    constant ADDR_IER                  : INTEGER := 16#08#;
+    constant ADDR_ISR                  : INTEGER := 16#0c#;
+    constant ADDR_IMAGE_WIDTH_DATA_0   : INTEGER := 16#10#;
+    constant ADDR_IMAGE_WIDTH_CTRL     : INTEGER := 16#14#;
+    constant ADDR_IMAGE_HEIGHT_DATA_0  : INTEGER := 16#18#;
+    constant ADDR_IMAGE_HEIGHT_CTRL    : INTEGER := 16#1c#;
+    constant ADDR_KERNEL_FACTOR_DATA_0 : INTEGER := 16#20#;
+    constant ADDR_KERNEL_FACTOR_CTRL   : INTEGER := 16#24#;
+    constant ADDR_KERNEL_BASE          : INTEGER := 16#40#;
+    constant ADDR_KERNEL_HIGH          : INTEGER := 16#7f#;
     constant ADDR_BITS         : INTEGER := 7;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
@@ -123,8 +129,9 @@ architecture behave of filter_kernel_control_s_axi is
     signal int_gie             : STD_LOGIC := '0';
     signal int_ier             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
-    signal int_width           : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_height          : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_image_width     : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_image_height    : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_kernel_factor   : UNSIGNED(31 downto 0) := (others => '0');
     -- memory signals
     signal int_kernel_address0 : UNSIGNED(3 downto 0);
     signal int_kernel_ce0      : STD_LOGIC;
@@ -319,10 +326,12 @@ port map (
                         rdata_data(1 downto 0) <= int_ier;
                     when ADDR_ISR =>
                         rdata_data(1 downto 0) <= int_isr;
-                    when ADDR_WIDTH_DATA_0 =>
-                        rdata_data <= RESIZE(int_width(31 downto 0), 32);
-                    when ADDR_HEIGHT_DATA_0 =>
-                        rdata_data <= RESIZE(int_height(31 downto 0), 32);
+                    when ADDR_IMAGE_WIDTH_DATA_0 =>
+                        rdata_data <= RESIZE(int_image_width(31 downto 0), 32);
+                    when ADDR_IMAGE_HEIGHT_DATA_0 =>
+                        rdata_data <= RESIZE(int_image_height(31 downto 0), 32);
+                    when ADDR_KERNEL_FACTOR_DATA_0 =>
+                        rdata_data <= RESIZE(int_kernel_factor(31 downto 0), 32);
                     when others =>
                         NULL;
                     end case;
@@ -339,8 +348,9 @@ port map (
     task_ap_done         <= (ap_done and not auto_restart_status) or auto_restart_done;
     task_ap_ready        <= ap_ready and not int_auto_restart;
     auto_restart_done    <= auto_restart_status and (ap_idle and not int_ap_idle);
-    width                <= STD_LOGIC_VECTOR(int_width);
-    height               <= STD_LOGIC_VECTOR(int_height);
+    image_width          <= STD_LOGIC_VECTOR(int_image_width);
+    image_height         <= STD_LOGIC_VECTOR(int_image_height);
+    kernel_factor        <= STD_LOGIC_VECTOR(int_kernel_factor);
 
     process (ACLK)
     begin
@@ -516,10 +526,10 @@ port map (
     begin
         if (ACLK'event and ACLK = '1') then
             if (ARESET = '1') then
-                int_width(31 downto 0) <= (others => '0');
+                int_image_width(31 downto 0) <= (others => '0');
             elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_WIDTH_DATA_0) then
-                    int_width(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_width(31 downto 0));
+                if (w_hs = '1' and waddr = ADDR_IMAGE_WIDTH_DATA_0) then
+                    int_image_width(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_image_width(31 downto 0));
                 end if;
             end if;
         end if;
@@ -529,10 +539,23 @@ port map (
     begin
         if (ACLK'event and ACLK = '1') then
             if (ARESET = '1') then
-                int_height(31 downto 0) <= (others => '0');
+                int_image_height(31 downto 0) <= (others => '0');
             elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_HEIGHT_DATA_0) then
-                    int_height(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_height(31 downto 0));
+                if (w_hs = '1' and waddr = ADDR_IMAGE_HEIGHT_DATA_0) then
+                    int_image_height(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_image_height(31 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ARESET = '1') then
+                int_kernel_factor(31 downto 0) <= (others => '0');
+            elsif (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_KERNEL_FACTOR_DATA_0) then
+                    int_kernel_factor(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_kernel_factor(31 downto 0));
                 end if;
             end if;
         end if;

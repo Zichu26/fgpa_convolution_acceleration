@@ -11,115 +11,115 @@ Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/top
 INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/cse_462/fgpa_convolution_acceleration/filter/hls_config.cfg(1)
 INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
 INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/cse_462/fgpa_convolution_acceleration/filter/hls_config.cfg(5)
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.319 seconds; current allocated memory: 161.926 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.741 seconds; current allocated memory: 162.035 MB.
 INFO: [HLS 200-10] Analyzing design file 'filter.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.476 seconds; current allocated memory: 165.168 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.691 seconds; current allocated memory: 165.254 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 200-1995] There were 2,119 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 1,373 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 584 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 548 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 532 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 925 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 559 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 559 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 559 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 571 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 555 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 553 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 533 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 533 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 542 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 536 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 214-131] Inlining function 'apply_kernel(ap_uint<8> (*) [3][3], float (*) [3], hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>&)' into 'filter_kernel(int, int, float (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (filter.cpp:152:13)
-INFO: [HLS 214-131] Inlining function 'store(hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>&, int, int, ap_uint<8> (*) [1920][3])' into 'filter_kernel(int, int, float (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (filter.cpp:145:13)
-INFO: [HLS 214-131] Inlining function 'create_window(int, int, int, int, ap_uint<8> (*) [1920][3], ap_uint<8> (*) [3][3])' into 'filter_kernel(int, int, float (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (filter.cpp:151:13)
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_34_1' is marked as complete unroll implied by the pipeline pragma (filter.cpp:34:19)
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_35_2' is marked as complete unroll implied by the pipeline pragma (filter.cpp:35:26)
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_36_3' is marked as complete unroll implied by the pipeline pragma (filter.cpp:36:30)
+INFO: [HLS 200-1995] There were 2,094 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,426 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 636 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 601 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 585 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 978 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 612 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 612 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 612 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 656 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 662 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 656 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 606 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 606 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 588 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 576 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'apply_kernel(ap_uint<8> (*) [3][3], int, int (*) [3], hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>&)' into 'filter_kernel(int, int, int, int (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (filter.cpp:152:13)
+INFO: [HLS 214-131] Inlining function 'store(hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>&, int, int, ap_uint<8> (*) [1920][3])' into 'filter_kernel(int, int, int, int (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (filter.cpp:148:13)
+INFO: [HLS 214-131] Inlining function 'create_window(int, int, int, int, ap_uint<8> (*) [1920][3], ap_uint<8> (*) [3][3])' into 'filter_kernel(int, int, int, int (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (filter.cpp:151:13)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_33_1' is marked as complete unroll implied by the pipeline pragma (filter.cpp:33:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_34_2' is marked as complete unroll implied by the pipeline pragma (filter.cpp:34:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_35_3' is marked as complete unroll implied by the pipeline pragma (filter.cpp:35:30)
 INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
 INFO: [HLS 214-291] Loop 'VITIS_LOOP_63_1' is marked as complete unroll implied by the pipeline pragma (filter.cpp:63:22)
 INFO: [HLS 214-291] Loop 'VITIS_LOOP_64_2' is marked as complete unroll implied by the pipeline pragma (filter.cpp:64:26)
 INFO: [HLS 214-291] Loop 'VITIS_LOOP_66_3' is marked as complete unroll implied by the pipeline pragma (filter.cpp:66:19)
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_119_3' is marked as complete unroll implied by the pipeline pragma (filter.cpp:119:20)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_34_1' (filter.cpp:34:19) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:90:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_35_2' (filter.cpp:35:26) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:90:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_36_3' (filter.cpp:36:30) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:90:0)
-INFO: [HLS 214-186] Unrolling loop 'anonymous' () in function 'filter_kernel' completely with a factor of 3 (filter.cpp:90:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_63_1' (filter.cpp:63:22) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:90:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_64_2' (filter.cpp:64:26) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:90:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_66_3' (filter.cpp:66:19) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:90:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_129_6' (filter.cpp:129:31) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:90:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_115_1' (filter.cpp:115:20) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:90:0)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_3' (filter.cpp:119:20) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:90:0)
-INFO: [HLS 214-178] Inlining function 'ap_uint<8>::ap_uint(float)' into 'filter_kernel(int, int, float (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (filter.cpp:90:0)
-INFO: [HLS 214-248] Applying array_partition to 'line_buffer': Complete partitioning on dimension 1. Complete partitioning on dimension 3. (filter.cpp:107:13)
-INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_136_7'. (filter.cpp:136:23)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 12.325 seconds; current allocated memory: 167.141 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 167.141 MB.
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_121_3' is marked as complete unroll implied by the pipeline pragma (filter.cpp:121:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_33_1' (filter.cpp:33:19) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:91:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_34_2' (filter.cpp:34:26) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:91:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_35_3' (filter.cpp:35:30) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:91:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' () in function 'filter_kernel' completely with a factor of 3 (filter.cpp:91:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_63_1' (filter.cpp:63:22) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:91:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_64_2' (filter.cpp:64:26) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:91:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_66_3' (filter.cpp:66:19) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:91:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_131_6' (filter.cpp:131:31) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:91:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_117_1' (filter.cpp:117:20) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:91:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_121_3' (filter.cpp:121:20) in function 'filter_kernel' completely with a factor of 3 (filter.cpp:91:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<8>::ap_uint(float)' into 'filter_kernel(int, int, int, int (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)' (filter.cpp:91:0)
+INFO: [HLS 214-248] Applying array_partition to 'line_buffer': Complete partitioning on dimension 1. Complete partitioning on dimension 3. (filter.cpp:109:13)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_138_7'. (filter.cpp:138:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.49 seconds; current allocated memory: 167.062 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 167.070 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 172.285 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.109 seconds; current allocated memory: 172.750 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.048 seconds; current allocated memory: 174.418 MB.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (filter.cpp:49:33) to (filter.cpp:137:27) in function 'filter_kernel'... converting 16 basic blocks.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.136 seconds; current allocated memory: 196.289 MB.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.165 seconds; current allocated memory: 226.496 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 174.711 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (filter.cpp:48:33) to (filter.cpp:139:27) in function 'filter_kernel'... converting 16 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.144 seconds; current allocated memory: 197.238 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.169 seconds; current allocated memory: 227.281 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'filter_kernel' ...
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'filter_kernel_Pipeline_VITIS_LOOP_117_2' 
+INFO: [HLS 200-42] -- Implementing module 'filter_kernel_Pipeline_VITIS_LOOP_119_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_2'. Use bind_storage pragma to override this type.
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_1'. Use bind_storage pragma to override this type.
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer'. Use bind_storage pragma to override this type.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_117_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_117_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_119_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_119_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.212 seconds; current allocated memory: 229.988 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.214 seconds; current allocated memory: 230.629 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 231.078 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 231.691 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'filter_kernel_Pipeline_VITIS_LOOP_117_21' 
+INFO: [HLS 200-42] -- Implementing module 'filter_kernel_Pipeline_VITIS_LOOP_119_21' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_5'. Use bind_storage pragma to override this type.
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_4'. Use bind_storage pragma to override this type.
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_3'. Use bind_storage pragma to override this type.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_117_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_117_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_119_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_119_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 231.125 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 231.746 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 231.125 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 231.746 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'filter_kernel_Pipeline_VITIS_LOOP_117_22' 
+INFO: [HLS 200-42] -- Implementing module 'filter_kernel_Pipeline_VITIS_LOOP_119_22' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_8'. Use bind_storage pragma to override this type.
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_7'. Use bind_storage pragma to override this type.
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_6'. Use bind_storage pragma to override this type.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_117_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_117_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_119_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_119_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 231.145 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.101 seconds; current allocated memory: 231.750 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 231.145 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 231.750 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'filter_kernel_Pipeline_VITIS_LOOP_137_8' 
+INFO: [HLS 200-42] -- Implementing module 'filter_kernel_Pipeline_VITIS_LOOP_139_8' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_8'. Use bind_storage pragma to override this type.
@@ -131,62 +131,64 @@ INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_6'. Use bind_storage pragma to override this type.
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer_3'. Use bind_storage pragma to override this type.
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'line_buffer'. Use bind_storage pragma to override this type.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_137_8'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 64, loop 'VITIS_LOOP_137_8'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_139_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 80, loop 'VITIS_LOOP_139_8'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.387 seconds; current allocated memory: 235.477 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.448 seconds; current allocated memory: 236.965 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.422 seconds; current allocated memory: 236.379 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.363 seconds; current allocated memory: 238.062 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'filter_kernel' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.158 seconds; current allocated memory: 237.004 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 239.016 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 237.590 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 239.828 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'filter_kernel_Pipeline_VITIS_LOOP_117_2' 
+INFO: [HLS 200-10] -- Generating RTL for module 'filter_kernel_Pipeline_VITIS_LOOP_119_2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_kernel_Pipeline_VITIS_LOOP_117_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 239.051 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_kernel_Pipeline_VITIS_LOOP_119_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 241.191 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'filter_kernel_Pipeline_VITIS_LOOP_117_21' 
+INFO: [HLS 200-10] -- Generating RTL for module 'filter_kernel_Pipeline_VITIS_LOOP_119_21' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_kernel_Pipeline_VITIS_LOOP_117_21'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 240.305 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_kernel_Pipeline_VITIS_LOOP_119_21'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 242.543 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'filter_kernel_Pipeline_VITIS_LOOP_117_22' 
+INFO: [HLS 200-10] -- Generating RTL for module 'filter_kernel_Pipeline_VITIS_LOOP_119_22' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_kernel_Pipeline_VITIS_LOOP_117_22'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.106 seconds; current allocated memory: 240.797 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_kernel_Pipeline_VITIS_LOOP_119_22'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.099 seconds; current allocated memory: 243.270 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'filter_kernel_Pipeline_VITIS_LOOP_137_8' 
+INFO: [HLS 200-10] -- Generating RTL for module 'filter_kernel_Pipeline_VITIS_LOOP_139_8' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'filter_kernel_Pipeline_VITIS_LOOP_137_8' pipeline 'VITIS_LOOP_137_8' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-104] Estimated max fanout for 'filter_kernel_Pipeline_VITIS_LOOP_137_8' is 7557 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001_grp1)
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'filter_kernel_Pipeline_VITIS_LOOP_139_8' pipeline 'VITIS_LOOP_139_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'filter_kernel_Pipeline_VITIS_LOOP_139_8' is 9064 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001_grp1)
 INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 27 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 27 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 27 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_8_1_1': 24 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_8_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'uitofp_32ns_32_6_no_dsp_1': 27 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_kernel_Pipeline_VITIS_LOOP_137_8'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.566 seconds; current allocated memory: 251.742 MB.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_kernel_Pipeline_VITIS_LOOP_139_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.644 seconds; current allocated memory: 256.562 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'filter_kernel' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
-INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/width' to 's_axilite & ap_none' (register).
-INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/height' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/image_width' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/image_height' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/kernel_factor' to 's_axilite & ap_none' (register).
 INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/kernel' to 's_axilite & ap_memory'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/input_stream_V_data_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/input_stream_V_keep_V' to 'axis' (register, both mode).
@@ -197,17 +199,18 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/output_strea
 INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/output_stream_V_strb_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/output_stream_V_last_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on function 'filter_kernel' to 's_axilite & ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Bundling port 'width', 'height', 'kernel' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Bundling port 'image_width', 'image_height', 'kernel_factor', 'kernel' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_6_no_dsp_1': 10 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'urem_31ns_3ns_2_35_seq_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'urem_32ns_3ns_2_36_seq_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_kernel'.
 INFO: [HLS 200-2167] Implementing memory 'filter_kernel_line_buffer_RAM_1WNR_AUTO_1R1W' using auto RAMs with 3 copies to ensure enough ports to satisfy II or latency constraints.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.992 seconds; current allocated memory: 261.551 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.655 seconds; current allocated memory: 266.973 MB.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.825 seconds; current allocated memory: 274.605 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.782 seconds; current allocated memory: 267.816 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.492 seconds; current allocated memory: 273.684 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.67 seconds; current allocated memory: 281.727 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for filter_kernel.
 INFO: [VLOG 209-307] Generating Verilog RTL for filter_kernel.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 137.82 MHz
-INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 0 seconds. Total elapsed time: 27.744 seconds; peak allocated memory: 274.832 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 27.006 seconds; peak allocated memory: 281.918 MB.
 INFO: [v++ 60-791] Total elapsed time: 0h 0m 32s

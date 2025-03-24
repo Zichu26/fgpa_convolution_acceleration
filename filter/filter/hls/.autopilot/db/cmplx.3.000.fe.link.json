@@ -1,39 +1,39 @@
 {
   "0": {
     "basicblocks": 51,
-    "calls": "1 2 3",
+    "calls": "3 2 1",
     "file": "filter.cpp",
     "fileloc": 84,
-    "instructions": 169,
+    "instructions": 156,
     "loads": {
-      "L": 4
+      "L": 3
     },
     "name": "filter_kernel",
     "stores": {
-      "L": 4
-    },
-    "total_instructions": 2119
-  },
-  "1": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "filter.cpp",
-    "fileloc": 11,
-    "instructions": 64,
-    "loads": {
       "L": 3
     },
-    "name": "store",
+    "total_instructions": 2094
+  },
+  "1": {
+    "basicblocks": 37,
+    "calls": "",
+    "file": "filter.cpp",
+    "fileloc": 54,
+    "instructions": 160,
+    "loads": {
+      "L": 13
+    },
+    "name": "apply_kernel",
     "stores": {
       "L": 3
     },
-    "total_instructions": 193
+    "total_instructions": 1517
   },
   "2": {
     "basicblocks": 31,
     "calls": "",
     "file": "filter.cpp",
-    "fileloc": 24,
+    "fileloc": 23,
     "instructions": 69,
     "loads": {
       "L": 1
@@ -45,18 +45,18 @@
     "total_instructions": 69
   },
   "3": {
-    "basicblocks": 37,
+    "basicblocks": 1,
     "calls": "",
     "file": "filter.cpp",
-    "fileloc": 55,
-    "instructions": 157,
+    "fileloc": 10,
+    "instructions": 64,
     "loads": {
-      "L": 13
+      "L": 3
     },
-    "name": "apply_kernel",
+    "name": "store",
     "stores": {
       "L": 3
     },
-    "total_instructions": 1514
+    "total_instructions": 193
   }
 }

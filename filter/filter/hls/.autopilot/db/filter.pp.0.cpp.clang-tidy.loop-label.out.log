@@ -18,21 +18,21 @@ D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.
       ^~~
       VITIS_LOOP_1248_1: 
 D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:4048:7: note: FIX-IT applied suggested code changes
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9768:2: warning: Added loop label VITIS_LOOP_34_1:   [xilinx-label-all-loops]
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9767:2: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
  for (int i = 0; i < 3; i++) {
  ^~~
- VITIS_LOOP_34_1: 
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9768:2: note: FIX-IT applied suggested code changes
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9769:9: warning: Added loop label VITIS_LOOP_35_2:   [xilinx-label-all-loops]
+ VITIS_LOOP_33_1: 
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9767:2: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9768:9: warning: Added loop label VITIS_LOOP_34_2:   [xilinx-label-all-loops]
         for (int j = 0; j < 3; j++) {
         ^~~
-        VITIS_LOOP_35_2: 
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9769:9: note: FIX-IT applied suggested code changes
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9770:13: warning: Added loop label VITIS_LOOP_36_3:   [xilinx-label-all-loops]
+        VITIS_LOOP_34_2: 
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9768:9: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9769:13: warning: Added loop label VITIS_LOOP_35_3:   [xilinx-label-all-loops]
             for (int c = 0; c < 3; c++) {
             ^~~
-            VITIS_LOOP_36_3: 
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9770:13: note: FIX-IT applied suggested code changes
+            VITIS_LOOP_35_3: 
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9769:13: note: FIX-IT applied suggested code changes
 D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9797:5: warning: Added loop label VITIS_LOOP_63_1:   [xilinx-label-all-loops]
     for (int i = 0; i < 3; i++) {
     ^~~
@@ -48,43 +48,43 @@ D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.
  ^~~
  VITIS_LOOP_66_3: 
 D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9800:2: note: FIX-IT applied suggested code changes
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9853:2: warning: Added loop label VITIS_LOOP_115_1:   [xilinx-label-all-loops]
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9855:2: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
  for (int i = 0; i < 3; i++) {
  ^~~
- VITIS_LOOP_115_1: 
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9853:2: note: FIX-IT applied suggested code changes
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9855:2: warning: Added loop label VITIS_LOOP_117_2:   [xilinx-label-all-loops]
+ VITIS_LOOP_117_1: 
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9855:2: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9857:2: warning: Added loop label VITIS_LOOP_119_2:   [xilinx-label-all-loops]
  for (int j = 0; j < 1920; j++) {
  ^~~
- VITIS_LOOP_117_2: 
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9855:2: note: FIX-IT applied suggested code changes
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9857:2: warning: Added loop label VITIS_LOOP_119_3:   [xilinx-label-all-loops]
+ VITIS_LOOP_119_2: 
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9857:2: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9859:2: warning: Added loop label VITIS_LOOP_121_3:   [xilinx-label-all-loops]
  for (int c = 0; c < 3; c++) {
  ^~~
- VITIS_LOOP_119_3: 
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9857:2: note: FIX-IT applied suggested code changes
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9865:5: warning: Added loop label VITIS_LOOP_127_4:   [xilinx-label-all-loops]
+ VITIS_LOOP_121_3: 
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9859:2: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9867:5: warning: Added loop label VITIS_LOOP_129_4:   [xilinx-label-all-loops]
     for (int i = 0; i < 3; i++) {
     ^~~
-    VITIS_LOOP_127_4: 
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9865:5: note: FIX-IT applied suggested code changes
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9866:9: warning: Added loop label VITIS_LOOP_128_5:   [xilinx-label-all-loops]
+    VITIS_LOOP_129_4: 
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9867:5: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9868:9: warning: Added loop label VITIS_LOOP_130_5:   [xilinx-label-all-loops]
         for (int j = 0; j < 3; j++) {
         ^~~
-        VITIS_LOOP_128_5: 
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9866:9: note: FIX-IT applied suggested code changes
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9867:13: warning: Added loop label VITIS_LOOP_129_6:   [xilinx-label-all-loops]
+        VITIS_LOOP_130_5: 
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9868:9: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9869:13: warning: Added loop label VITIS_LOOP_131_6:   [xilinx-label-all-loops]
             for (int c = 0; c < 3; c++) {
             ^~~
-            VITIS_LOOP_129_6: 
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9867:13: note: FIX-IT applied suggested code changes
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9874:5: warning: Added loop label VITIS_LOOP_136_7:   [xilinx-label-all-loops]
-    for (int row = 0; row < height; row++) {
+            VITIS_LOOP_131_6: 
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9869:13: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9876:5: warning: Added loop label VITIS_LOOP_138_7:   [xilinx-label-all-loops]
+    for (int row = 0; row < image_height; row++) {
     ^~~
-    VITIS_LOOP_136_7: 
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9874:5: note: FIX-IT applied suggested code changes
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9875:9: warning: Added loop label VITIS_LOOP_137_8:   [xilinx-label-all-loops]
-        for (int col = 0; col < width; col++) {
+    VITIS_LOOP_138_7: 
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9876:5: note: FIX-IT applied suggested code changes
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9877:9: warning: Added loop label VITIS_LOOP_139_8:   [xilinx-label-all-loops]
+        for (int col = 0; col < image_width; col++) {
         ^~~
-        VITIS_LOOP_137_8: 
-D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9875:9: note: FIX-IT applied suggested code changes
+        VITIS_LOOP_139_8: 
+D:\cse_462\fgpa_convolution_acceleration\filter\filter\hls\.autopilot\db\filter.pp.0.cpp:9877:9: note: FIX-IT applied suggested code changes

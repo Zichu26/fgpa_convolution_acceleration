@@ -7,7 +7,6 @@
 
 typedef ap_axis<32, 0, 0, 0> AXI_PIXEL;
 
-// store pixel in line buffer
 void store(
     AXI_PIXEL &pixel,
     int row_idx,
@@ -41,8 +40,8 @@ void create_window(
                 int src_col = col + j - 1;
                 
                 // clamp the valid image coordinates
-                src_row = (src_row < 0) ? 0 : ((src_row >= height) ? height-1 : src_row);
-                src_col = (src_col < 0) ? 0 : ((src_col >= width) ? width-1 : src_col);
+                src_row = (src_row < 0) ? 0 : ((src_row >= height) ? height - 1 : src_row);
+                src_col = (src_col < 0) ? 0 : ((src_col >= width) ? width - 1 : src_col);
                 
                 // calculate circular buffer index
                 int buffer_row = src_row % 3;
@@ -54,7 +53,8 @@ void create_window(
 
 void apply_kernel(
     ap_uint<8> window[3][3][3],
-    float kernel[3][3],
+    int kernel_factor,
+    int kernel[3][3],
     AXI_PIXEL &output_pixel
 ) {
     #pragma HLS INLINE
@@ -65,7 +65,7 @@ void apply_kernel(
             #pragma HLS UNROLL
             for (int c = 0; c < 3; c++) {
                 #pragma HLS UNROLL
-                sum[c] += float(window[i][j][c]) * kernel[i][j];
+                sum[c] += float(window[i][j][c]) * kernel[i][j] / kernel_factor;
             }
         }
     }
@@ -82,17 +82,19 @@ void apply_kernel(
 }
 
 void filter_kernel(
-    int width,
-    int height,
-    float kernel[3][3],
+    int image_width,
+    int image_height,
+    int kernel_factor,
+    int kernel[3][3],
     hls::stream<AXI_PIXEL> &input_stream,   // reference, me big dumb
     hls::stream<AXI_PIXEL> &output_stream
 ) {
 // AXI-Lite slave interface, lower bandwidth interface for control signals
 // `bundle=control` creates one shared AXI-Lite interface for all control parameters, in hardware this becomes a set of memory-mapped registers accessible from the PS
-#pragma HLS INTERFACE s_axilite port=width register bundle=control
-#pragma HLS INTERFACE s_axilite port=height register bundle=control
-#pragma HLS INTERFACE s_axilite port=kernel register bundle=control
+#pragma HLS INTERFACE s_axilite port=image_width register bundle=control
+#pragma HLS INTERFACE s_axilite port=image_height register bundle=control
+#pragma HLS INTERFACE s_axilite port=kernel_factor register bundle=control
+#pragma HLS INTERFACE s_axilite port=kernel bundle=control
 // #pragma HLS INTERFACE s_axilite port=channels bundle=control
 // `port=return` creates 4 hardware signals
     // `ap_start` software set to '1' to begin execution
@@ -133,25 +135,24 @@ void filter_kernel(
         }
     }
 
-    for (int row = 0; row < height; row++) {
-        for (int col = 0; col < width; col++) {
-            #pragma HLS PIPELINE II=1   // new loop starts every clock cycle
+    for (int row = 0; row < image_height; row++) {
+        for (int col = 0; col < image_width; col++) {
+            #pragma HLS PIPELINE
+            
             // index of circular line buffer
             int row_idx = row % 3;
 
             // read and store pixel in line buffer
-            AXI_PIXEL in_pixel;
-            input_stream >> in_pixel;
-            store(in_pixel, row_idx, col, line_buffer);
+            AXI_PIXEL pixel;
+            input_stream >> pixel;
+            store(pixel, row_idx, col, line_buffer);
 
-            AXI_PIXEL output_pixel;
-            output_pixel.data = 0;
-            output_pixel.last = (row == height-1 && col == width-1) ? 1 : 0;
+            // pixel.data = 0;
+            create_window(row, col, image_height, image_width, line_buffer, window);
+            apply_kernel(window, kernel_factor, kernel, pixel);
 
-            create_window(row, col, height, width, line_buffer, window);
-            apply_kernel(window, kernel, output_pixel);
-
-            output_stream << output_pixel;
+            pixel.last = (row == image_height - 1 && col == image_width - 1) ? 1 : 0;
+            output_stream << pixel;
         }
     }
 }

@@ -1,0 +1,144 @@
+
+
+================================================================
+== Vitis HLS Report for 'filter_kernel_Pipeline_VITIS_LOOP_119_22'
+================================================================
+* Date:           Mon Mar 24 04:06:39 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        filter
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.481 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+------------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  |                    Pipeline                    |
+    |   min   |   max   |    min    |    max    |  min |  max |                      Type                      |
+    +---------+---------+-----------+-----------+------+------+------------------------------------------------+
+    |     1922|     1922|  19.220 us|  19.220 us|  1921|  1921|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+------+------+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_119_2  |     1920|     1920|         1|          1|          1|  1920|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     24|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     27|    -|
+|Register         |        -|    -|      13|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      13|     51|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |add_ln119_fu_94_p2   |         +|   0|  0|  12|          11|           1|
+    |icmp_ln119_fu_88_p2  |      icmp|   0|  0|  12|          11|           9|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0|  24|          22|          10|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_done_int           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j_1  |   9|          2|   11|         22|
+    |j_fu_34               |   9|          2|   11|         22|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  27|          6|   23|         46|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+----+----+-----+-----------+
+    |     Name    | FF | LUT| Bits| Const Bits|
+    +-------------+----+----+-----+-----------+
+    |ap_CS_fsm    |   1|   0|    1|          0|
+    |ap_done_reg  |   1|   0|    1|          0|
+    |j_fu_34      |  11|   0|   11|          0|
+    +-------------+----+----+-----+-----------+
+    |Total        |  13|   0|   13|          0|
+    +-------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+------------------------------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |               Source Object              |    C Type    |
++------------------------+-----+-----+------------+------------------------------------------+--------------+
+|ap_clk                  |   in|    1|  ap_ctrl_hs|  filter_kernel_Pipeline_VITIS_LOOP_119_22|  return value|
+|ap_rst                  |   in|    1|  ap_ctrl_hs|  filter_kernel_Pipeline_VITIS_LOOP_119_22|  return value|
+|ap_start                |   in|    1|  ap_ctrl_hs|  filter_kernel_Pipeline_VITIS_LOOP_119_22|  return value|
+|ap_done                 |  out|    1|  ap_ctrl_hs|  filter_kernel_Pipeline_VITIS_LOOP_119_22|  return value|
+|ap_idle                 |  out|    1|  ap_ctrl_hs|  filter_kernel_Pipeline_VITIS_LOOP_119_22|  return value|
+|ap_ready                |  out|    1|  ap_ctrl_hs|  filter_kernel_Pipeline_VITIS_LOOP_119_22|  return value|
+|line_buffer_8_address0  |  out|   11|   ap_memory|                             line_buffer_8|         array|
+|line_buffer_8_ce0       |  out|    1|   ap_memory|                             line_buffer_8|         array|
+|line_buffer_8_we0       |  out|    1|   ap_memory|                             line_buffer_8|         array|
+|line_buffer_8_d0        |  out|    8|   ap_memory|                             line_buffer_8|         array|
+|line_buffer_7_address0  |  out|   11|   ap_memory|                             line_buffer_7|         array|
+|line_buffer_7_ce0       |  out|    1|   ap_memory|                             line_buffer_7|         array|
+|line_buffer_7_we0       |  out|    1|   ap_memory|                             line_buffer_7|         array|
+|line_buffer_7_d0        |  out|    8|   ap_memory|                             line_buffer_7|         array|
+|line_buffer_6_address0  |  out|   11|   ap_memory|                             line_buffer_6|         array|
+|line_buffer_6_ce0       |  out|    1|   ap_memory|                             line_buffer_6|         array|
+|line_buffer_6_we0       |  out|    1|   ap_memory|                             line_buffer_6|         array|
+|line_buffer_6_d0        |  out|    8|   ap_memory|                             line_buffer_6|         array|
++------------------------+-----+-----+------------+------------------------------------------+--------------+
+

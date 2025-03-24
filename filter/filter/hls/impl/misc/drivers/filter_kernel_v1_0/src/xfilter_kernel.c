@@ -76,37 +76,54 @@ void XFilter_kernel_DisableAutoRestart(XFilter_kernel *InstancePtr) {
     XFilter_kernel_WriteReg(InstancePtr->Control_BaseAddress, XFILTER_KERNEL_CONTROL_ADDR_AP_CTRL, 0);
 }
 
-void XFilter_kernel_Set_width(XFilter_kernel *InstancePtr, u32 Data) {
+void XFilter_kernel_Set_image_width(XFilter_kernel *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XFilter_kernel_WriteReg(InstancePtr->Control_BaseAddress, XFILTER_KERNEL_CONTROL_ADDR_WIDTH_DATA, Data);
+    XFilter_kernel_WriteReg(InstancePtr->Control_BaseAddress, XFILTER_KERNEL_CONTROL_ADDR_IMAGE_WIDTH_DATA, Data);
 }
 
-u32 XFilter_kernel_Get_width(XFilter_kernel *InstancePtr) {
+u32 XFilter_kernel_Get_image_width(XFilter_kernel *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XFilter_kernel_ReadReg(InstancePtr->Control_BaseAddress, XFILTER_KERNEL_CONTROL_ADDR_WIDTH_DATA);
+    Data = XFilter_kernel_ReadReg(InstancePtr->Control_BaseAddress, XFILTER_KERNEL_CONTROL_ADDR_IMAGE_WIDTH_DATA);
     return Data;
 }
 
-void XFilter_kernel_Set_height(XFilter_kernel *InstancePtr, u32 Data) {
+void XFilter_kernel_Set_image_height(XFilter_kernel *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XFilter_kernel_WriteReg(InstancePtr->Control_BaseAddress, XFILTER_KERNEL_CONTROL_ADDR_HEIGHT_DATA, Data);
+    XFilter_kernel_WriteReg(InstancePtr->Control_BaseAddress, XFILTER_KERNEL_CONTROL_ADDR_IMAGE_HEIGHT_DATA, Data);
 }
 
-u32 XFilter_kernel_Get_height(XFilter_kernel *InstancePtr) {
+u32 XFilter_kernel_Get_image_height(XFilter_kernel *InstancePtr) {
     u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    Data = XFilter_kernel_ReadReg(InstancePtr->Control_BaseAddress, XFILTER_KERNEL_CONTROL_ADDR_HEIGHT_DATA);
+    Data = XFilter_kernel_ReadReg(InstancePtr->Control_BaseAddress, XFILTER_KERNEL_CONTROL_ADDR_IMAGE_HEIGHT_DATA);
+    return Data;
+}
+
+void XFilter_kernel_Set_kernel_factor(XFilter_kernel *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XFilter_kernel_WriteReg(InstancePtr->Control_BaseAddress, XFILTER_KERNEL_CONTROL_ADDR_KERNEL_FACTOR_DATA, Data);
+}
+
+u32 XFilter_kernel_Get_kernel_factor(XFilter_kernel *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XFilter_kernel_ReadReg(InstancePtr->Control_BaseAddress, XFILTER_KERNEL_CONTROL_ADDR_KERNEL_FACTOR_DATA);
     return Data;
 }
 

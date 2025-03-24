@@ -38,129 +38,21 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_1248_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_34_1:  '
-    FileOffset:      34
+    Message:         'Added loop label VITIS_LOOP_38_1:  '
+    FileOffset:      38
     FilePath:        grayscale_kernel.cpp
     Replacements:    
       - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1056390
+        Offset:          1056477
         Length:          0
-        ReplacementText: 'VITIS_LOOP_34_1: '
+        ReplacementText: 'VITIS_LOOP_38_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_35_2:  '
-    FileOffset:      35
+    Message:         'Added loop label VITIS_LOOP_39_2:  '
+    FileOffset:      39
     FilePath:        grayscale_kernel.cpp
     Replacements:    
       - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1056428
+        Offset:          1056526
         Length:          0
-        ReplacementText: 'VITIS_LOOP_35_2: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_36_3:  '
-    FileOffset:      36
-    FilePath:        grayscale_kernel.cpp
-    Replacements:    
-      - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1056470
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_36_3: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_63_1:  '
-    FileOffset:      63
-    FilePath:        grayscale_kernel.cpp
-    Replacements:    
-      - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1057091
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_63_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_64_2:  '
-    FileOffset:      64
-    FilePath:        grayscale_kernel.cpp
-    Replacements:    
-      - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1057129
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_64_2: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_66_3:  '
-    FileOffset:      66
-    FilePath:        grayscale_kernel.cpp
-    Replacements:    
-      - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1057179
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_66_3: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_115_1:  '
-    FileOffset:      115
-    FilePath:        grayscale_kernel.cpp
-    Replacements:    
-      - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1058606
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_115_1: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_117_2:  '
-    FileOffset:      117
-    FilePath:        grayscale_kernel.cpp
-    Replacements:    
-      - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1058656
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_117_2: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_119_3:  '
-    FileOffset:      119
-    FilePath:        grayscale_kernel.cpp
-    Replacements:    
-      - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1058711
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_119_3: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_127_4:  '
-    FileOffset:      127
-    FilePath:        grayscale_kernel.cpp
-    Replacements:    
-      - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1058823
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_127_4: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_128_5:  '
-    FileOffset:      128
-    FilePath:        grayscale_kernel.cpp
-    Replacements:    
-      - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1058861
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_128_5: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_129_6:  '
-    FileOffset:      129
-    FilePath:        grayscale_kernel.cpp
-    Replacements:    
-      - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1058903
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_129_6: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_136_7:  '
-    FileOffset:      136
-    FilePath:        grayscale_kernel.cpp
-    Replacements:    
-      - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1059009
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_136_7: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_137_8:  '
-    FileOffset:      137
-    FilePath:        grayscale_kernel.cpp
-    Replacements:    
-      - FilePath:        'D:\cse_462\fgpa_convolution_acceleration\grayscale\grayscale\hls\.autopilot\db\grayscale_kernel.pp.0.cpp'
-        Offset:          1059058
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_137_8: '
+        ReplacementText: 'VITIS_LOOP_39_2: '
 ...

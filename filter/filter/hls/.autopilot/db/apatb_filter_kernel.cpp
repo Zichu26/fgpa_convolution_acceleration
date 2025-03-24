@@ -20,10 +20,12 @@
 using namespace std;
 
 // wrapc file define:
-#define AUTOTB_TVIN_width "../tv/cdatafile/c.filter_kernel.autotvin_width.dat"
-#define AUTOTB_TVOUT_width "../tv/cdatafile/c.filter_kernel.autotvout_width.dat"
-#define AUTOTB_TVIN_height "../tv/cdatafile/c.filter_kernel.autotvin_height.dat"
-#define AUTOTB_TVOUT_height "../tv/cdatafile/c.filter_kernel.autotvout_height.dat"
+#define AUTOTB_TVIN_image_width "../tv/cdatafile/c.filter_kernel.autotvin_image_width.dat"
+#define AUTOTB_TVOUT_image_width "../tv/cdatafile/c.filter_kernel.autotvout_image_width.dat"
+#define AUTOTB_TVIN_image_height "../tv/cdatafile/c.filter_kernel.autotvin_image_height.dat"
+#define AUTOTB_TVOUT_image_height "../tv/cdatafile/c.filter_kernel.autotvout_image_height.dat"
+#define AUTOTB_TVIN_kernel_factor "../tv/cdatafile/c.filter_kernel.autotvin_kernel_factor.dat"
+#define AUTOTB_TVOUT_kernel_factor "../tv/cdatafile/c.filter_kernel.autotvout_kernel_factor.dat"
 #define AUTOTB_TVIN_kernel "../tv/cdatafile/c.filter_kernel.autotvin_kernel.dat"
 #define AUTOTB_TVOUT_kernel "../tv/cdatafile/c.filter_kernel.autotvout_kernel.dat"
 #define AUTOTB_TVIN_input_stream_V_data_V "../tv/cdatafile/c.filter_kernel.autotvin_input_stream_V_data_V.dat"
@@ -1262,34 +1264,45 @@ namespace hls::sim
 
 
 extern "C"
-void filter_kernel_hw_stub_wrapper(hls::sim::Byte<4>, hls::sim::Byte<4>, void*, void*, void*, void*, void*, void*, void*, void*, void*);
+void filter_kernel_hw_stub_wrapper(hls::sim::Byte<4>, hls::sim::Byte<4>, hls::sim::Byte<4>, void*, void*, void*, void*, void*, void*, void*, void*, void*);
 
 extern "C"
-void apatb_filter_kernel_hw(hls::sim::Byte<4> __xlx_apatb_param_width, hls::sim::Byte<4> __xlx_apatb_param_height, void* __xlx_apatb_param_kernel, void* __xlx_apatb_param_input_stream_V_data_V, void* __xlx_apatb_param_input_stream_V_keep_V, void* __xlx_apatb_param_input_stream_V_strb_V, void* __xlx_apatb_param_input_stream_V_last_V, void* __xlx_apatb_param_output_stream_V_data_V, void* __xlx_apatb_param_output_stream_V_keep_V, void* __xlx_apatb_param_output_stream_V_strb_V, void* __xlx_apatb_param_output_stream_V_last_V)
+void apatb_filter_kernel_hw(hls::sim::Byte<4> __xlx_apatb_param_image_width, hls::sim::Byte<4> __xlx_apatb_param_image_height, hls::sim::Byte<4> __xlx_apatb_param_kernel_factor, void* __xlx_apatb_param_kernel, void* __xlx_apatb_param_input_stream_V_data_V, void* __xlx_apatb_param_input_stream_V_keep_V, void* __xlx_apatb_param_input_stream_V_strb_V, void* __xlx_apatb_param_input_stream_V_last_V, void* __xlx_apatb_param_output_stream_V_data_V, void* __xlx_apatb_param_output_stream_V_keep_V, void* __xlx_apatb_param_output_stream_V_strb_V, void* __xlx_apatb_param_output_stream_V_last_V)
 {
   static hls::sim::Register port0 {
-    .name = "width",
+    .name = "image_width",
     .width = 32,
 #ifdef POST_CHECK
 #else
     .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_width),
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_image_width),
 #endif
   };
-  port0.param = &__xlx_apatb_param_width;
+  port0.param = &__xlx_apatb_param_image_width;
 
   static hls::sim::Register port1 {
-    .name = "height",
+    .name = "image_height",
     .width = 32,
 #ifdef POST_CHECK
 #else
     .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_height),
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_image_height),
 #endif
   };
-  port1.param = &__xlx_apatb_param_height;
+  port1.param = &__xlx_apatb_param_image_height;
 
-  static hls::sim::Stream<hls::sim::Byte<4>> port2 {
+  static hls::sim::Register port2 {
+    .name = "kernel_factor",
+    .width = 32,
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_kernel_factor),
+#endif
+  };
+  port2.param = &__xlx_apatb_param_kernel_factor;
+
+  static hls::sim::Stream<hls::sim::Byte<4>> port3 {
     .width = 32,
     .name = "input_stream_V_data_V",
 #ifdef POST_CHECK
@@ -1300,10 +1313,10 @@ void apatb_filter_kernel_hw(hls::sim::Byte<4> __xlx_apatb_param_width, hls::sim:
     .gwriter = new hls::sim::Writer(WRAPC_STREAM_INGRESS_STATUS_input_stream_V_data_V),
 #endif
   };
-  port2.param = (hls::stream<hls::sim::Byte<4>>*)__xlx_apatb_param_input_stream_V_data_V;
-  port2.hasWrite = false;
+  port3.param = (hls::stream<hls::sim::Byte<4>>*)__xlx_apatb_param_input_stream_V_data_V;
+  port3.hasWrite = false;
 
-  static hls::sim::Stream<hls::sim::Byte<1>> port3 {
+  static hls::sim::Stream<hls::sim::Byte<1>> port4 {
     .width = 4,
     .name = "input_stream_V_keep_V",
 #ifdef POST_CHECK
@@ -1314,10 +1327,10 @@ void apatb_filter_kernel_hw(hls::sim::Byte<4> __xlx_apatb_param_width, hls::sim:
     .gwriter = new hls::sim::Writer(WRAPC_STREAM_INGRESS_STATUS_input_stream_V_keep_V),
 #endif
   };
-  port3.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_input_stream_V_keep_V;
-  port3.hasWrite = false;
+  port4.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_input_stream_V_keep_V;
+  port4.hasWrite = false;
 
-  static hls::sim::Stream<hls::sim::Byte<1>> port4 {
+  static hls::sim::Stream<hls::sim::Byte<1>> port5 {
     .width = 4,
     .name = "input_stream_V_strb_V",
 #ifdef POST_CHECK
@@ -1328,10 +1341,10 @@ void apatb_filter_kernel_hw(hls::sim::Byte<4> __xlx_apatb_param_width, hls::sim:
     .gwriter = new hls::sim::Writer(WRAPC_STREAM_INGRESS_STATUS_input_stream_V_strb_V),
 #endif
   };
-  port4.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_input_stream_V_strb_V;
-  port4.hasWrite = false;
+  port5.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_input_stream_V_strb_V;
+  port5.hasWrite = false;
 
-  static hls::sim::Stream<hls::sim::Byte<1>> port5 {
+  static hls::sim::Stream<hls::sim::Byte<1>> port6 {
     .width = 1,
     .name = "input_stream_V_last_V",
 #ifdef POST_CHECK
@@ -1342,10 +1355,10 @@ void apatb_filter_kernel_hw(hls::sim::Byte<4> __xlx_apatb_param_width, hls::sim:
     .gwriter = new hls::sim::Writer(WRAPC_STREAM_INGRESS_STATUS_input_stream_V_last_V),
 #endif
   };
-  port5.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_input_stream_V_last_V;
-  port5.hasWrite = false;
+  port6.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_input_stream_V_last_V;
+  port6.hasWrite = false;
 
-  static hls::sim::Stream<hls::sim::Byte<4>> port6 {
+  static hls::sim::Stream<hls::sim::Byte<4>> port7 {
     .width = 32,
     .name = "output_stream_V_data_V",
 #ifdef POST_CHECK
@@ -1356,10 +1369,10 @@ void apatb_filter_kernel_hw(hls::sim::Byte<4> __xlx_apatb_param_width, hls::sim:
     .gwriter = new hls::sim::Writer(WRAPC_STREAM_EGRESS_STATUS_output_stream_V_data_V),
 #endif
   };
-  port6.param = (hls::stream<hls::sim::Byte<4>>*)__xlx_apatb_param_output_stream_V_data_V;
-  port6.hasWrite = true;
+  port7.param = (hls::stream<hls::sim::Byte<4>>*)__xlx_apatb_param_output_stream_V_data_V;
+  port7.hasWrite = true;
 
-  static hls::sim::Stream<hls::sim::Byte<1>> port7 {
+  static hls::sim::Stream<hls::sim::Byte<1>> port8 {
     .width = 4,
     .name = "output_stream_V_keep_V",
 #ifdef POST_CHECK
@@ -1370,10 +1383,10 @@ void apatb_filter_kernel_hw(hls::sim::Byte<4> __xlx_apatb_param_width, hls::sim:
     .gwriter = new hls::sim::Writer(WRAPC_STREAM_EGRESS_STATUS_output_stream_V_keep_V),
 #endif
   };
-  port7.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_output_stream_V_keep_V;
-  port7.hasWrite = true;
+  port8.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_output_stream_V_keep_V;
+  port8.hasWrite = true;
 
-  static hls::sim::Stream<hls::sim::Byte<1>> port8 {
+  static hls::sim::Stream<hls::sim::Byte<1>> port9 {
     .width = 4,
     .name = "output_stream_V_strb_V",
 #ifdef POST_CHECK
@@ -1384,10 +1397,10 @@ void apatb_filter_kernel_hw(hls::sim::Byte<4> __xlx_apatb_param_width, hls::sim:
     .gwriter = new hls::sim::Writer(WRAPC_STREAM_EGRESS_STATUS_output_stream_V_strb_V),
 #endif
   };
-  port8.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_output_stream_V_strb_V;
-  port8.hasWrite = true;
+  port9.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_output_stream_V_strb_V;
+  port9.hasWrite = true;
 
-  static hls::sim::Stream<hls::sim::Byte<1>> port9 {
+  static hls::sim::Stream<hls::sim::Byte<1>> port10 {
     .width = 1,
     .name = "output_stream_V_last_V",
 #ifdef POST_CHECK
@@ -1398,13 +1411,13 @@ void apatb_filter_kernel_hw(hls::sim::Byte<4> __xlx_apatb_param_width, hls::sim:
     .gwriter = new hls::sim::Writer(WRAPC_STREAM_EGRESS_STATUS_output_stream_V_last_V),
 #endif
   };
-  port9.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_output_stream_V_last_V;
-  port9.hasWrite = true;
+  port10.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_output_stream_V_last_V;
+  port10.hasWrite = true;
 
 #ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port10 {
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port11 {
 #else
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port10 {
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port11 {
 #endif
     .width = 32,
     .asize = 4,
@@ -1421,14 +1434,13 @@ void apatb_filter_kernel_hw(hls::sim::Byte<4> __xlx_apatb_param_width, hls::sim:
 #endif
     .hasWrite = { false },
   };
-  port10.param = { __xlx_apatb_param_kernel };
-  port10.mname = { "kernel" };
-  port10.nbytes = { 36 };
+  port11.param = { __xlx_apatb_param_kernel };
+  port11.mname = { "kernel" };
+  port11.nbytes = { 36 };
 
   try {
 #ifdef POST_CHECK
     CodeState = ENTER_WRAPC_PC;
-    check(port2);
     check(port3);
     check(port4);
     check(port5);
@@ -1436,51 +1448,54 @@ void apatb_filter_kernel_hw(hls::sim::Byte<4> __xlx_apatb_param_width, hls::sim:
     check(port7);
     check(port8);
     check(port9);
+    check(port10);
 #else
     static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
     tcl.containsVLA = 0;
     CodeState = DUMP_INPUTS;
     dump(port0, port0.iwriter, tcl.AESL_transaction);
     dump(port1, port1.iwriter, tcl.AESL_transaction);
-    dump(port10, port10.iwriter, tcl.AESL_transaction);
+    dump(port2, port2.iwriter, tcl.AESL_transaction);
+    dump(port11, port11.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
-    port10.doTCL(tcl);
-    port2.markSize();
+    port2.doTCL(tcl);
+    port11.doTCL(tcl);
     port3.markSize();
     port4.markSize();
     port5.markSize();
-    port2.buffer();
+    port6.markSize();
     port3.buffer();
     port4.buffer();
     port5.buffer();
-    port6.markSize();
+    port6.buffer();
     port7.markSize();
     port8.markSize();
     port9.markSize();
+    port10.markSize();
     CodeState = CALL_C_DUT;
-    filter_kernel_hw_stub_wrapper(__xlx_apatb_param_width, __xlx_apatb_param_height, __xlx_apatb_param_kernel, __xlx_apatb_param_input_stream_V_data_V, __xlx_apatb_param_input_stream_V_keep_V, __xlx_apatb_param_input_stream_V_strb_V, __xlx_apatb_param_input_stream_V_last_V, __xlx_apatb_param_output_stream_V_data_V, __xlx_apatb_param_output_stream_V_keep_V, __xlx_apatb_param_output_stream_V_strb_V, __xlx_apatb_param_output_stream_V_last_V);
-    port6.buffer();
+    filter_kernel_hw_stub_wrapper(__xlx_apatb_param_image_width, __xlx_apatb_param_image_height, __xlx_apatb_param_kernel_factor, __xlx_apatb_param_kernel, __xlx_apatb_param_input_stream_V_data_V, __xlx_apatb_param_input_stream_V_keep_V, __xlx_apatb_param_input_stream_V_strb_V, __xlx_apatb_param_input_stream_V_last_V, __xlx_apatb_param_output_stream_V_data_V, __xlx_apatb_param_output_stream_V_keep_V, __xlx_apatb_param_output_stream_V_strb_V, __xlx_apatb_param_output_stream_V_last_V);
     port7.buffer();
     port8.buffer();
     port9.buffer();
-    dump(port2, tcl.AESL_transaction);
+    port10.buffer();
     dump(port3, tcl.AESL_transaction);
     dump(port4, tcl.AESL_transaction);
     dump(port5, tcl.AESL_transaction);
-    port2.doTCL(tcl);
+    dump(port6, tcl.AESL_transaction);
     port3.doTCL(tcl);
     port4.doTCL(tcl);
     port5.doTCL(tcl);
+    port6.doTCL(tcl);
     CodeState = DUMP_OUTPUTS;
-    dump(port6, tcl.AESL_transaction);
     dump(port7, tcl.AESL_transaction);
     dump(port8, tcl.AESL_transaction);
     dump(port9, tcl.AESL_transaction);
-    port6.doTCL(tcl);
+    dump(port10, tcl.AESL_transaction);
     port7.doTCL(tcl);
     port8.doTCL(tcl);
     port9.doTCL(tcl);
+    port10.doTCL(tcl);
     tcl.AESL_transaction++;
 #endif
   } catch (const hls::sim::SimException &e) {

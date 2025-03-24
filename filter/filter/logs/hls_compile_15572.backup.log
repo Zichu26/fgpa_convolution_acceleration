@@ -1,0 +1,108 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/cse_462/fgpa_convolution_acceleration/filter/filter 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=filter.cpp' from D:/cse_462/fgpa_convolution_acceleration/filter/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/cse_462/fgpa_convolution_acceleration/filter/filter.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=filter_kernel' from D:/cse_462/fgpa_convolution_acceleration/filter/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/cse_462/fgpa_convolution_acceleration/filter/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from D:/cse_462/fgpa_convolution_acceleration/filter/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/cse_462/fgpa_convolution_acceleration/filter/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.328 seconds; current allocated memory: 162.469 MB.
+INFO: [HLS 200-10] Analyzing design file 'filter.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.066 seconds; current allocated memory: 165.641 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 336 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 99 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 74 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 76 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 76 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 75 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 75 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 75 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 75 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 85 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 67 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 67 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 55 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 55 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 61 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 61 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/cse_462/fgpa_convolution_acceleration/filter/filter/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_139_8> at filter.cpp:139:27 
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.848 seconds; current allocated memory: 167.109 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 167.109 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.095 seconds; current allocated memory: 171.281 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 172.797 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 193.625 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_138_7'(filter.cpp:138:23) and 'VITIS_LOOP_139_8'(filter.cpp:139:27) in function 'filter_kernel' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_138_7' (filter.cpp:138:23) in function 'filter_kernel'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 197.172 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'filter_kernel' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'filter_kernel_Pipeline_VITIS_LOOP_138_7_VITIS_LOOP_139_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_138_7_VITIS_LOOP_139_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_138_7_VITIS_LOOP_139_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.245 seconds; current allocated memory: 200.582 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 201.660 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'filter_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.076 seconds; current allocated memory: 201.766 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 201.840 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'filter_kernel_Pipeline_VITIS_LOOP_138_7_VITIS_LOOP_139_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'filter_kernel_Pipeline_VITIS_LOOP_138_7_VITIS_LOOP_139_8' pipeline 'VITIS_LOOP_138_7_VITIS_LOOP_139_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_kernel_Pipeline_VITIS_LOOP_138_7_VITIS_LOOP_139_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.182 seconds; current allocated memory: 203.422 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'filter_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/image_width' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/image_height' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/kernel_factor' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/kernel' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/input_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/input_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/input_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/input_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/output_stream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/output_stream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/output_stream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_kernel/output_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'filter_kernel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'image_width', 'image_height', 'kernel_factor', 'kernel' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_31ns_62_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.398 seconds; current allocated memory: 205.488 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.376 seconds; current allocated memory: 209.125 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.609 seconds; current allocated memory: 213.117 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for filter_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for filter_kernel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 144.68 MHz
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 20.699 seconds; peak allocated memory: 213.387 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 25s

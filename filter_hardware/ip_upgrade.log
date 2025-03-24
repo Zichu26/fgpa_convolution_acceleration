@@ -1,0 +1,301 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar 24 04:08:20 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_filter_kernel_0_3 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114008840) to (Rev. 2114008867)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar 24 03:41:00 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_filter_kernel_0_3 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114008795) to (Rev. 2114008840)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar 24 02:55:30 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_filter_kernel_0_3 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114008775) to (Rev. 2114008795)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar 24 02:36:09 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_filter_kernel_0_3 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114008722) to (Rev. 2114008775)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar 24 01:42:47 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_filter_kernel_0_3 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114008692) to (Rev. 2114008722)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar 24 01:08:08 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_filter_kernel_0_2 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114008641) to (Rev. 2114008687)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_filter_kernel_0_2'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 6 differs from original width 7
+
+-Upgraded port 's_axi_control_AWADDR' width 6 differs from original width 7
+
+-Upgrade has added port 'kernel_address0'
+
+-Upgrade has added port 'kernel_address1'
+
+-Upgrade has added port 'kernel_ce0'
+
+-Upgrade has added port 'kernel_ce1'
+
+-Upgrade has added port 'kernel_d0'
+
+-Upgrade has added port 'kernel_d1'
+
+-Upgrade has added port 'kernel_q0'
+
+-Upgrade has added port 'kernel_q1'
+
+-Upgrade has added port 'kernel_we0'
+
+-Upgrade has added port 'kernel_we1'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar 24 00:22:02 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_filter_kernel_0_2 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114008594) to (Rev. 2114008641)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun Mar 23 23:34:55 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_filter_kernel_0_2 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114008580) to (Rev. 2114008594)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun Mar 23 23:20:58 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_filter_kernel_0_2 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114008469) to (Rev. 2114008580)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun Mar 23 21:30:00 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_filter_kernel_0_2 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114008442) to (Rev. 2114008469)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun Mar 23 21:02:37 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_filter_kernel_0_2 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114008416) to (Rev. 2114008442)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun Mar 23 20:36:52 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_filter_kernel_0_2 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114008364) to (Rev. 2114008416)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun Mar 23 19:10:55 2025
+| Host         : LAPTOP-D6BOEUU6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_filter_kernel_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_filter_kernel_0_1 (xilinx.com:hls:filter_kernel:1.0) from (Rev. 2114002804) to (Rev. 2114008327)
+

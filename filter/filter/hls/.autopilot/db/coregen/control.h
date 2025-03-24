@@ -17,26 +17,31 @@
 //        bit 0 - ap_done (Read/TOW)
 //        bit 1 - ap_ready (Read/TOW)
 //        others - reserved
-// 0x10 : Data signal of width
-//        bit 31~0 - width[31:0] (Read/Write)
+// 0x10 : Data signal of image_width
+//        bit 31~0 - image_width[31:0] (Read/Write)
 // 0x14 : reserved
-// 0x18 : Data signal of height
-//        bit 31~0 - height[31:0] (Read/Write)
+// 0x18 : Data signal of image_height
+//        bit 31~0 - image_height[31:0] (Read/Write)
 // 0x1c : reserved
+// 0x20 : Data signal of kernel_factor
+//        bit 31~0 - kernel_factor[31:0] (Read/Write)
+// 0x24 : reserved
 // 0x40 ~
 // 0x7f : Memory 'kernel' (9 * 32b)
 //        Word n : bit [31:0] - kernel[n]
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
-#define CONTROL_ADDR_AP_CTRL     0x00
-#define CONTROL_ADDR_GIE         0x04
-#define CONTROL_ADDR_IER         0x08
-#define CONTROL_ADDR_ISR         0x0c
-#define CONTROL_ADDR_WIDTH_DATA  0x10
-#define CONTROL_BITS_WIDTH_DATA  32
-#define CONTROL_ADDR_HEIGHT_DATA 0x18
-#define CONTROL_BITS_HEIGHT_DATA 32
-#define CONTROL_ADDR_KERNEL_BASE 0x40
-#define CONTROL_ADDR_KERNEL_HIGH 0x7f
-#define CONTROL_WIDTH_KERNEL     32
-#define CONTROL_DEPTH_KERNEL     9
+#define CONTROL_ADDR_AP_CTRL            0x00
+#define CONTROL_ADDR_GIE                0x04
+#define CONTROL_ADDR_IER                0x08
+#define CONTROL_ADDR_ISR                0x0c
+#define CONTROL_ADDR_IMAGE_WIDTH_DATA   0x10
+#define CONTROL_BITS_IMAGE_WIDTH_DATA   32
+#define CONTROL_ADDR_IMAGE_HEIGHT_DATA  0x18
+#define CONTROL_BITS_IMAGE_HEIGHT_DATA  32
+#define CONTROL_ADDR_KERNEL_FACTOR_DATA 0x20
+#define CONTROL_BITS_KERNEL_FACTOR_DATA 32
+#define CONTROL_ADDR_KERNEL_BASE        0x40
+#define CONTROL_ADDR_KERNEL_HIGH        0x7f
+#define CONTROL_WIDTH_KERNEL            32
+#define CONTROL_DEPTH_KERNEL            9

@@ -203,8 +203,8 @@
       "processing_system7_0": {
         "vlnv": "xilinx.com:ip:processing_system7:5.5",
         "ip_revision": "6",
-        "xci_name": "design_1_processing_system7_0_1",
-        "xci_path": "ip\\design_1_processing_system7_0_1\\design_1_processing_system7_0_1.xci",
+        "xci_name": "design_1_processing_system7_0_3",
+        "xci_path": "ip\\design_1_processing_system7_0_3\\design_1_processing_system7_0_3.xci",
         "inst_hier_path": "processing_system7_0",
         "parameters": {
           "PCW_ACT_APU_PERIPHERAL_FREQMHZ": {
@@ -1924,16 +1924,16 @@
       },
       "filter_kernel_0": {
         "vlnv": "xilinx.com:hls:filter_kernel:1.0",
-        "ip_revision": "2114002804",
-        "xci_name": "design_1_filter_kernel_0_1",
-        "xci_path": "ip\\design_1_filter_kernel_0_1\\design_1_filter_kernel_0_1.xci",
+        "ip_revision": "2114008867",
+        "xci_name": "design_1_filter_kernel_0_3",
+        "xci_path": "ip\\design_1_filter_kernel_0_3\\design_1_filter_kernel_0_3.xci",
         "inst_hier_path": "filter_kernel_0"
       },
       "axi_smc": {
         "vlnv": "xilinx.com:ip:smartconnect:1.0",
         "ip_revision": "25",
-        "xci_name": "design_1_axi_smc_1",
-        "xci_path": "ip\\design_1_axi_smc_1\\design_1_axi_smc_1.xci",
+        "xci_name": "design_1_axi_smc_3",
+        "xci_path": "ip\\design_1_axi_smc_3\\design_1_axi_smc_3.xci",
         "inst_hier_path": "axi_smc",
         "parameters": {
           "NUM_MI": {
@@ -2016,19 +2016,22 @@
       "rst_ps7_0_100M": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "ip_revision": "16",
-        "xci_name": "design_1_rst_ps7_0_100M_1",
-        "xci_path": "ip\\design_1_rst_ps7_0_100M_1\\design_1_rst_ps7_0_100M_1.xci",
+        "xci_name": "design_1_rst_ps7_0_100M_3",
+        "xci_path": "ip\\design_1_rst_ps7_0_100M_3\\design_1_rst_ps7_0_100M_3.xci",
         "inst_hier_path": "rst_ps7_0_100M"
       },
       "axi_dma_0": {
         "vlnv": "xilinx.com:ip:axi_dma:7.1",
         "ip_revision": "34",
-        "xci_name": "design_1_axi_dma_0_1",
-        "xci_path": "ip\\design_1_axi_dma_0_1\\design_1_axi_dma_0_1.xci",
+        "xci_name": "design_1_axi_dma_0_3",
+        "xci_path": "ip\\design_1_axi_dma_0_3\\design_1_axi_dma_0_3.xci",
         "inst_hier_path": "axi_dma_0",
         "parameters": {
           "c_include_sg": {
             "value": "0"
+          },
+          "c_sg_length_width": {
+            "value": "26"
           }
         },
         "interface_ports": {
@@ -2068,9 +2071,9 @@
       },
       "axi_mem_intercon": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
-        "xci_path": "ip\\design_1_axi_mem_intercon_1\\design_1_axi_mem_intercon_1.xci",
+        "xci_path": "ip\\design_1_axi_mem_intercon_3\\design_1_axi_mem_intercon_3.xci",
         "inst_hier_path": "axi_mem_intercon",
-        "xci_name": "design_1_axi_mem_intercon_1",
+        "xci_name": "design_1_axi_mem_intercon_3",
         "parameters": {
           "NUM_MI": {
             "value": "1"
@@ -2163,8 +2166,8 @@
           "xbar": {
             "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
             "ip_revision": "34",
-            "xci_name": "design_1_axi_mem_intercon_imp_xbar_1",
-            "xci_path": "ip\\design_1_axi_mem_intercon_imp_xbar_1\\design_1_axi_mem_intercon_imp_xbar_1.xci",
+            "xci_name": "design_1_axi_mem_intercon_imp_xbar_3",
+            "xci_path": "ip\\design_1_axi_mem_intercon_imp_xbar_3\\design_1_axi_mem_intercon_imp_xbar_3.xci",
             "inst_hier_path": "axi_mem_intercon/xbar",
             "parameters": {
               "NUM_MI": {
@@ -2245,8 +2248,8 @@
               "auto_us": {
                 "vlnv": "xilinx.com:ip:axi_dwidth_converter:2.1",
                 "ip_revision": "33",
-                "xci_name": "design_1_axi_mem_intercon_imp_auto_us_2",
-                "xci_path": "ip\\design_1_axi_mem_intercon_imp_auto_us_2\\design_1_axi_mem_intercon_imp_auto_us_2.xci",
+                "xci_name": "design_1_axi_mem_intercon_imp_auto_us_0",
+                "xci_path": "ip\\design_1_axi_mem_intercon_imp_auto_us_0\\design_1_axi_mem_intercon_imp_auto_us_0.xci",
                 "inst_hier_path": "axi_mem_intercon/s00_couplers/auto_us",
                 "parameters": {
                   "MI_DATA_WIDTH": {
@@ -2347,8 +2350,8 @@
               "auto_us": {
                 "vlnv": "xilinx.com:ip:axi_dwidth_converter:2.1",
                 "ip_revision": "33",
-                "xci_name": "design_1_axi_mem_intercon_imp_auto_us_3",
-                "xci_path": "ip\\design_1_axi_mem_intercon_imp_auto_us_3\\design_1_axi_mem_intercon_imp_auto_us_3.xci",
+                "xci_name": "design_1_axi_mem_intercon_imp_auto_us_1",
+                "xci_path": "ip\\design_1_axi_mem_intercon_imp_auto_us_1\\design_1_axi_mem_intercon_imp_auto_us_1.xci",
                 "inst_hier_path": "axi_mem_intercon/s01_couplers/auto_us",
                 "parameters": {
                   "MI_DATA_WIDTH": {
@@ -2449,8 +2452,8 @@
               "auto_pc": {
                 "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
                 "ip_revision": "33",
-                "xci_name": "design_1_axi_mem_intercon_imp_auto_pc_1",
-                "xci_path": "ip\\design_1_axi_mem_intercon_imp_auto_pc_1\\design_1_axi_mem_intercon_imp_auto_pc_1.xci",
+                "xci_name": "design_1_axi_mem_intercon_imp_auto_pc_0",
+                "xci_path": "ip\\design_1_axi_mem_intercon_imp_auto_pc_0\\design_1_axi_mem_intercon_imp_auto_pc_0.xci",
                 "inst_hier_path": "axi_mem_intercon/m00_couplers/auto_pc",
                 "parameters": {
                   "MI_PROTOCOL": {
@@ -2635,7 +2638,6 @@
           "processing_system7_0/FCLK_CLK0",
           "processing_system7_0/M_AXI_GP0_ACLK",
           "axi_smc/aclk",
-          "filter_kernel_0/ap_clk",
           "rst_ps7_0_100M/slowest_sync_clk",
           "axi_dma_0/s_axi_lite_aclk",
           "axi_dma_0/m_axi_mm2s_aclk",
@@ -2644,7 +2646,8 @@
           "axi_mem_intercon/M00_ACLK",
           "axi_mem_intercon/ACLK",
           "axi_dma_0/m_axi_s2mm_aclk",
-          "axi_mem_intercon/S01_ACLK"
+          "axi_mem_intercon/S01_ACLK",
+          "filter_kernel_0/ap_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2656,13 +2659,13 @@
       "rst_ps7_0_100M_peripheral_aresetn": {
         "ports": [
           "rst_ps7_0_100M/peripheral_aresetn",
-          "filter_kernel_0/ap_rst_n",
           "axi_smc/aresetn",
           "axi_dma_0/axi_resetn",
           "axi_mem_intercon/S00_ARESETN",
           "axi_mem_intercon/M00_ARESETN",
           "axi_mem_intercon/ARESETN",
-          "axi_mem_intercon/S01_ARESETN"
+          "axi_mem_intercon/S01_ARESETN",
+          "filter_kernel_0/ap_rst_n"
         ]
       }
     },

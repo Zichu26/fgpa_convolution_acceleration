@@ -4,15 +4,15 @@
     "calls": "",
     "file": "filter.cpp",
     "fileloc": 84,
-    "instructions": 925,
+    "instructions": 978,
     "loads": {
-      "L": 73,
+      "L": 75,
       "T": 9
     },
     "name": "filter_kernel",
     "stores": {
-      "L": 19
+      "L": 22
     },
-    "total_instructions": 925
+    "total_instructions": 978
   }
 }

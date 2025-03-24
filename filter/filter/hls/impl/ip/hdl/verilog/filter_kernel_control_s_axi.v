@@ -32,8 +32,9 @@ module filter_kernel_control_s_axi
     output wire                          RVALID,
     input  wire                          RREADY,
     output wire                          interrupt,
-    output wire [31:0]                   width,
-    output wire [31:0]                   height,
+    output wire [31:0]                   image_width,
+    output wire [31:0]                   image_height,
+    output wire [31:0]                   kernel_factor,
     input  wire [3:0]                    kernel_address0,
     input  wire                          kernel_ce0,
     output wire [31:0]                   kernel_q0,
@@ -64,12 +65,15 @@ module filter_kernel_control_s_axi
 //        bit 0 - ap_done (Read/TOW)
 //        bit 1 - ap_ready (Read/TOW)
 //        others - reserved
-// 0x10 : Data signal of width
-//        bit 31~0 - width[31:0] (Read/Write)
+// 0x10 : Data signal of image_width
+//        bit 31~0 - image_width[31:0] (Read/Write)
 // 0x14 : reserved
-// 0x18 : Data signal of height
-//        bit 31~0 - height[31:0] (Read/Write)
+// 0x18 : Data signal of image_height
+//        bit 31~0 - image_height[31:0] (Read/Write)
 // 0x1c : reserved
+// 0x20 : Data signal of kernel_factor
+//        bit 31~0 - kernel_factor[31:0] (Read/Write)
+// 0x24 : reserved
 // 0x40 ~
 // 0x7f : Memory 'kernel' (9 * 32b)
 //        Word n : bit [31:0] - kernel[n]
@@ -77,23 +81,25 @@ module filter_kernel_control_s_axi
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL       = 7'h00,
-    ADDR_GIE           = 7'h04,
-    ADDR_IER           = 7'h08,
-    ADDR_ISR           = 7'h0c,
-    ADDR_WIDTH_DATA_0  = 7'h10,
-    ADDR_WIDTH_CTRL    = 7'h14,
-    ADDR_HEIGHT_DATA_0 = 7'h18,
-    ADDR_HEIGHT_CTRL   = 7'h1c,
-    ADDR_KERNEL_BASE   = 7'h40,
-    ADDR_KERNEL_HIGH   = 7'h7f,
-    WRIDLE             = 2'd0,
-    WRDATA             = 2'd1,
-    WRRESP             = 2'd2,
-    WRRESET            = 2'd3,
-    RDIDLE             = 2'd0,
-    RDDATA             = 2'd1,
-    RDRESET            = 2'd2,
+    ADDR_AP_CTRL              = 7'h00,
+    ADDR_GIE                  = 7'h04,
+    ADDR_IER                  = 7'h08,
+    ADDR_ISR                  = 7'h0c,
+    ADDR_IMAGE_WIDTH_DATA_0   = 7'h10,
+    ADDR_IMAGE_WIDTH_CTRL     = 7'h14,
+    ADDR_IMAGE_HEIGHT_DATA_0  = 7'h18,
+    ADDR_IMAGE_HEIGHT_CTRL    = 7'h1c,
+    ADDR_KERNEL_FACTOR_DATA_0 = 7'h20,
+    ADDR_KERNEL_FACTOR_CTRL   = 7'h24,
+    ADDR_KERNEL_BASE          = 7'h40,
+    ADDR_KERNEL_HIGH          = 7'h7f,
+    WRIDLE                    = 2'd0,
+    WRDATA                    = 2'd1,
+    WRRESP                    = 2'd2,
+    WRRESET                   = 2'd3,
+    RDIDLE                    = 2'd0,
+    RDDATA                    = 2'd1,
+    RDRESET                   = 2'd2,
     ADDR_BITS                = 7;
 
 //------------------------Local signal-------------------
@@ -123,8 +129,9 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
-    reg  [31:0]                   int_width = 'b0;
-    reg  [31:0]                   int_height = 'b0;
+    reg  [31:0]                   int_image_width = 'b0;
+    reg  [31:0]                   int_image_height = 'b0;
+    reg  [31:0]                   int_kernel_factor = 'b0;
     // memory signals
     wire [3:0]                    int_kernel_address0;
     wire                          int_kernel_ce0;
@@ -266,11 +273,14 @@ always @(posedge ACLK) begin
                 ADDR_ISR: begin
                     rdata <= int_isr;
                 end
-                ADDR_WIDTH_DATA_0: begin
-                    rdata <= int_width[31:0];
+                ADDR_IMAGE_WIDTH_DATA_0: begin
+                    rdata <= int_image_width[31:0];
                 end
-                ADDR_HEIGHT_DATA_0: begin
-                    rdata <= int_height[31:0];
+                ADDR_IMAGE_HEIGHT_DATA_0: begin
+                    rdata <= int_image_height[31:0];
+                end
+                ADDR_KERNEL_FACTOR_DATA_0: begin
+                    rdata <= int_kernel_factor[31:0];
                 end
             endcase
         end
@@ -287,8 +297,9 @@ assign ap_start          = int_ap_start;
 assign task_ap_done      = (ap_done && !auto_restart_status) || auto_restart_done;
 assign task_ap_ready     = ap_ready && !int_auto_restart;
 assign auto_restart_done = auto_restart_status && (ap_idle && !int_ap_idle);
-assign width             = int_width;
-assign height            = int_height;
+assign image_width       = int_image_width;
+assign image_height      = int_image_height;
+assign kernel_factor     = int_kernel_factor;
 // int_interrupt
 always @(posedge ACLK) begin
     if (ARESET)
@@ -421,23 +432,33 @@ always @(posedge ACLK) begin
     end
 end
 
-// int_width[31:0]
+// int_image_width[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_width[31:0] <= 0;
+        int_image_width[31:0] <= 0;
     else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_WIDTH_DATA_0)
-            int_width[31:0] <= (WDATA[31:0] & wmask) | (int_width[31:0] & ~wmask);
+        if (w_hs && waddr == ADDR_IMAGE_WIDTH_DATA_0)
+            int_image_width[31:0] <= (WDATA[31:0] & wmask) | (int_image_width[31:0] & ~wmask);
     end
 end
 
-// int_height[31:0]
+// int_image_height[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_height[31:0] <= 0;
+        int_image_height[31:0] <= 0;
     else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_HEIGHT_DATA_0)
-            int_height[31:0] <= (WDATA[31:0] & wmask) | (int_height[31:0] & ~wmask);
+        if (w_hs && waddr == ADDR_IMAGE_HEIGHT_DATA_0)
+            int_image_height[31:0] <= (WDATA[31:0] & wmask) | (int_image_height[31:0] & ~wmask);
+    end
+end
+
+// int_kernel_factor[31:0]
+always @(posedge ACLK) begin
+    if (ARESET)
+        int_kernel_factor[31:0] <= 0;
+    else if (ACLK_EN) begin
+        if (w_hs && waddr == ADDR_KERNEL_FACTOR_DATA_0)
+            int_kernel_factor[31:0] <= (WDATA[31:0] & wmask) | (int_kernel_factor[31:0] & ~wmask);
     end
 end
 

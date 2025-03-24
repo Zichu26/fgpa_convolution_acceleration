@@ -17,10 +17,10 @@ target triple = "fpga64-xilinx-none"
 %"struct.hls::axis_disabled_signal" = type { i8 }
 
 ; Function Attrs: noinline willreturn
-define void @apatb_filter_kernel_ir(i32 %width, i32 %height, [3 x float]* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="3" %kernel, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias nonnull dereferenceable(12) %input_stream, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias nonnull dereferenceable(12) %output_stream) local_unnamed_addr #0 {
+define void @apatb_filter_kernel_ir(i32 %image_width, i32 %image_height, i32 %kernel_factor, [3 x i32]* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="3" %kernel, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias nonnull dereferenceable(12) %input_stream, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias nonnull dereferenceable(12) %output_stream) local_unnamed_addr #0 {
 entry:
-  %0 = bitcast [3 x float]* %kernel to [3 x [3 x float]]*
-  %kernel_copy = alloca [3 x [3 x float]], align 512
+  %0 = bitcast [3 x i32]* %kernel to [3 x [3 x i32]]*
+  %kernel_copy = alloca [3 x [3 x i32]], align 512
   %input_stream_copy.data = alloca i32, align 512
   %input_stream_copy.keep = alloca i4, align 512
   %input_stream_copy.strb = alloca i4, align 512
@@ -29,31 +29,31 @@ entry:
   %output_stream_copy.keep = alloca i4, align 512
   %output_stream_copy.strb = alloca i4, align 512
   %output_stream_copy.last = alloca i1, align 512
-  call fastcc void @copy_in([3 x [3 x float]]* nonnull %0, [3 x [3 x float]]* nonnull align 512 %kernel_copy, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* nonnull %input_stream, i32* nonnull align 512 %input_stream_copy.data, i4* nonnull align 512 %input_stream_copy.keep, i4* nonnull align 512 %input_stream_copy.strb, i1* nonnull align 512 %input_stream_copy.last, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* nonnull %output_stream, i32* nonnull align 512 %output_stream_copy.data, i4* nonnull align 512 %output_stream_copy.keep, i4* nonnull align 512 %output_stream_copy.strb, i1* nonnull align 512 %output_stream_copy.last)
-  call void @apatb_filter_kernel_hw(i32 %width, i32 %height, [3 x [3 x float]]* %kernel_copy, i32* %input_stream_copy.data, i4* %input_stream_copy.keep, i4* %input_stream_copy.strb, i1* %input_stream_copy.last, i32* %output_stream_copy.data, i4* %output_stream_copy.keep, i4* %output_stream_copy.strb, i1* %output_stream_copy.last)
-  call void @copy_back([3 x [3 x float]]* %0, [3 x [3 x float]]* %kernel_copy, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %input_stream, i32* %input_stream_copy.data, i4* %input_stream_copy.keep, i4* %input_stream_copy.strb, i1* %input_stream_copy.last, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %output_stream, i32* %output_stream_copy.data, i4* %output_stream_copy.keep, i4* %output_stream_copy.strb, i1* %output_stream_copy.last)
+  call fastcc void @copy_in([3 x [3 x i32]]* nonnull %0, [3 x [3 x i32]]* nonnull align 512 %kernel_copy, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* nonnull %input_stream, i32* nonnull align 512 %input_stream_copy.data, i4* nonnull align 512 %input_stream_copy.keep, i4* nonnull align 512 %input_stream_copy.strb, i1* nonnull align 512 %input_stream_copy.last, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* nonnull %output_stream, i32* nonnull align 512 %output_stream_copy.data, i4* nonnull align 512 %output_stream_copy.keep, i4* nonnull align 512 %output_stream_copy.strb, i1* nonnull align 512 %output_stream_copy.last)
+  call void @apatb_filter_kernel_hw(i32 %image_width, i32 %image_height, i32 %kernel_factor, [3 x [3 x i32]]* %kernel_copy, i32* %input_stream_copy.data, i4* %input_stream_copy.keep, i4* %input_stream_copy.strb, i1* %input_stream_copy.last, i32* %output_stream_copy.data, i4* %output_stream_copy.keep, i4* %output_stream_copy.strb, i1* %output_stream_copy.last)
+  call void @copy_back([3 x [3 x i32]]* %0, [3 x [3 x i32]]* %kernel_copy, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %input_stream, i32* %input_stream_copy.data, i4* %input_stream_copy.keep, i4* %input_stream_copy.strb, i1* %input_stream_copy.last, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %output_stream, i32* %output_stream_copy.data, i4* %output_stream_copy.keep, i4* %output_stream_copy.strb, i1* %output_stream_copy.last)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @copy_in([3 x [3 x float]]* noalias readonly, [3 x [3 x float]]* noalias align 512, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias, i32* noalias align 512 "unpacked"="3.0" %_V_data_V, i4* noalias align 512 "unpacked"="3.1" %_V_keep_V, i4* noalias align 512 "unpacked"="3.2" %_V_strb_V, i1* noalias align 512 "unpacked"="3.3" %_V_last_V, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias, i32* noalias align 512 "unpacked"="5.0" %_V_data_V1, i4* noalias align 512 "unpacked"="5.1" %_V_keep_V2, i4* noalias align 512 "unpacked"="5.2" %_V_strb_V3, i1* noalias align 512 "unpacked"="5.3" %_V_last_V4) unnamed_addr #1 {
+define internal fastcc void @copy_in([3 x [3 x i32]]* noalias readonly, [3 x [3 x i32]]* noalias align 512, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias, i32* noalias align 512 "unpacked"="3.0" %_V_data_V, i4* noalias align 512 "unpacked"="3.1" %_V_keep_V, i4* noalias align 512 "unpacked"="3.2" %_V_strb_V, i1* noalias align 512 "unpacked"="3.3" %_V_last_V, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias, i32* noalias align 512 "unpacked"="5.0" %_V_data_V1, i4* noalias align 512 "unpacked"="5.1" %_V_keep_V2, i4* noalias align 512 "unpacked"="5.2" %_V_strb_V3, i1* noalias align 512 "unpacked"="5.3" %_V_last_V4) unnamed_addr #1 {
 entry:
-  call fastcc void @onebyonecpy_hls.p0a3a3f32([3 x [3 x float]]* align 512 %1, [3 x [3 x float]]* %0)
+  call fastcc void @onebyonecpy_hls.p0a3a3i32([3 x [3 x i32]]* align 512 %1, [3 x [3 x i32]]* %0)
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>.19"(i32* align 512 %_V_data_V, i4* align 512 %_V_keep_V, i4* align 512 %_V_strb_V, i1* align 512 %_V_last_V, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %2)
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>.19"(i32* align 512 %_V_data_V1, i4* align 512 %_V_keep_V2, i4* align 512 %_V_strb_V3, i1* align 512 %_V_last_V4, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %3)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @onebyonecpy_hls.p0a3a3f32([3 x [3 x float]]* noalias align 512 %dst, [3 x [3 x float]]* noalias readonly %src) unnamed_addr #2 {
+define internal fastcc void @onebyonecpy_hls.p0a3a3i32([3 x [3 x i32]]* noalias align 512 %dst, [3 x [3 x i32]]* noalias readonly %src) unnamed_addr #2 {
 entry:
-  %0 = icmp eq [3 x [3 x float]]* %dst, null
-  %1 = icmp eq [3 x [3 x float]]* %src, null
+  %0 = icmp eq [3 x [3 x i32]]* %dst, null
+  %1 = icmp eq [3 x [3 x i32]]* %src, null
   %2 = or i1 %0, %1
   br i1 %2, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call void @arraycpy_hls.p0a3a3f32([3 x [3 x float]]* nonnull %dst, [3 x [3 x float]]* nonnull %src, i64 3)
+  call void @arraycpy_hls.p0a3a3i32([3 x [3 x i32]]* nonnull %dst, [3 x [3 x i32]]* nonnull %src, i64 3)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
@@ -61,10 +61,10 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define void @arraycpy_hls.p0a3a3f32([3 x [3 x float]]* %dst, [3 x [3 x float]]* readonly %src, i64 %num) local_unnamed_addr #3 {
+define void @arraycpy_hls.p0a3a3i32([3 x [3 x i32]]* %dst, [3 x [3 x i32]]* readonly %src, i64 %num) local_unnamed_addr #3 {
 entry:
-  %0 = icmp eq [3 x [3 x float]]* %src, null
-  %1 = icmp eq [3 x [3 x float]]* %dst, null
+  %0 = icmp eq [3 x [3 x i32]]* %src, null
+  %1 = icmp eq [3 x [3 x i32]]* %dst, null
   %2 = or i1 %1, %0
   br i1 %2, label %ret, label %copy
 
@@ -77,9 +77,9 @@ for.loop.lr.ph:                                   ; preds = %copy
 
 for.loop:                                         ; preds = %for.loop, %for.loop.lr.ph
   %for.loop.idx2 = phi i64 [ 0, %for.loop.lr.ph ], [ %for.loop.idx.next, %for.loop ]
-  %dst.addr = getelementptr [3 x [3 x float]], [3 x [3 x float]]* %dst, i64 0, i64 %for.loop.idx2
-  %src.addr = getelementptr [3 x [3 x float]], [3 x [3 x float]]* %src, i64 0, i64 %for.loop.idx2
-  call void @arraycpy_hls.p0a3f32([3 x float]* %dst.addr, [3 x float]* %src.addr, i64 3)
+  %dst.addr = getelementptr [3 x [3 x i32]], [3 x [3 x i32]]* %dst, i64 0, i64 %for.loop.idx2
+  %src.addr = getelementptr [3 x [3 x i32]], [3 x [3 x i32]]* %src, i64 0, i64 %for.loop.idx2
+  call void @arraycpy_hls.p0a3i32([3 x i32]* %dst.addr, [3 x i32]* %src.addr, i64 3)
   %for.loop.idx.next = add nuw nsw i64 %for.loop.idx2, 1
   %exitcond = icmp ne i64 %for.loop.idx.next, %num
   br i1 %exitcond, label %for.loop, label %copy.split
@@ -92,10 +92,10 @@ ret:                                              ; preds = %copy.split, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define void @arraycpy_hls.p0a3f32([3 x float]* %dst, [3 x float]* readonly %src, i64 %num) local_unnamed_addr #3 {
+define void @arraycpy_hls.p0a3i32([3 x i32]* %dst, [3 x i32]* readonly %src, i64 %num) local_unnamed_addr #3 {
 entry:
-  %0 = icmp eq [3 x float]* %src, null
-  %1 = icmp eq [3 x float]* %dst, null
+  %0 = icmp eq [3 x i32]* %src, null
+  %1 = icmp eq [3 x i32]* %dst, null
   %2 = or i1 %1, %0
   br i1 %2, label %ret, label %copy
 
@@ -108,10 +108,10 @@ for.loop.lr.ph:                                   ; preds = %copy
 
 for.loop:                                         ; preds = %for.loop, %for.loop.lr.ph
   %for.loop.idx2 = phi i64 [ 0, %for.loop.lr.ph ], [ %for.loop.idx.next, %for.loop ]
-  %dst.addr = getelementptr [3 x float], [3 x float]* %dst, i64 0, i64 %for.loop.idx2
-  %src.addr = getelementptr [3 x float], [3 x float]* %src, i64 0, i64 %for.loop.idx2
-  %3 = load float, float* %src.addr, align 4
-  store float %3, float* %dst.addr, align 4
+  %dst.addr = getelementptr [3 x i32], [3 x i32]* %dst, i64 0, i64 %for.loop.idx2
+  %src.addr = getelementptr [3 x i32], [3 x i32]* %src, i64 0, i64 %for.loop.idx2
+  %3 = load i32, i32* %src.addr, align 4
+  store i32 %3, i32* %dst.addr, align 4
   %for.loop.idx.next = add nuw nsw i64 %for.loop.idx2, 1
   %exitcond = icmp ne i64 %for.loop.idx.next, %num
   br i1 %exitcond, label %for.loop, label %copy.split
@@ -124,9 +124,9 @@ ret:                                              ; preds = %copy.split, %entry
 }
 
 ; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @copy_out([3 x [3 x float]]* noalias, [3 x [3 x float]]* noalias readonly align 512, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias, i32* noalias align 512 "unpacked"="3.0" %_V_data_V, i4* noalias align 512 "unpacked"="3.1" %_V_keep_V, i4* noalias align 512 "unpacked"="3.2" %_V_strb_V, i1* noalias align 512 "unpacked"="3.3" %_V_last_V, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias, i32* noalias align 512 "unpacked"="5.0" %_V_data_V1, i4* noalias align 512 "unpacked"="5.1" %_V_keep_V2, i4* noalias align 512 "unpacked"="5.2" %_V_strb_V3, i1* noalias align 512 "unpacked"="5.3" %_V_last_V4) unnamed_addr #4 {
+define internal fastcc void @copy_out([3 x [3 x i32]]* noalias, [3 x [3 x i32]]* noalias readonly align 512, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias, i32* noalias align 512 "unpacked"="3.0" %_V_data_V, i4* noalias align 512 "unpacked"="3.1" %_V_keep_V, i4* noalias align 512 "unpacked"="3.2" %_V_strb_V, i1* noalias align 512 "unpacked"="3.3" %_V_last_V, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias, i32* noalias align 512 "unpacked"="5.0" %_V_data_V1, i4* noalias align 512 "unpacked"="5.1" %_V_keep_V2, i4* noalias align 512 "unpacked"="5.2" %_V_strb_V3, i1* noalias align 512 "unpacked"="5.3" %_V_last_V4) unnamed_addr #4 {
 entry:
-  call fastcc void @onebyonecpy_hls.p0a3a3f32([3 x [3 x float]]* %0, [3 x [3 x float]]* align 512 %1)
+  call fastcc void @onebyonecpy_hls.p0a3a3i32([3 x [3 x i32]]* %0, [3 x [3 x i32]]* align 512 %1)
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"(%"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %2, i32* align 512 %_V_data_V, i4* align 512 %_V_keep_V, i4* align 512 %_V_strb_V, i1* align 512 %_V_last_V)
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"(%"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %3, i32* align 512 %_V_data_V1, i4* align 512 %_V_keep_V2, i4* align 512 %_V_strb_V3, i1* align 512 %_V_last_V4)
   ret void
@@ -262,30 +262,30 @@ declare i8* @malloc(i64)
 
 declare void @free(i8*)
 
-declare void @apatb_filter_kernel_hw(i32, i32, [3 x [3 x float]]*, i32*, i4*, i4*, i1*, i32*, i4*, i4*, i1*)
+declare void @apatb_filter_kernel_hw(i32, i32, i32, [3 x [3 x i32]]*, i32*, i4*, i4*, i1*, i32*, i4*, i4*, i1*)
 
 ; Function Attrs: argmemonly noinline willreturn
-define internal fastcc void @copy_back([3 x [3 x float]]* noalias, [3 x [3 x float]]* noalias readonly align 512, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias, i32* noalias align 512 "unpacked"="3.0" %_V_data_V, i4* noalias align 512 "unpacked"="3.1" %_V_keep_V, i4* noalias align 512 "unpacked"="3.2" %_V_strb_V, i1* noalias align 512 "unpacked"="3.3" %_V_last_V, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias, i32* noalias align 512 "unpacked"="5.0" %_V_data_V1, i4* noalias align 512 "unpacked"="5.1" %_V_keep_V2, i4* noalias align 512 "unpacked"="5.2" %_V_strb_V3, i1* noalias align 512 "unpacked"="5.3" %_V_last_V4) unnamed_addr #4 {
+define internal fastcc void @copy_back([3 x [3 x i32]]* noalias, [3 x [3 x i32]]* noalias readonly align 512, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias, i32* noalias align 512 "unpacked"="3.0" %_V_data_V, i4* noalias align 512 "unpacked"="3.1" %_V_keep_V, i4* noalias align 512 "unpacked"="3.2" %_V_strb_V, i1* noalias align 512 "unpacked"="3.3" %_V_last_V, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias, i32* noalias align 512 "unpacked"="5.0" %_V_data_V1, i4* noalias align 512 "unpacked"="5.1" %_V_keep_V2, i4* noalias align 512 "unpacked"="5.2" %_V_strb_V3, i1* noalias align 512 "unpacked"="5.3" %_V_last_V4) unnamed_addr #4 {
 entry:
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"(%"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %2, i32* align 512 %_V_data_V, i4* align 512 %_V_keep_V, i4* align 512 %_V_strb_V, i1* align 512 %_V_last_V)
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"(%"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %3, i32* align 512 %_V_data_V1, i4* align 512 %_V_keep_V2, i4* align 512 %_V_strb_V3, i1* align 512 %_V_last_V4)
   ret void
 }
 
-declare void @filter_kernel_hw_stub(i32, i32, [3 x float]* noalias nocapture nonnull readonly, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias nonnull, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias nonnull)
+declare void @filter_kernel_hw_stub(i32, i32, i32, [3 x i32]* noalias nocapture nonnull readonly, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias nonnull, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* noalias nonnull)
 
-define void @filter_kernel_hw_stub_wrapper(i32, i32, [3 x [3 x float]]*, i32*, i4*, i4*, i1*, i32*, i4*, i4*, i1*) #7 {
+define void @filter_kernel_hw_stub_wrapper(i32, i32, i32, [3 x [3 x i32]]*, i32*, i4*, i4*, i1*, i32*, i4*, i4*, i1*) #7 {
 entry:
-  %11 = call i8* @malloc(i64 12)
-  %12 = bitcast i8* %11 to %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"*
-  %13 = call i8* @malloc(i64 12)
-  %14 = bitcast i8* %13 to %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"*
-  call void @copy_out([3 x [3 x float]]* null, [3 x [3 x float]]* %2, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %12, i32* %3, i4* %4, i4* %5, i1* %6, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %14, i32* %7, i4* %8, i4* %9, i1* %10)
-  %15 = bitcast [3 x [3 x float]]* %2 to [3 x float]*
-  call void @filter_kernel_hw_stub(i32 %0, i32 %1, [3 x float]* %15, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %12, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %14)
-  call void @copy_in([3 x [3 x float]]* null, [3 x [3 x float]]* %2, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %12, i32* %3, i4* %4, i4* %5, i1* %6, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %14, i32* %7, i4* %8, i4* %9, i1* %10)
-  call void @free(i8* %11)
-  call void @free(i8* %13)
+  %12 = call i8* @malloc(i64 12)
+  %13 = bitcast i8* %12 to %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"*
+  %14 = call i8* @malloc(i64 12)
+  %15 = bitcast i8* %14 to %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"*
+  call void @copy_out([3 x [3 x i32]]* null, [3 x [3 x i32]]* %3, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %13, i32* %4, i4* %5, i4* %6, i1* %7, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %15, i32* %8, i4* %9, i4* %10, i1* %11)
+  %16 = bitcast [3 x [3 x i32]]* %3 to [3 x i32]*
+  call void @filter_kernel_hw_stub(i32 %0, i32 %1, i32 %2, [3 x i32]* %16, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %13, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %15)
+  call void @copy_in([3 x [3 x i32]]* null, [3 x [3 x i32]]* %3, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %13, i32* %4, i4* %5, i4* %6, i1* %7, %"class.hls::stream<hls::axis<ap_int<32>, 0, 0, 0, '8', false>, 0>"* %15, i32* %8, i4* %9, i4* %10, i1* %11)
+  call void @free(i8* %12)
+  call void @free(i8* %14)
   ret void
 }
 

@@ -99,10 +99,12 @@ u32 XFilter_kernel_IsReady(XFilter_kernel *InstancePtr);
 void XFilter_kernel_EnableAutoRestart(XFilter_kernel *InstancePtr);
 void XFilter_kernel_DisableAutoRestart(XFilter_kernel *InstancePtr);
 
-void XFilter_kernel_Set_width(XFilter_kernel *InstancePtr, u32 Data);
-u32 XFilter_kernel_Get_width(XFilter_kernel *InstancePtr);
-void XFilter_kernel_Set_height(XFilter_kernel *InstancePtr, u32 Data);
-u32 XFilter_kernel_Get_height(XFilter_kernel *InstancePtr);
+void XFilter_kernel_Set_image_width(XFilter_kernel *InstancePtr, u32 Data);
+u32 XFilter_kernel_Get_image_width(XFilter_kernel *InstancePtr);
+void XFilter_kernel_Set_image_height(XFilter_kernel *InstancePtr, u32 Data);
+u32 XFilter_kernel_Get_image_height(XFilter_kernel *InstancePtr);
+void XFilter_kernel_Set_kernel_factor(XFilter_kernel *InstancePtr, u32 Data);
+u32 XFilter_kernel_Get_kernel_factor(XFilter_kernel *InstancePtr);
 u32 XFilter_kernel_Get_kernel_BaseAddress(XFilter_kernel *InstancePtr);
 u32 XFilter_kernel_Get_kernel_HighAddress(XFilter_kernel *InstancePtr);
 u32 XFilter_kernel_Get_kernel_TotalBytes(XFilter_kernel *InstancePtr);

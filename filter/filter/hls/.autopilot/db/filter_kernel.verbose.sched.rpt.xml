@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'filter_kernel'" level="0">
-<item name = "Date">Wed Mar 19 23:02:46 2025
+<item name = "Date">Mon Mar 24 04:06:39 2025
 </item>
 <item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
 <item name = "Project">filter</item>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_136_7">?, ?, ?, -, -, ?, no</column>
+<column name="- VITIS_LOOP_138_7">?, ?, ?, -, -, ?, no</column>
 </table>
 </item>
 </section>

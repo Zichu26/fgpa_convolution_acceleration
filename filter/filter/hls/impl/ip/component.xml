@@ -660,9 +660,9 @@
           </spirit:field>
         </spirit:register>
         <spirit:register>
-          <spirit:name>width</spirit:name>
-          <spirit:displayName>width</spirit:displayName>
-          <spirit:description>Data signal of width</spirit:description>
+          <spirit:name>image_width</spirit:name>
+          <spirit:displayName>image_width</spirit:displayName>
+          <spirit:description>Data signal of image_width</spirit:description>
           <spirit:addressOffset>16</spirit:addressOffset>
           <spirit:size spirit:format="long">32</spirit:size>
           <spirit:access>write-only</spirit:access>
@@ -670,8 +670,8 @@
             <spirit:value spirit:format="long">0</spirit:value>
           </spirit:reset>
           <spirit:field>
-            <spirit:name>width</spirit:name>
-            <spirit:description>Bit 31 to 0 of width</spirit:description>
+            <spirit:name>image_width</spirit:name>
+            <spirit:description>Bit 31 to 0 of image_width</spirit:description>
             <spirit:bitOffset>0</spirit:bitOffset>
             <spirit:bitWidth spirit:format="long">32</spirit:bitWidth>
             <spirit:access>write-only</spirit:access>
@@ -683,9 +683,9 @@
           </spirit:field>
         </spirit:register>
         <spirit:register>
-          <spirit:name>height</spirit:name>
-          <spirit:displayName>height</spirit:displayName>
-          <spirit:description>Data signal of height</spirit:description>
+          <spirit:name>image_height</spirit:name>
+          <spirit:displayName>image_height</spirit:displayName>
+          <spirit:description>Data signal of image_height</spirit:description>
           <spirit:addressOffset>24</spirit:addressOffset>
           <spirit:size spirit:format="long">32</spirit:size>
           <spirit:access>write-only</spirit:access>
@@ -693,8 +693,31 @@
             <spirit:value spirit:format="long">0</spirit:value>
           </spirit:reset>
           <spirit:field>
-            <spirit:name>height</spirit:name>
-            <spirit:description>Bit 31 to 0 of height</spirit:description>
+            <spirit:name>image_height</spirit:name>
+            <spirit:description>Bit 31 to 0 of image_height</spirit:description>
+            <spirit:bitOffset>0</spirit:bitOffset>
+            <spirit:bitWidth spirit:format="long">32</spirit:bitWidth>
+            <spirit:access>write-only</spirit:access>
+            <spirit:writeValueConstraint>
+              <spirit:minimum>0</spirit:minimum>
+              <spirit:maximum>0</spirit:maximum>
+            </spirit:writeValueConstraint>
+            <spirit:testable spirit:testConstraint="unconstrained">false</spirit:testable>
+          </spirit:field>
+        </spirit:register>
+        <spirit:register>
+          <spirit:name>kernel_factor</spirit:name>
+          <spirit:displayName>kernel_factor</spirit:displayName>
+          <spirit:description>Data signal of kernel_factor</spirit:description>
+          <spirit:addressOffset>32</spirit:addressOffset>
+          <spirit:size spirit:format="long">32</spirit:size>
+          <spirit:access>write-only</spirit:access>
+          <spirit:reset>
+            <spirit:value spirit:format="long">0</spirit:value>
+          </spirit:reset>
+          <spirit:field>
+            <spirit:name>kernel_factor</spirit:name>
+            <spirit:description>Bit 31 to 0 of kernel_factor</spirit:description>
             <spirit:bitOffset>0</spirit:bitOffset>
             <spirit:bitWidth spirit:format="long">32</spirit:bitWidth>
             <spirit:access>write-only</spirit:access>
@@ -736,7 +759,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>dd88ccff</spirit:value>
+            <spirit:value>81af503e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -755,7 +778,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1fcdda41</spirit:value>
+            <spirit:value>b31e2c19</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -774,7 +797,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>10923fe4</spirit:value>
+            <spirit:value>cb97809a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -793,7 +816,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>53f9958f</spirit:value>
+            <spirit:value>57779dfa</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -807,7 +830,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2d585993</spirit:value>
+            <spirit:value>c383df0a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1377,7 +1400,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/ip/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/ip/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/ip/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1397,19 +1428,23 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_117_2.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_117_21.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_117_22.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_21.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_137_8.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_22.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_139_8.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1442,6 +1477,10 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/filter_kernel_regslice_both.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/filter_kernel_sitofp_32ns_32_6_no_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1492,7 +1531,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/ip/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/ip/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/ip/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1517,22 +1566,27 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_117_2.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_117_21.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_117_22.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_21.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_137_8.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_22.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_139_8.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1572,6 +1626,11 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/filter_kernel_regslice_both.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/filter_kernel_sitofp_32ns_32_6_no_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1632,7 +1691,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/ip/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/ip/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/ip/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1652,19 +1719,23 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_117_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_117_21.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_117_22.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_21.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_137_8.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_22.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_139_8.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1681,6 +1752,10 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/filter_kernel_regslice_both.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/filter_kernel_sitofp_32ns_32_6_no_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1706,7 +1781,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/filter_kernel.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_add713d3</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_cac9715e</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1732,7 +1807,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/ip/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/ip/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/ip/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1757,22 +1842,27 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_117_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_117_21.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_117_22.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_21.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_137_8.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_22.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_139_8.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1793,6 +1883,11 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/filter_kernel_regslice_both.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/filter_kernel_sitofp_32ns_32_6_no_dsp_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1949,8 +2044,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Filter_kernel</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114002804</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-03-20T04:04:38Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114008867</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-03-24T09:07:49Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1959,8 +2054,8 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="71f72c31"/>
-      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ee0bb71f"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="33d7dae3"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="57cbeea4"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4e401cf3"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="16e51d05"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="d824ec03"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="25da6d24"/>

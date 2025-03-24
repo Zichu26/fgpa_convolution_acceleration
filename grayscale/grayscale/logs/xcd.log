@@ -441,3 +441,53 @@
 03/19/25 23:01:05: Socket received request to stop server.
 03/19/25 23:01:05: Dispatch Server: do_await_stop
 03/19/25 23:01:05: SERVER: destructor for server bound to port 61172
+03/23/25 19:42:37: Running xcd server. This server was built by gradle.
+03/23/25 19:42:37: Server was asked to start on port: '60092'
+03/23/25 19:42:37: Server is using token UUID: 'e3a9569b-5cc3-4115-82ca-9c6b7d8950ff'
+03/23/25 19:42:37: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+03/23/25 19:42:37: Attempting to start server on port '60092'
+03/23/25 19:42:37: Running Dispatch Server
+03/23/25 19:42:37: Version 2.2.0
+03/23/25 19:42:38: Dispatch Server: Accepted socket connection from client
+03/23/25 19:42:38: Starting Socket connection
+03/23/25 19:42:38: EXCHANGE_TOKEN received, server token: e3a9569b-5cc3-4115-82ca-9c6b7d8950ff, passed token: e3a9569b-5cc3-4115-82ca-9c6b7d8950ff
+03/23/25 19:42:39: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+03/23/25 19:42:39: SESSION_MGR: creating session with session uuid: '33a9ac7f-0b05-4b9a-aa6b-443b6205b837' and name 'v++_compile_grayscale'
+03/23/25 19:42:39: KERNEL_SVC: creating session with uuid: '33a9ac7f-0b05-4b9a-aa6b-443b6205b837' and name 'v++_compile_grayscale'
+03/23/25 19:42:39: GUIDANCE_SMGR: creating guidance session with uuid: '33a9ac7f-0b05-4b9a-aa6b-443b6205b837' and name 'v++_compile_grayscale'
+03/23/25 19:42:39: SYSTEM_DIAGRAM: creating session with uuid: '33a9ac7f-0b05-4b9a-aa6b-443b6205b837' and name 'v++_compile_grayscale'
+03/23/25 19:42:46: Dispatch Server: Accepted socket connection from client
+03/23/25 19:42:46: Starting Socket connection
+03/23/25 19:42:54: SESSION_MGR: closing session for UUID '33a9ac7f-0b05-4b9a-aa6b-443b6205b837' with name 'v++_compile_grayscale'
+03/23/25 19:42:54: KERNEL_SVC: closing session for UUID '33a9ac7f-0b05-4b9a-aa6b-443b6205b837' with name 'v++_compile_grayscale'
+03/23/25 19:42:54: GUIDANCE_SMGR: closing session for UUID '33a9ac7f-0b05-4b9a-aa6b-443b6205b837' with name 'v++_compile_grayscale'
+03/23/25 19:42:54: SYSTEM_DIAGRAM: closing session for UUID '33a9ac7f-0b05-4b9a-aa6b-443b6205b837' with name 'v++_compile_grayscale'
+03/23/25 19:42:54: STOP_SERVER received, server token: e3a9569b-5cc3-4115-82ca-9c6b7d8950ff, passed token: e3a9569b-5cc3-4115-82ca-9c6b7d8950ff
+03/23/25 19:42:54: Socket received request to stop server.
+03/23/25 19:42:54: Dispatch Server: do_await_stop
+03/23/25 19:42:54: SERVER: destructor for server bound to port 60092
+03/24/25 00:20:34: Running xcd server. This server was built by gradle.
+03/24/25 00:20:34: Server was asked to start on port: '53476'
+03/24/25 00:20:34: Server is using token UUID: '47e34309-fb70-42e6-b445-cb84b5417549'
+03/24/25 00:20:34: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+03/24/25 00:20:34: Attempting to start server on port '53476'
+03/24/25 00:20:34: Running Dispatch Server
+03/24/25 00:20:34: Version 2.2.0
+03/24/25 00:20:36: Dispatch Server: Accepted socket connection from client
+03/24/25 00:20:36: Starting Socket connection
+03/24/25 00:20:36: EXCHANGE_TOKEN received, server token: 47e34309-fb70-42e6-b445-cb84b5417549, passed token: 47e34309-fb70-42e6-b445-cb84b5417549
+03/24/25 00:20:36: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+03/24/25 00:20:36: SESSION_MGR: creating session with session uuid: '404a0f6d-0f49-4204-a202-170aaa9ea4a6' and name 'v++_compile_grayscale'
+03/24/25 00:20:36: KERNEL_SVC: creating session with uuid: '404a0f6d-0f49-4204-a202-170aaa9ea4a6' and name 'v++_compile_grayscale'
+03/24/25 00:20:36: GUIDANCE_SMGR: creating guidance session with uuid: '404a0f6d-0f49-4204-a202-170aaa9ea4a6' and name 'v++_compile_grayscale'
+03/24/25 00:20:36: SYSTEM_DIAGRAM: creating session with uuid: '404a0f6d-0f49-4204-a202-170aaa9ea4a6' and name 'v++_compile_grayscale'
+03/24/25 00:20:40: Dispatch Server: Accepted socket connection from client
+03/24/25 00:20:40: Starting Socket connection
+03/24/25 00:20:47: SESSION_MGR: closing session for UUID '404a0f6d-0f49-4204-a202-170aaa9ea4a6' with name 'v++_compile_grayscale'
+03/24/25 00:20:47: KERNEL_SVC: closing session for UUID '404a0f6d-0f49-4204-a202-170aaa9ea4a6' with name 'v++_compile_grayscale'
+03/24/25 00:20:47: GUIDANCE_SMGR: closing session for UUID '404a0f6d-0f49-4204-a202-170aaa9ea4a6' with name 'v++_compile_grayscale'
+03/24/25 00:20:47: SYSTEM_DIAGRAM: closing session for UUID '404a0f6d-0f49-4204-a202-170aaa9ea4a6' with name 'v++_compile_grayscale'
+03/24/25 00:20:47: STOP_SERVER received, server token: 47e34309-fb70-42e6-b445-cb84b5417549, passed token: 47e34309-fb70-42e6-b445-cb84b5417549
+03/24/25 00:20:47: Socket received request to stop server.
+03/24/25 00:20:47: Dispatch Server: do_await_stop
+03/24/25 00:20:47: SERVER: destructor for server bound to port 53476

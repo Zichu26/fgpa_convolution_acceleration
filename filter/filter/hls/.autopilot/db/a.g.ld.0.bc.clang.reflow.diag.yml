@@ -2,13 +2,13 @@
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: filter.cpp, Line: 75, Column: 20 }
-Function:        _Z12apply_kernelPA3_A3_7ap_uintILi8EEPA3_fRN3hls4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEE
+Function:        _Z12apply_kernelPA3_A3_7ap_uintILi8EEiPA3_iRN3hls4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEE
 Args:            
   - Callee:          'ap_uint<8>::ap_uint(float)'
     DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
                        Line: 299, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'apply_kernel(ap_uint<8> (*) [3][3], float (*) [3], hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>&)'
+  - Caller:          'apply_kernel(ap_uint<8> (*) [3][3], int, int (*) [3], hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>&)'
     DebugLoc:        { File: filter.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -16,92 +16,92 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: filter.cpp, Line: 152, Column: 13 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'apply_kernel(ap_uint<8> (*) [3][3], float (*) [3], hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>&)'
+  - Callee:          'apply_kernel(ap_uint<8> (*) [3][3], int, int (*) [3], hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>&)'
     DebugLoc:        { File: filter.cpp, Line: 59, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'filter_kernel(int, int, float (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
-    DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
+  - Caller:          'filter_kernel(int, int, int, int (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
   - String:          ''''
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: filter.cpp, Line: 74, Column: 20 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - Callee:          'ap_uint<8>::ap_uint(float)'
     DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
                        Line: 299, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'filter_kernel(int, int, float (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
-    DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
+  - Caller:          'filter_kernel(int, int, int, int (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: filter.cpp, Line: 145, Column: 13 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 148, Column: 13 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'store(hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>&, int, int, ap_uint<8> (*) [1920][3])'
-    DebugLoc:        { File: filter.cpp, Line: 17, Column: 0 }
+    DebugLoc:        { File: filter.cpp, Line: 16, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'filter_kernel(int, int, float (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
-    DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
+  - Caller:          'filter_kernel(int, int, int, int (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: filter.cpp, Line: 151, Column: 13 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'create_window(int, int, int, int, ap_uint<8> (*) [1920][3], ap_uint<8> (*) [3][3])'
-    DebugLoc:        { File: filter.cpp, Line: 31, Column: 0 }
+    DebugLoc:        { File: filter.cpp, Line: 30, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'filter_kernel(int, int, float (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
-    DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
+  - Caller:          'filter_kernel(int, int, int, int (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: filter.cpp, Line: 34, Column: 19 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 33, Column: 19 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_34_1
+  - LoopName:        VITIS_LOOP_33_1
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: filter.cpp, Line: 35, Column: 26 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 34, Column: 26 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_35_2
+  - LoopName:        VITIS_LOOP_34_2
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: filter.cpp, Line: 36, Column: 30 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 35, Column: 30 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_36_3
+  - LoopName:        VITIS_LOOP_35_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -111,7 +111,7 @@ Args:
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: filter.cpp, Line: 63, Column: 22 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_63_1
@@ -121,7 +121,7 @@ Args:
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: filter.cpp, Line: 64, Column: 26 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_64_2
@@ -131,7 +131,7 @@ Args:
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: filter.cpp, Line: 66, Column: 19 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_66_3
@@ -140,23 +140,23 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: filter.cpp, Line: 119, Column: 20 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 121, Column: 20 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_119_3
+  - LoopName:        VITIS_LOOP_121_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_34_1
+  - LoopName:        VITIS_LOOP_33_1
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:34:19'
+  - LoopLoc:         'filter.cpp:33:19'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -166,13 +166,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_35_2
+  - LoopName:        VITIS_LOOP_34_2
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:35:26'
+  - LoopLoc:         'filter.cpp:34:26'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -182,13 +182,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_36_3
+  - LoopName:        VITIS_LOOP_35_3
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:36:30'
+  - LoopLoc:         'filter.cpp:35:30'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -198,13 +198,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_36_3
+  - LoopName:        VITIS_LOOP_35_3
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:36:30'
+  - LoopLoc:         'filter.cpp:35:30'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -214,13 +214,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_36_3
+  - LoopName:        VITIS_LOOP_35_3
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:36:30'
+  - LoopLoc:         'filter.cpp:35:30'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -230,13 +230,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_35_2
+  - LoopName:        VITIS_LOOP_34_2
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:35:26'
+  - LoopLoc:         'filter.cpp:34:26'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -246,13 +246,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_36_3
+  - LoopName:        VITIS_LOOP_35_3
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:36:30'
+  - LoopLoc:         'filter.cpp:35:30'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -262,13 +262,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_36_3
+  - LoopName:        VITIS_LOOP_35_3
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:36:30'
+  - LoopLoc:         'filter.cpp:35:30'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -278,13 +278,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_36_3
+  - LoopName:        VITIS_LOOP_35_3
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:36:30'
+  - LoopLoc:         'filter.cpp:35:30'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -294,13 +294,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_35_2
+  - LoopName:        VITIS_LOOP_34_2
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:35:26'
+  - LoopLoc:         'filter.cpp:34:26'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -310,13 +310,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_36_3
+  - LoopName:        VITIS_LOOP_35_3
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:36:30'
+  - LoopLoc:         'filter.cpp:35:30'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -326,13 +326,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_36_3
+  - LoopName:        VITIS_LOOP_35_3
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:36:30'
+  - LoopLoc:         'filter.cpp:35:30'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -342,13 +342,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_36_3
+  - LoopName:        VITIS_LOOP_35_3
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:36:30'
+  - LoopLoc:         'filter.cpp:35:30'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -358,8 +358,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -374,8 +374,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_63_1
@@ -390,8 +390,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_64_2
@@ -406,8 +406,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_66_3
@@ -422,8 +422,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_66_3
@@ -438,8 +438,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_66_3
@@ -454,8 +454,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_64_2
@@ -470,8 +470,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_66_3
@@ -486,8 +486,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_66_3
@@ -502,8 +502,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_66_3
@@ -518,8 +518,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_64_2
@@ -534,8 +534,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_66_3
@@ -550,8 +550,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_66_3
@@ -566,8 +566,8 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_66_3
@@ -582,13 +582,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_129_6
+  - LoopName:        VITIS_LOOP_131_6
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:129:31'
+  - LoopLoc:         'filter.cpp:131:31'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -598,13 +598,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_115_1
+  - LoopName:        VITIS_LOOP_117_1
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:115:20'
+  - LoopLoc:         'filter.cpp:117:20'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -614,13 +614,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_119_3
+  - LoopName:        VITIS_LOOP_121_3
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:119:20'
+  - LoopLoc:         'filter.cpp:121:20'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -630,13 +630,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_119_3
+  - LoopName:        VITIS_LOOP_121_3
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:119:20'
+  - LoopLoc:         'filter.cpp:121:20'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -646,13 +646,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_119_3
+  - LoopName:        VITIS_LOOP_121_3
   - String:          ''' ('
-  - LoopLoc:         'filter.cpp:119:20'
+  - LoopLoc:         'filter.cpp:121:20'
   - String:          ') '
   - String:          'in function '''
   - String:          filter_kernel
@@ -663,14 +663,14 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: filter.cpp, Line: 73, Column: 20 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - Callee:          'ap_uint<8>::ap_uint(float)'
     DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
                        Line: 299, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'filter_kernel(int, int, float (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
-    DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
+  - Caller:          'filter_kernel(int, int, int, int (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -678,8 +678,8 @@ Pass:            inline
 Name:            NeverInline
 Function:        apatb_filter_kernel_ir
 Args:            
-  - Callee:          'filter_kernel(int, int, float (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
-    DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
+  - Callee:          'filter_kernel(int, int, int, int (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_filter_kernel_ir
   - String:          ' because it should never be inlined (cost=never)'
@@ -687,23 +687,23 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_uint<8>::ap_uint(float)'
     DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
                        Line: 299, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'filter_kernel(int, int, float (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
-    DebugLoc:        { File: filter.cpp, Line: 90, Column: 0 }
+  - Caller:          'filter_kernel(int, int, int, int (*) [3], hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_int<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: filter.cpp, Line: 91, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: filter.cpp, Line: 107, Column: 13 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 109, Column: 13 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -726,18 +726,18 @@ Args:
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            FlattenOffInference
-DebugLoc:        { File: filter.cpp, Line: 136, Column: 23 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 138, Column: 23 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - String:          'Automatically disabling loop flattening for loop '''
-  - LoopName:        VITIS_LOOP_136_7
+  - LoopName:        VITIS_LOOP_138_7
   - String:          '''.'
 ...
 --- !Passed
 Pass:            reflow-loop-flatten-cost-model
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: filter.cpp, Line: 136, Column: 23 }
-Function:        _Z13filter_kerneliiPA3_fRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
+DebugLoc:        { File: filter.cpp, Line: 138, Column: 23 }
+Function:        _Z13filter_kerneliiiPA3_iRN3hls6streamINS1_4axisI6ap_intILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEES8_
 Args:            
   - PragmaType:      loop_flatten
   - String:          ' '
@@ -747,11 +747,11 @@ Args:
   - String:          ' '
   - PragmaFunction:  filter_kernel
   - String:          ' '
-  - PragmaSrcLoc:    'filter.cpp:136:23'
-    DebugLoc:        { File: filter.cpp, Line: 136, Column: 23 }
-  - LoopName:        VITIS_LOOP_136_7
+  - PragmaSrcLoc:    'filter.cpp:138:23'
+    DebugLoc:        { File: filter.cpp, Line: 138, Column: 23 }
+  - LoopName:        VITIS_LOOP_138_7
   - String:          ' '
-  - LoopLoc:         'filter.cpp:136:23'
-    DebugLoc:        { File: filter.cpp, Line: 136, Column: 23 }
+  - LoopLoc:         'filter.cpp:138:23'
+    DebugLoc:        { File: filter.cpp, Line: 138, Column: 23 }
   - String:          ' '
 ...

@@ -1,0 +1,1082 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Mar 24 04:09:10 2025
+# Process ID         : 4928
+# Current directory  : D:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.runs/design_1_filter_kernel_0_3_synth_1
+# Command line       : vivado.exe -log design_1_filter_kernel_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_filter_kernel_0_3.tcl
+# Log file           : D:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.runs/design_1_filter_kernel_0_3_synth_1/design_1_filter_kernel_0_3.vds
+# Journal file       : D:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.runs/design_1_filter_kernel_0_3_synth_1\vivado.jou
+# Running On         : LAPTOP-D6BOEUU6
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 5800H with Radeon Graphics         
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 14877 MB
+# Swap memory        : 12847 MB
+# Total Virtual      : 27724 MB
+# Available Virtual  : 4282 MB
+#-----------------------------------------------------------
+source design_1_filter_kernel_0_3.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/cse_462/fgpa_convolution_acceleration/filter'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/cse_462/fgpa_convolution_acceleration/filter' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.runs/design_1_filter_kernel_0_3_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_filter_kernel_0_3
+Command: synth_design -top design_1_filter_kernel_0_3 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10316
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1080.836 ; gain = 467.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_filter_kernel_0_3' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ip/design_1_filter_kernel_0_3/synth/design_1_filter_kernel_0_3.v:53]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_line_buffer_RAM_1WNR_AUTO_1R1W' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_line_buffer_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_line_buffer_RAM_1WNR_AUTO_1R1W' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_line_buffer_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_2' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_flow_control_loop_pipe_sequential_init' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_flow_control_loop_pipe_sequential_init' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_2' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_21' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_21.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_21' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_21.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_22' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_22.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_22' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_119_22.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_139_8' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_139_8.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/ip/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84087]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84087]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/ip/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/ip/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/ip/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/ip/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/ip/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_uitofp_32ns_32_6_no_dsp_1' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/ip/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/ip/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_uitofp_32ns_32_6_no_dsp_1' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1_ip' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/ip/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1_ip' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/ip/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_sparsemux_7_2_8_1_1' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_sparsemux_7_2_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_sparsemux_7_2_8_1_1' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_sparsemux_7_2_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_sparsemux_9_3_8_1_1' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_sparsemux_9_3_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_sparsemux_9_3_8_1_1' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_sparsemux_9_3_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_139_8' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_139_8.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_control_s_axi' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_control_s_axi_ram' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_control_s_axi.v:516]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_control_s_axi_ram' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_control_s_axi.v:516]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_control_s_axi.v:258]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_control_s_axi' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_sitofp_32ns_32_6_no_dsp_1' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_sitofp_32ns_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/ip/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/ip/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_sitofp_32ns_32_6_no_dsp_1' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_sitofp_32ns_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_urem_32ns_3ns_2_36_seq_1' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_urem_32ns_3ns_2_36_seq_1.v:83]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_urem_32ns_3ns_2_36_seq_1_divseq' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_urem_32ns_3ns_2_36_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_urem_32ns_3ns_2_36_seq_1_divseq' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_urem_32ns_3ns_2_36_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_urem_32ns_3ns_2_36_seq_1' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_urem_32ns_3ns_2_36_seq_1.v:83]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_urem_31ns_3ns_2_35_seq_1' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_urem_31ns_3ns_2_35_seq_1.v:83]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_urem_31ns_3ns_2_35_seq_1_divseq' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_urem_31ns_3ns_2_35_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_urem_31ns_3ns_2_35_seq_1_divseq' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_urem_31ns_3ns_2_35_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_urem_31ns_3ns_2_35_seq_1' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_urem_31ns_3ns_2_35_seq_1.v:83]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_regslice_both' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_regslice_both' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_regslice_both__parameterized0' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_regslice_both__parameterized0' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'filter_kernel_regslice_both__parameterized1' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel_regslice_both__parameterized1' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'filter_kernel' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_filter_kernel_0_3' (0#1) [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ip/design_1_filter_kernel_0_3/synth/design_1_filter_kernel_0_3.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_control_s_axi.v:330]
+WARNING: [Synth 8-6014] Unused sequential element quot_reg was removed.  [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_urem_32ns_3ns_2_36_seq_1.v:149]
+WARNING: [Synth 8-6014] Unused sequential element quot_reg was removed.  [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_urem_31ns_3ns_2_35_seq_1.v:149]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized119 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized119 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized119 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[7] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[6] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[5] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[4] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[3] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[2] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[11] in module carry_chain__parameterized22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized97 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[7] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[6] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[5] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[4] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[3] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[2] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[1] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[0] in module renorm_and_round_logic__parameterized1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1407.961 ; gain = 794.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1407.961 ; gain = 794.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1407.961 ; gain = 794.309
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1613.527 ; gain = 45.531
+INFO: [Netlist 29-17] Analyzing 42782 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ip/design_1_filter_kernel_0_3/constraints/filter_kernel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ip/design_1_filter_kernel_0_3/constraints/filter_kernel_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.runs/design_1_filter_kernel_0_3_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.runs/design_1_filter_kernel_0_3_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.216 . Memory (MB): peak = 2019.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 241 instances were transformed.
+  FDE => FDRE: 241 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2083.398 ; gain = 63.566
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:57 ; elapsed = 00:01:09 . Memory (MB): peak = 2083.398 ; gain = 1469.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:57 ; elapsed = 00:01:09 . Memory (MB): peak = 2083.398 ; gain = 1469.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.runs/design_1_filter_kernel_0_3_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:09 . Memory (MB): peak = 2083.398 ; gain = 1469.746
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'col_reg_2825_reg' and it is trimmed from '31' to '11' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_filter_kernel_Pipeline_VITIS_LOOP_139_8.v:5238]
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'filter_kernel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'filter_kernel_control_s_axi'
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg' and it is trimmed from '32' to '31' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_urem_32ns_3ns_2_36_seq_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg' and it is trimmed from '31' to '30' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_urem_31ns_3ns_2_35_seq_1.v:41]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_kernel_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_kernel_regslice_both__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_kernel_regslice_both__parameterized1'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'filter_kernel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'filter_kernel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_kernel_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_kernel_regslice_both__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_kernel_regslice_both__parameterized1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 2083.398 ; gain = 1469.746
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1:/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1:/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1:/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1:/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1:/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1:/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1:/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1:/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1:/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1:/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1:/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1:/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1:/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1:/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1:/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1:/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1:/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1:/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1:/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized0) to 'filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1:/filter_kernel_fdiv_32ns_32ns_32_16_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_uitofp_32ns_32_6_no_dsp_1:/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1:/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1:/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1:/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1:/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1:/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1:/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1:/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1:/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'filter_kernel_sitofp_32ns_32_6_no_dsp_1:/filter_kernel_sitofp_32ns_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[17]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[16]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[19]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[18]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[21]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[20]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[23]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[22]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[25]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[24]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[27]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[26]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[29]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[28]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[31]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[30]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[9]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[8]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[11]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[10]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[13]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[12]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[15]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U110/din0_buf1_reg[14]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[17]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[16]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[19]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[18]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[21]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[20]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[23]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[22]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[25]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[24]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[27]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[26]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[29]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[28]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[31]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[30]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[9]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[8]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[11]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[10]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[13]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[12]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[15]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U105/din0_buf1_reg[14]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[17]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[16]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[19]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[18]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[21]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[20]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[23]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[22]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[25]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[24]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[27]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[26]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[29]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[28]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[31]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[30]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[9]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[8]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[11]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[10]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[13]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[12]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[15]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U91/din0_buf1_reg[14]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[17]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[16]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[19]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[18]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[21]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[20]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[23]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[22]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[25]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[24]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[27]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[26]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[29]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[28]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[31]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[30]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[9]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[8]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[11]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[10]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[13]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[12]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[15]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U102/din0_buf1_reg[14]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U111/din0_buf1_reg[17]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U111/din0_buf1_reg[16]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U111/din0_buf1_reg[19]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uitofp_32ns_32_6_no_dsp_1_U111/din0_buf1_reg[18]' (FDE) to 'uitofp_32ns_32_6_no_dsp_1_U92/din0_buf1_reg[31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U100/din0_buf1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U110/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U105/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U91/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U102/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U111/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U104/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U92/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U93/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U103/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U109/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U101/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U100/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U121/din0_buf1_reg[31:0]' into 'sum_25_reg_3797_pp0_iter75_reg_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:72]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U120/ce_r_reg' into 'fcmp_32ns_32ns_1_2_no_dsp_1_U121/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:100]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U120/din0_buf1_reg[31:0]' into 'sum_25_reg_3797_pp0_iter75_reg_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:72]
+INFO: [Synth 8-5544] ROM "fcmp_32ns_32ns_1_2_no_dsp_1_U121/op_tdata" won't be mapped to Block RAM because address size (4) smaller than threshold (8)
+INFO: [Synth 8-5544] ROM "fcmp_32ns_32ns_1_2_no_dsp_1_U120/op_tdata" won't be mapped to Block RAM because address size (4) smaller than threshold (8)
+INFO: [Synth 8-5544] ROM "fcmp_32ns_32ns_1_2_no_dsp_1_U121/op_tdata" won't be mapped to Block RAM because address size (4) smaller than threshold (8)
+INFO: [Synth 8-5544] ROM "fcmp_32ns_32ns_1_2_no_dsp_1_U120/op_tdata" won't be mapped to Block RAM because address size (4) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U107/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U106/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U96/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U95/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U94/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U54/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U53/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U53/din1_buf1_reg[31:0]' into 'fmul_32ns_32ns_32_4_max_dsp_1_U54/din1_buf1_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:55]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U52/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U52/din1_buf1_reg[31:0]' into 'fmul_32ns_32ns_32_4_max_dsp_1_U54/din1_buf1_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:55]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U42/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U41/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U41/din1_buf1_reg[31:0]' into 'fmul_32ns_32ns_32_4_max_dsp_1_U42/din1_buf1_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:55]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U40/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U40/din1_buf1_reg[31:0]' into 'fmul_32ns_32ns_32_4_max_dsp_1_U42/din1_buf1_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:55]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U35/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U32/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U29/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U26/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U23/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U20/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U17/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U121/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U108/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:100]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U107/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U108/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U106/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U96/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U95/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U94/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fcmp_32ns_32ns_1_2_no_dsp_1_U121/opcode_buf1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fcmp_32ns_32ns_1_2_no_dsp_1_U121/opcode_buf1_reg[2] )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__2.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__2.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__4.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__4.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__5.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__5.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__6.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__6.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__7.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__7.
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U116/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U115/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U114/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U113/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U112/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U99/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U98/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'uitofp_32ns_32_6_no_dsp_1_U97/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_uitofp_32ns_32_6_no_dsp_1.v:44]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U63/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U62/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U62/din1_buf1_reg[31:0]' into 'fmul_32ns_32ns_32_4_max_dsp_1_U63/din1_buf1_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:55]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U61/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U61/din1_buf1_reg[31:0]' into 'fmul_32ns_32ns_32_4_max_dsp_1_U63/din1_buf1_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:55]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U60/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U59/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U59/din1_buf1_reg[31:0]' into 'fmul_32ns_32ns_32_4_max_dsp_1_U60/din1_buf1_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:55]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U58/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U58/din1_buf1_reg[31:0]' into 'fmul_32ns_32ns_32_4_max_dsp_1_U60/din1_buf1_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:55]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U45/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U44/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U44/din1_buf1_reg[31:0]' into 'fmul_32ns_32ns_32_4_max_dsp_1_U45/din1_buf1_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:55]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U43/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'fmul_32ns_32ns_32_4_max_dsp_1_U43/din1_buf1_reg[31:0]' into 'fmul_32ns_32ns_32_4_max_dsp_1_U45/din1_buf1_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fmul_32ns_32ns_32_4_max_dsp_1.v:55]
+INFO: [Synth 8-4471] merging register 'fadd_32ns_32ns_32_5_full_dsp_1_U14/ce_r_reg' into 'uitofp_32ns_32_6_no_dsp_1_U117/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1.v:51]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U97/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U115/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U116/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U117/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U112/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U113/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U114/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U98/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uitofp_32ns_32_6_no_dsp_1_U99/filter_kernel_uitofp_32ns_32_6_no_dsp_1_ip_u/inst /i_synth/\FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.sign_op_reg )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__8.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__8.
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SHIFT_TABLE[0]" won't be mapped to Block RAM because address size (6) smaller than threshold (8)
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U123/din0_buf1_reg[31:0]' into 'sum_26_reg_3804_pp0_iter75_reg_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:72]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U122/ce_r_reg' into 'fcmp_32ns_32ns_1_2_no_dsp_1_U123/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:100]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U122/din0_buf1_reg[31:0]' into 'sum_26_reg_3804_pp0_iter75_reg_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:72]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U119/ce_r_reg' into 'fcmp_32ns_32ns_1_2_no_dsp_1_U123/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:100]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U119/din0_buf1_reg[31:0]' into 'sum_24_reg_3790_pp0_iter75_reg_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:72]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U119/din1_buf1_reg[31:0]' into 'fcmp_32ns_32ns_1_2_no_dsp_1_U123/din1_buf1_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:74]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U119/opcode_buf1_reg[4:0]' into 'fcmp_32ns_32ns_1_2_no_dsp_1_U123/opcode_buf1_reg[4:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:95]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U118/ce_r_reg' into 'fcmp_32ns_32ns_1_2_no_dsp_1_U123/ce_r_reg' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:100]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U118/din0_buf1_reg[31:0]' into 'sum_24_reg_3790_pp0_iter75_reg_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:72]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U118/din1_buf1_reg[31:0]' into 'fcmp_32ns_32ns_1_2_no_dsp_1_U122/din1_buf1_reg[31:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:74]
+INFO: [Synth 8-4471] merging register 'fcmp_32ns_32ns_1_2_no_dsp_1_U118/opcode_buf1_reg[4:0]' into 'fcmp_32ns_32ns_1_2_no_dsp_1_U122/opcode_buf1_reg[4:0]' [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/e2e5/hdl/verilog/filter_kernel_fcmp_32ns_32ns_1_2_no_dsp_1.v:95]
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fcmp_32ns_32ns_1_2_no_dsp_1_U123/opcode_buf1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U11/din1_buf1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U10/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst /i_synth/\ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U12/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst /i_synth/\ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fadd_32ns_32ns_32_5_full_dsp_1_U11/filter_kernel_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst /i_synth/\ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/B_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__9.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__9.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__10.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__10.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__11.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__11.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__12.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__12.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__13.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__13.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__14.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__14.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__15.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__15.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__16.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__16.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__17.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__17.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__18.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__18.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__19.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__19.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__20.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__20.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__21.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__21.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__22.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__22.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__23.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__23.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__24.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__24.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__25.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__25.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv__26.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv__26.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_19_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_19_viv.
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '32' to '26' bits. [d:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.gen/sources_1/bd/design_1/ipshared/d531/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\urem_32ns_3ns_2_36_seq_1_U202/divisor0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\urem_32ns_3ns_2_36_seq_1_U202/divisor0_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\control_s_axi_U/waddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\grp_filter_kernel_Pipeline_VITIS_LOOP_119_21_fu_282/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\grp_filter_kernel_Pipeline_VITIS_LOOP_119_22_fu_292/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\grp_filter_kernel_Pipeline_VITIS_LOOP_119_2_fu_272/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sitofp_32ns_32_6_no_dsp_1_U193/ce_r_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\grp_filter_kernel_Pipeline_VITIS_LOOP_119_2_fu_272/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\urem_31ns_3ns_2_35_seq_1_U203/filter_kernel_urem_31ns_3ns_2_35_seq_1_divseq_u/divisor0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\urem_31ns_3ns_2_35_seq_1_U203/filter_kernel_urem_31ns_3ns_2_35_seq_1_divseq_u/divisor0_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\urem_32ns_3ns_2_36_seq_1_U202/filter_kernel_urem_32ns_3ns_2_36_seq_1_divseq_u/divisor0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\urem_32ns_3ns_2_36_seq_1_U202/filter_kernel_urem_32ns_3ns_2_36_seq_1_divseq_u/divisor0_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:02:15 . Memory (MB): peak = 2083.398 ; gain = 1469.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:02:25 . Memory (MB): peak = 2083.398 ; gain = 1469.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:02:47 . Memory (MB): peak = 2083.398 ; gain = 1469.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_1/\output_stream_TDATA_reg_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_1/\output_stream_TDATA_reg_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_1/\output_stream_TDATA_reg_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_1/\output_stream_TDATA_reg_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_1/\output_stream_TDATA_reg_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_1/\output_stream_TDATA_reg_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_1/\output_stream_TDATA_reg_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_1/\output_stream_TDATA_reg_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_1/\regslice_both_output_stream_V_data_V_U/data_p2_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_1/\regslice_both_output_stream_V_data_V_U/data_p1_reg[31] )
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_1_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_1_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_1_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_2_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_2_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_2_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_3_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_3_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_3_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_4_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_4_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_4_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_5_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_5_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_5_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_6_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_6_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_6_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_7_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_7_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_7_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_8_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_8_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_1/line_buffer_8_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:11 ; elapsed = 00:03:13 . Memory (MB): peak = 2083.398 ; gain = 1469.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_1_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_1_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_1_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_2_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_2_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_2_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_3_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_3_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_3_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_4_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_4_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_4_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_5_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_5_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_5_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_6_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_6_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_6_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_7_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_7_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_7_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_8_U/ram0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_8_U/ram1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buffer_8_U/ram2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:27 ; elapsed = 00:03:33 . Memory (MB): peak = 2108.477 ; gain = 1494.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:27 ; elapsed = 00:03:34 . Memory (MB): peak = 2108.477 ; gain = 1494.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:40 ; elapsed = 00:03:49 . Memory (MB): peak = 2273.211 ; gain = 1659.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:40 ; elapsed = 00:03:49 . Memory (MB): peak = 2273.211 ; gain = 1659.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:42 ; elapsed = 00:03:51 . Memory (MB): peak = 2302.383 ; gain = 1688.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:42 ; elapsed = 00:03:52 . Memory (MB): peak = 2302.383 ; gain = 1688.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                          | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper_8246                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_8206 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_8187                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_8147 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_8128                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_8088 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_8068                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_8022 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_8001                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7955 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7934                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7888 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7867                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7821 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7800                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7754 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7733                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7687 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7666                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7620 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7599                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7553 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7532                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7486 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7465                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7419 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7398                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7352 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7331                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7285 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7264                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7218 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7197                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7151 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7130                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7084 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_7063                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7017 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_6996                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_6950 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_6929                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_6883 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_6862                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_6816 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_6795                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_6749 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_6728                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_6682 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_6661                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_6615 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_6594                 | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_6548 | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper                      | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0      | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2601 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2602 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2599 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2572 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2573 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2570 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2543 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2544 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2541 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2514 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2515 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2512 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2485 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2486 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2483 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2456 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2457 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2454 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2427 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2428 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2425 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2398 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2399 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2396 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2369 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2370 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2367 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2340 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2341 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2338 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2311 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2312 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2309 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2282 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2283 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2280 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2253 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2254 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2251 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2224 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2225 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2222 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2195 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2196 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2193 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2166 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2167 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2164 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2137 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2138 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2135 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2108 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2109 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2106 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2079 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2080 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2077 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2050 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2051 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2048 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_2021 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2022 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_2019 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_1992 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1993 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_1990 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_1963 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1964 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_1961 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_1934 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1935 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_1932 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_1905 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1906 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_1903 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_1876 | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1877 | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_1874 | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1      | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2      | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3      | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   265|
+|2     |DSP48E1  |   135|
+|7     |LUT1     |   451|
+|8     |LUT2     |  5439|
+|9     |LUT3     | 23706|
+|10    |LUT4     |  3272|
+|11    |LUT5     |  3264|
+|12    |LUT6     |  4122|
+|13    |MUXCY    | 21995|
+|14    |MUXF7    |    30|
+|15    |RAM16X1D |    32|
+|16    |RAMB18E1 |    27|
+|17    |SRL16E   |  1000|
+|18    |SRLC32E  |   200|
+|19    |XORCY    | 20270|
+|20    |FDE      |   241|
+|21    |FDRE     | 41610|
+|22    |FDSE     |    10|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:43 ; elapsed = 00:03:52 . Memory (MB): peak = 2302.383 ; gain = 1688.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 203 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:51 ; elapsed = 00:03:17 . Memory (MB): peak = 2302.383 ; gain = 1013.293
+Synthesis Optimization Complete : Time (s): cpu = 00:02:43 ; elapsed = 00:03:54 . Memory (MB): peak = 2302.383 ; gain = 1688.730
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2321.258 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 42995 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 2548.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6557 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 6284 instances
+  FDE => FDRE: 241 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+
+Synth Design complete | Checksum: f9309d2c
+INFO: [Common 17-83] Releasing license: Synthesis
+559 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:17 ; elapsed = 00:04:37 . Memory (MB): peak = 2548.234 ; gain = 2165.664
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.231 . Memory (MB): peak = 2548.234 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.runs/design_1_filter_kernel_0_3_synth_1/design_1_filter_kernel_0_3.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2548.234 ; gain = 0.000
+write_verilog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2548.234 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2548.234 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_filter_kernel_0_3, cache-ID = c2a992720450d585
+INFO: [Coretcl 2-1174] Renamed 8672 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.215 . Memory (MB): peak = 2548.234 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/cse_462/fgpa_convolution_acceleration/filter_hardware/filter_hardware.runs/design_1_filter_kernel_0_3_synth_1/design_1_filter_kernel_0_3.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2548.234 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_filter_kernel_0_3_utilization_synth.rpt -pb design_1_filter_kernel_0_3_utilization_synth.pb
+write_verilog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2548.234 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2548.234 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 24 04:14:46 2025...
